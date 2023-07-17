@@ -12,6 +12,7 @@ def Cal_vol(data, window):
     df['time'] = pd.to_datetime(df['time'])
 
     dayList = list(pd.date_range(start='2023-06-05 01:00:00',end='2023-07-10 23:00:00', freq='D'))
+    
     for day in dayList:
 
         s_date = day
@@ -20,7 +21,8 @@ def Cal_vol(data, window):
         df_temp = df[(df['time'] >= s_date) & (df['time'] < e_date)]
         if len(df_temp) == 0:
             continue
-
+        
+        
         # Exclude data before 9:45 am and only consider data from the 16th minute after the market opens
         df_temp = df_temp[df_temp['time'].dt.time >= pd.to_datetime('09:46').time()]
 
@@ -66,7 +68,7 @@ def Cal_vol(data, window):
         factor_mean = df.dropna(subset=['factor']).sort_values(by='time').tail(window)['factor'].mean()
         factor_std = df.dropna(subset=['factor']).sort_values(by='time').tail(window)['factor'].std()
         index = (factor_mean+factor_std)/2
-        df.loc[(df['time'] >= s_date) & (df['time'] < e_date),'index'] = index
+        df.loc[(df['time'] >= s_date) & (df['time'] < e_date),'index'] = Factor
 
     # Save processed data to new folder
     df.to_csv('C:/Users/21995/Desktop/量化投资/CB_Data_Test/{}'.format(data))
@@ -77,7 +79,7 @@ if __name__ == '__main__':
     files = os.listdir('C:/Users/21995/Desktop/量化投资/CB_Data')
     
     for ind, file in enumerate(files):
-        Cal_vol(file, window=5)
+        Cal_vol(file, window=1)
 
         print("\r", end="")
         print("Processing Data: {}%: ".format(int(ind+1)*100//len(files)), "▋" * (int((int(ind+1)/len(files)) * 100 // 2)), end="")
