@@ -4,8 +4,8 @@ import os
 import sys
 
 follow_interval = 5
-adv_moment_num = 5
-session_length = 25
+adv_moment_num = 4
+session_length = 75
 day_avg = 1
 weighted_avg = True
 
@@ -15,7 +15,7 @@ def analyze(data, window, s_dir, d_dir):
 
     df['time'] = pd.to_datetime(df['time'])
 
-    dayList = list(pd.date_range(start='2023-06-05 01:00:00',end='2023-07-10 23:00:00', freq='D'))
+    dayList = list(pd.date_range(start='2022-01-01 01:00:00',end='2022-12-31 23:00:00', freq='D'))
     for day in dayList:
 
         s_date = day
@@ -86,7 +86,7 @@ def analyze(data, window, s_dir, d_dir):
     
 
 if __name__ == '__main__':
-    s_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data'
+    s_dir = 'C:/Users/21995/Desktop/量化投资/可转债数据/2022_modified'
     d_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
     files = os.listdir(s_dir)
     

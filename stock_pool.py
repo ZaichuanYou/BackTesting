@@ -40,7 +40,7 @@ class MyStrategy(bt.Strategy):
     params = dict(
         group = 0,
         printlog=True,
-        hedge = False,
+        hedge = True,
         reverse = False,
         total_trade = 0,
         win_count = 0
@@ -70,7 +70,8 @@ class MyStrategy(bt.Strategy):
         # 提取股票池当日因子截面
         rate_list=[]
         for data in self.datas:
-            rate_list.append([data._name, self.indx[data._name]])
+            if not self.indx[data._name] == 0:
+                rate_list.append([data._name, self.indx[data._name]])
 
         # 股票池按照因子大小排序，记录前10%的股票，如果因子值为NaN则跳过当个交易日
         long_list=[]
@@ -171,10 +172,11 @@ def backTest(name, save, group, dir):
     cerebro.addsizer(bt.sizers.FixedSize, stake=100)
 
     # 将文件夹下每一个CSV数据导入策略模型
-    data_Dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_RevMomentum'
+    data_Dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
     files = os.listdir(data_Dir)
     for ind, file in enumerate(files):
-
+        if ind < 100 or ind >= 200:
+            continue
         data = GenericCVS_extend(
             dataname=data_Dir+'/'+file,
             fromdate=bt.datetime.datetime(2022, 1, 4),

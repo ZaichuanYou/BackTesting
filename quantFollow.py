@@ -5,8 +5,8 @@ import sys
 
 if __name__ == '__main__':
     tester = analyzeFollow
-    tester.follow_interval = 3
-    tester.adv_moment_num = 5
+    tester.follow_interval = 5
+    tester.adv_moment_num = 3
     tester.session_length = 75
     tester.day_avg = 1
     tester.weighted_avg = True
