@@ -93,7 +93,7 @@ class MyStrategy(bt.Strategy):
 
         # 得到当前的账户价值
         total_value = self.broker.getvalue()
-        p_value = total_value*0.5/3
+        p_value = total_value*0.5/len(long_list)
         for data in self.datas:
             #获取仓位
             pos = self.getposition(data).size
@@ -150,6 +150,8 @@ class MyStrategy(bt.Strategy):
                 self.p.win_count = self.p.win_count+1
 
     def stop(self):
+        if not self.p.printlog:
+            print(f'策略胜率：{self.p.win_count/self.p.total_trade}%')
         self.log(f'策略胜率：{self.p.win_count/self.p.total_trade}%')
         return
 
@@ -169,23 +171,23 @@ def backTest(name, save, group, dir):
     cerebro.addsizer(bt.sizers.FixedSize, stake=100)
 
     # 将文件夹下每一个CSV数据导入策略模型
-    data_Dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
+    data_Dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_RevMomentum'
     files = os.listdir(data_Dir)
     for ind, file in enumerate(files):
 
         data = GenericCVS_extend(
             dataname=data_Dir+'/'+file,
-            fromdate=bt.datetime.datetime(2023, 6, 5),
-            todate=bt.datetime.datetime(2023, 7, 10),
+            fromdate=bt.datetime.datetime(2022, 1, 4),
+            todate=bt.datetime.datetime(2022, 12, 31),
             dtformat = '%Y-%m-%d %H:%M:%S',
-            datetime=1,
+            datetime=2,
             high=4,
             low=5,
             close=6,
-            volume=8,
+            volume=7,
             open=3,
             openinterest = -1,
-            indx = 10,
+            indx = 8,
             plot=False
         )
 
@@ -230,4 +232,4 @@ if __name__ == '__main__':
     backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='')
     # for a in range(0,10):
     #     print(f"top {a*10} to {a*10+10}%")
-    #     backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result_15min")
+    #     backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result_FluxRate")

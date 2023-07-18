@@ -1,10 +1,10 @@
-import analyze
+import analyzeFollow
 from stock_pool import backTest
 import os
 import sys
 
 if __name__ == '__main__':
-    tester = analyze
+    tester = analyzeFollow
     tester.follow_interval = 3
     tester.adv_moment_num = 5
     tester.session_length = 75
