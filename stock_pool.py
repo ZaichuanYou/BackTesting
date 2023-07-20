@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import os
 import numpy as np
 import sys
+import logging
 
 class GenericCVS_extend(GenericCSVData):
 
@@ -40,10 +41,11 @@ class MyStrategy(bt.Strategy):
     params = dict(
         group = 0,
         printlog=True,
-        hedge = True,
+        hedge = False,
         reverse = False,
         total_trade = 0,
-        win_count = 0
+        win_count = 0,
+        logger = None
     )
 
     def __init__(self):
@@ -55,7 +57,7 @@ class MyStrategy(bt.Strategy):
         # 建立timer在每周1、2、3、4、5交易
         self.add_timer(
             when = bt.Timer.SESSION_START,
-            weekdays = [1,2,3,4,5],
+            weekdays = [1],
             monthcarry = True
         )
 
@@ -114,6 +116,7 @@ class MyStrategy(bt.Strategy):
     def log(self, txt, dt=None,doprint=False):
         if self.params.printlog or doprint:
             dt = dt or self.datas[0].datetime.date(0)
+            self.params.logger.info(f'{dt.isoformat()},{txt}')
             print(f'{dt.isoformat()},{txt}')
 
     #记录交易执行情况（可省略，默认不输出结果）
@@ -157,7 +160,7 @@ class MyStrategy(bt.Strategy):
         return
 
 
-def backTest(name, save, group, dir):
+def backTest(name, save, group, dir, logger):
     cerebro = bt.Cerebro()
 
     cerebro.addanalyzer(bt.analyzers.TimeReturn, _name='pnl')  # 返回收益率时序数据
@@ -166,7 +169,7 @@ def backTest(name, save, group, dir):
     cerebro.addanalyzer(bt.analyzers.DrawDown, _name='_DrawDown')  # 回撤
     cerebro.addanalyzer(TotalValue, _name="_TotalValue") # 账户总值
 
-    cerebro.addstrategy(MyStrategy, group=group)
+    cerebro.addstrategy(MyStrategy, group=group, logger=logger)
 
     # 将买卖数量固定为100的倍数
     cerebro.addsizer(bt.sizers.FixedSize, stake=100)
@@ -175,8 +178,9 @@ def backTest(name, save, group, dir):
     data_Dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
     files = os.listdir(data_Dir)
     for ind, file in enumerate(files):
-        if ind < 100 or ind >= 200:
-            continue
+        # prob = 0.1
+        # if np.random.rand() > prob:
+        #     continue
         data = GenericCVS_extend(
             dataname=data_Dir+'/'+file,
             fromdate=bt.datetime.datetime(2022, 1, 4),
@@ -206,7 +210,6 @@ def backTest(name, save, group, dir):
     #cerebro.addobserver(bt.observers.DrawDown)
     cerebro.addobserver(bt.observers.TimeReturn)
 
-
     print('启动资金: %.2f' % cerebro.broker.getvalue())
 
     result = cerebro.run()
@@ -231,7 +234,10 @@ def backTest(name, save, group, dir):
 
 
 if __name__ == '__main__':
-    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='')
+    logging.basicConfig(filename=f'backTest_0.1.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+    logger = logging.getLogger()
+    logger.setLevel(level=logging.INFO)
+    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='', logger=logger)
     # for a in range(0,10):
     #     print(f"top {a*10} to {a*10+10}%")
     #     backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result_FluxRate")

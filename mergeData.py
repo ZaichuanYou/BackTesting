@@ -27,7 +27,7 @@ dirs = os.listdir("C:/Users/21995/Desktop/量化投资/可转债数据/2022")
 #             df_temp = df_temp.drop(columns=['IOPV', 'fp_Volume', 'fp_Amount', 'Market'])
 #         df = pd.concat([df, df_temp])
 #     df.to_csv(f"C:/Users/21995/Desktop/量化投资/可转债数据/2022/{file[:-4]}.csv")
-
+columns = ['open', 'high', 'low', 'close']
 
 for dir in dirs:
     df = pd.read_csv(data_dir+f"/{dir}", index_col=None)
@@ -37,4 +37,14 @@ for dir in dirs:
     df = df.loc[(df["DateTime"].dt.time>=pd.to_datetime('13:00').time()) | (df["DateTime"].dt.time<=pd.to_datetime('11:30').time())]
     df = df.rename(columns={"DateTime":"time", "OpenPx": "open", "HighPx":"high", "LowPx":"low", "LastPx":"close", "Volume":"volume", "Amount":"amount"})
     df = df.drop(columns=["PreClosePx"])
+    df = df.reset_index(drop=True)
+    index = df.loc[df['open']==0].index
+    if index.size>0:
+        if index.size>1200:
+            print(f"Too many data was deprecated, this bond will be droped: {dir}")
+            continue
+        print("Found following rows:")
+        print(dir, index)
+        df[columns] = df[columns].replace(to_replace=0, method='ffill')
+        df[columns] = df[columns].replace(to_replace=0, method='bfill')
     df.to_csv(f"C:/Users/21995/Desktop/量化投资/可转债数据/2022_modified/{dir}")
