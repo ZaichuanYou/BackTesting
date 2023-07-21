@@ -5,29 +5,22 @@ import sys
 import time
 
 follow_interval = 5
-adv_moment_num = 4
+adv_moment_num = 3
 session_length = 75
-day_avg = 7
+day_avg = 20
 weighted_avg = True
 
-def analyze(data, window, s_dir, d_dir, cols):
+def analyze(data, window, s_dir, d_dir):
     df = pd.read_csv(s_dir+'/{}'.format(data), index_col=0)
-    df_result = pd.DataFrame(columns=cols)
-
     df = df.dropna()
 
     df['time'] = pd.to_datetime(df['time'])
 
     dayList = list(pd.date_range(start='2022-01-01 01:00:00',end='2022-12-31 23:00:00', freq='D'))
-
-    weight_df = pd.DataFrame(data={'weight':range(1, window+1)})
-    weight_df = weight_df.sort_values(by='weight', ascending=False)
-
     for day in dayList:
 
         s_date = day
         e_date = (day + pd.Timedelta(days=1))
-        
 
         df_temp = df[(df['time'] >= s_date) & (df['time'] < e_date)]
         if len(df_temp) == 0:
@@ -40,18 +33,11 @@ def analyze(data, window, s_dir, d_dir, cols):
             i_end = (i+1)*session_length
             
             df_session = df_temp.iloc[i_start:i_end]
-
             # Sort the dataframe by trading volume
             df_session = df_session.sort_values(by='volume', ascending=False)
 
             # Get the 10 minutes with the highest trading volume of the day
-            M = df_session.loc[df_session['close']-df_session['open']>0].head(adv_moment_num).sort_values(by='time')
-
-            if M['volume'].sum()==0 or M.size == 0:
-                df_result = pd.concat([df_result, df.iloc[i_start+df_temp.head(1).index]])
-                df_result.iat[-1, 8] = 0
-                df_result.iat[-1, 9] = 0
-                continue
+            M = df_session.head(adv_moment_num).sort_values(by='time')
 
             # Identify "advantageous moments", which are at least 5 minutes apart
             A = M.copy()
@@ -76,7 +62,7 @@ def analyze(data, window, s_dir, d_dir, cols):
             # Calculate the factor as the average of the "follow-up ratios"
             Factor = sum(R.values()) / len(R)
 
-            df.loc[i_start+df_temp.head(1).index,'factor'] = Factor
+            df.loc[df['time']==df_session.sort_values(by='time').head(1)['time'].iloc[0],'factor'] = Factor
 
             # If we have more than window day's Factor
             if df['factor'].dropna().size < window:
@@ -84,30 +70,29 @@ def analyze(data, window, s_dir, d_dir, cols):
             
             # Calculte the mean of last window day's factor and save at new column 'index' at first minute of each day
             if not weighted_avg:
-                factor_mean = df.dropna(subset=['factor']).tail(window)['factor'].mean()
-                factor_std = df.dropna(subset=['factor']).tail(window)['factor'].std()
+                factor_mean = df.dropna(subset=['factor']).sort_values(by='time').tail(window)['factor'].mean()
+                factor_std = df.dropna(subset=['factor']).sort_values(by='time').tail(window)['factor'].std()
                 index = (factor_mean+factor_std)/2
             else:
-                factor_mean = df.dropna(subset=['factor']).tail(window)['factor'].mean()
-                factor_weighted_mean = (df.dropna(subset=['factor']).tail(window)['factor']*weight_df['weight']).sum()/factor_mean
-                factor_std = df.dropna(subset=['factor']).tail(window)['factor'].std()
+                weight_df = pd.DataFrame(data={'weight':range(1, window+1)})
+                weight_df = weight_df.sort_values(by='weight', ascending=False)
+                factor_mean = df.dropna(subset=['factor']).sort_values(by='time').tail(window)['factor'].mean()
+                factor_weighted_mean = (df.dropna(subset=['factor']).sort_values(by='time').tail(window)['factor']*weight_df['weight']).sum()/factor_mean
+                factor_std = df.dropna(subset=['factor']).sort_values(by='time').tail(window)['factor'].std()
                 index = (factor_weighted_mean+factor_std)/2
-            df.loc[i_start+df_temp.head(1).index,'index'] = index
+            df.loc[(df['time'] >= s_date) & (df['time'] < e_date),'index'] = index
 
     df.to_csv(d_dir+'/{}'.format(data)) 
 
 
-def analyze_index(data, window, s_dir, d_dir, cols):
 
-    df = pd.read_csv(s_dir+'/{}'.format(data), index_col=0)
+def analyze_index(data, window, s_dir, d_dir, cols, weight_df, weight_mean):
+
+    df = pd.read_csv(s_dir+'/{}'.format(data), index_col=0, engine='pyarrow')
     df_result = pd.DataFrame(columns=cols)
     df['time'] = pd.to_datetime(df['time'])
 
     df = df.dropna()
-
-    weight_df = pd.DataFrame(data={'weight':range(1, window+1)})
-    weight_df = weight_df.sort_values(by='weight', ascending=False)
-    weight_mean = weight_df['weight'].sum()
 
     i = 0
     while i < len(df):
@@ -127,7 +112,7 @@ def analyze_index(data, window, s_dir, d_dir, cols):
             M = df_session.loc[df_session['close']-df_session['open']>0].head(adv_moment_num).sort_values(by='time')
 
             if M['volume'].sum()==0 or M.size == 0:
-                df_result = pd.concat([df_result, df.loc[[i+16+i_start]]], ignore_index=True)
+                df_result = pd.concat([df_result, df.loc[[i+i_start]]], ignore_index=True)
                 df_result.iat[-1, 8] = 0
                 df_result.iat[-1, 9] = 0
                 continue
@@ -182,11 +167,22 @@ if __name__ == '__main__':
     d_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
     cols = ['SecurityID', 'time', 'open', 'high', 'low', 'close', 'volume', 'amount', 'factor', 'index']
     files = os.listdir(s_dir)
+    finishd = os.listdir(d_dir)
+
+    window=int(225/session_length)*day_avg
+    weight_df = pd.DataFrame(data={'weight':range(1, window+1)})
+    weight_df = weight_df.sort_values(by='weight', ascending=False)
+    weight_mean = weight_df['weight'].sum()
     
     for ind, file in enumerate(files):
+        if file in finishd:
+            continue
         tic = time.perf_counter()
-        analyze_index(file, window=int(225/session_length)*day_avg, s_dir=s_dir, d_dir=d_dir, cols=cols)
+        try:
+            analyze_index(file, window=window, s_dir=s_dir, d_dir=d_dir, cols=cols, weight_df=weight_df, weight_mean=weight_mean)
+        except KeyError as e:
+            print(e)
         toc = time.perf_counter()
         print("\r", end="")
-        print(f"Processing Data: {int(ind+1)*100//len(files)}%, time taken last file: {toc - tic:0.4f}s")
+        print(f"Processing Data: {int(ind+1)*100//len(files)}%, time taken last file: {toc - tic:0.4f}s, last file: {file}")
         sys.stdout.flush()

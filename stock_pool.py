@@ -34,6 +34,7 @@ class TotalValue(bt.analyzers.Analyzer):
 
     def get_analysis(self):
         return self.rets
+    
 
 
 class MyStrategy(bt.Strategy):
@@ -45,7 +46,10 @@ class MyStrategy(bt.Strategy):
         reverse = False,
         total_trade = 0,
         win_count = 0,
-        logger = None
+        logger = None,
+        base = 0,
+        total_trend = [],
+        account_value = []
     )
 
     def __init__(self):
@@ -61,15 +65,19 @@ class MyStrategy(bt.Strategy):
             monthcarry = True
         )
 
-
     # 在timer被触发时调仓
     def notify_timer(self, timer, when, *args, **kwargs):
         self.rebalance_portfolio()
+        bond_list = []
+        for data in self.datas:
+            bond_list.append(data.close[0])
+        self.params.total_trend.append(np.mean(bond_list))
 
     def rebalance_portfolio(self):
         # print('Current time: {}'.format(self.datas[0].datetime.datetime()))
 
         # 提取股票池当日因子截面
+        self.p.account_value.append(self.broker.getvalue())
         rate_list=[]
         for data in self.datas:
             if not self.indx[data._name] == 0:
@@ -160,7 +168,7 @@ class MyStrategy(bt.Strategy):
         return
 
 
-def backTest(name, save, group, dir, logger):
+def backTest(name, save, group, dir, logger, prob):
     cerebro = bt.Cerebro()
 
     cerebro.addanalyzer(bt.analyzers.TimeReturn, _name='pnl')  # 返回收益率时序数据
@@ -178,9 +186,8 @@ def backTest(name, save, group, dir, logger):
     data_Dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
     files = os.listdir(data_Dir)
     for ind, file in enumerate(files):
-        # prob = 0.1
-        # if np.random.rand() > prob:
-        #     continue
+        if np.random.rand() > prob:
+            continue
         data = GenericCVS_extend(
             dataname=data_Dir+'/'+file,
             fromdate=bt.datetime.datetime(2022, 1, 4),
@@ -193,7 +200,7 @@ def backTest(name, save, group, dir, logger):
             volume=7,
             open=3,
             openinterest = -1,
-            indx = 8,
+            indx = 10,
             plot=False
         )
 
@@ -216,10 +223,13 @@ def backTest(name, save, group, dir, logger):
 
     print('期末价值: %.2f' % cerebro.broker.getvalue())
 
-    dictionary = result[0].analyzers.getbyname("_TotalValue").get_analysis()
-    df = pd.DataFrame(dictionary).T
-    df.columns = ["Date", f"{name} Return"]
-    df[f"{name} Return"] = (df[f"{name} Return"]/500000)-1
+    
+    account_value = np.array(result[0].p.account_value)
+    account_value = account_value/(account_value[0]/2)-1
+    total_trend = np.array(result[0].p.total_trend)
+    total_trend = total_trend/total_trend[0]
+
+    df = pd.DataFrame(data={'Market trend':total_trend, f"{name} Return":account_value})
 
     if save and os.path.exists(f"{dir}.csv"):
         temp_df = pd.read_csv(f"{dir}.csv")
@@ -229,15 +239,18 @@ def backTest(name, save, group, dir, logger):
         df.to_csv(f"{dir}.csv", index=False)
     else:
         cerebro.plot()
-        # plt.plot(df['Date'], df[f"{name} Return"])
-        # plt.show()
+        plt.plot(account_value, label="Account value")
+        plt.plot(total_trend, label="Market trend")
+        plt.title("Account value compared to market trend")
+        plt.legend()
+        plt.show()
 
 
 if __name__ == '__main__':
-    logging.basicConfig(filename=f'backTest_0.1.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+    logging.basicConfig(filename=f'backTest.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
     logger = logging.getLogger()
     logger.setLevel(level=logging.INFO)
-    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='', logger=logger)
+    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='', logger=logger, prob=1)
     # for a in range(0,10):
-    #     print(f"top {a*10} to {a*10+10}%")
-    #     backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result_FluxRate")
+    # print(f"top {a*10} to {a*10+10}%")
+    # backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result_FluxRate", logger=logger, prob=1)
