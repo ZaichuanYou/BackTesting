@@ -5,8 +5,8 @@ import sys
 import time
 
 follow_interval = 5
-adv_moment_num = 3
-session_length = 75
+adv_moment_num = 10
+session_length = 225
 day_avg = 20
 weighted_avg = False
 
@@ -35,7 +35,8 @@ def analyze_index(data, window, s_dir, d_dir, cols, weight_df, weight_mean):
             df_session = df_session.sort_values(by='volume', ascending=False)
 
             # Get the 10 minutes with the highest trading volume of the day
-            M = df_session.loc[df_session['close']-df_session['open']>0].head(adv_moment_num)
+            # M = df_session.loc[df_session['close']-df_session['open']>0].head(adv_moment_num)
+            M = df_session.head(adv_moment_num).sort_values(by='time')
 
             if M['volume'].sum()==0 or M.size == 0:
                 df_result = pd.concat([df_result, df.loc[[i+i_start]]], ignore_index=True)
@@ -72,16 +73,17 @@ def analyze_index(data, window, s_dir, d_dir, cols, weight_df, weight_mean):
     
     if not weighted_avg:
         session = df_result['factor'].rolling(window=window)
-        df_result['index'] = (session.apply(np.sum())+session.apply(np.std()))/2
+        df_result['index'] = (session.apply(np.mean)+session.apply(np.std))/2
     else:
         for i in range(window,len(df_result)):
             session = df_result.iloc[i-window: i,8].values
             df_result.iat[i, 9] = ((np.sum(session*weight_df)/weight_mean)+np.std(session))/2
+
     df_result.to_csv(d_dir+'/{}'.format(data)) 
     
 
 if __name__ == '__main__':
-    s_dir = 'C:/Users/21995/Desktop/量化投资/可转债数据/2022_modified'
+    s_dir = 'C:/Users/21995/Desktop/量化投资/可转债数据/full_data'
     d_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
     cols = ['SecurityID', 'time', 'open', 'high', 'low', 'close', 'volume', 'amount', 'factor', 'index']
     files = os.listdir(s_dir)
@@ -93,13 +95,10 @@ if __name__ == '__main__':
     weight_mean = weight_df.sum()
     
     for ind, file in enumerate(files):
-        if file in finishd:
-            continue
+        # if file in finishd:
+        #     continue
         tic = time.perf_counter()
-        try:
-            analyze_index(file, window=window, s_dir=s_dir, d_dir=d_dir, cols=cols, weight_df=weight_df, weight_mean=weight_mean)
-        except KeyError as e:
-            print(e)
+        analyze_index(file, window=window, s_dir=s_dir, d_dir=d_dir, cols=cols, weight_df=weight_df, weight_mean=weight_mean)
         toc = time.perf_counter()
         print("\r", end="")
         print(f"Processing Data: {int(ind+1)*100//len(files)}%, time taken last file: {toc - tic:0.4f}s, last file: {file}")

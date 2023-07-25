@@ -53,25 +53,23 @@ class MyStrategy(bt.Strategy):
     )
 
     def __init__(self):
+        # 建立timer在每周1、2、3、4、5交易
+
         self.indx = dict()
         # 遍历所有股票,提取indx指标
         for data in self.datas:
             self.indx[data._name] = data.indx
 
-        # 建立timer在每周1、2、3、4、5交易
         self.add_timer(
             when = bt.Timer.SESSION_START,
-            weekdays = [1],
+            weekdays = [1,2,3,4,5],
             monthcarry = True
         )
 
     # 在timer被触发时调仓
     def notify_timer(self, timer, when, *args, **kwargs):
         self.rebalance_portfolio()
-        bond_list = []
-        for data in self.datas:
-            bond_list.append(data.close[0])
-        self.params.total_trend.append(np.mean(bond_list))
+
 
     def rebalance_portfolio(self):
         # print('Current time: {}'.format(self.datas[0].datetime.datetime()))
@@ -79,19 +77,24 @@ class MyStrategy(bt.Strategy):
         # 提取股票池当日因子截面
         self.p.account_value.append(self.broker.getvalue())
         rate_list=[]
+        bond_list = []
         for data in self.datas:
-            if not self.indx[data._name] == 0:
-                rate_list.append([data._name, self.indx[data._name]])
+            if (not self.indx[data._name] == 0) & (not np.isnan(self.indx[data._name][0])):
+                rate_list.append([data._name, data.indx[0]])
+            bond_list.append(data.close[0])
+        self.params.total_trend.append(np.mean(bond_list))
+        
+        if len(rate_list) == 0:
+            return
 
         # 股票池按照因子大小排序，记录前10%的股票，如果因子值为NaN则跳过当个交易日
         long_list=[]
         sorted_rate=sorted(rate_list,key=lambda x:x[1], reverse=self.p.reverse)
-
-        if np.isnan(sorted_rate[0][1][0]):
-            return
+        
         group_start = int(len(sorted_rate)/10)*self.params.group
         group_end = int(len(sorted_rate)/10)*(self.params.group+1)
         long_list=[i[0] for i in sorted_rate[group_start:group_end]]
+
 
         # for stock in sorted_rate:
         #     print(stock[0], stock[1][0])
@@ -183,7 +186,7 @@ def backTest(name, save, group, dir, logger, prob):
     cerebro.addsizer(bt.sizers.FixedSize, stake=100)
 
     # 将文件夹下每一个CSV数据导入策略模型
-    data_Dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
+    data_Dir = 'C:/Users/21995/Desktop/量化投资/Test'
     files = os.listdir(data_Dir)
     for ind, file in enumerate(files):
         if np.random.rand() > prob:
@@ -191,9 +194,9 @@ def backTest(name, save, group, dir, logger, prob):
         data = GenericCVS_extend(
             dataname=data_Dir+'/'+file,
             fromdate=bt.datetime.datetime(2022, 1, 4),
-            todate=bt.datetime.datetime(2022, 12, 31),
+            todate=bt.datetime.datetime(2023, 7, 14),
             dtformat = '%Y-%m-%d %H:%M:%S',
-            datetime=2,
+            datetime=1,
             high=4,
             low=5,
             close=6,
@@ -205,11 +208,6 @@ def backTest(name, save, group, dir, logger, prob):
         )
 
         cerebro.adddata(data)
-
-        print("\r", end="")
-        print("Loading data: {}%: ".format(int(ind+1)*100//len(files)), "▋" * (int((int(ind+1)/len(files)) * 100 // 2)), end="")
-        sys.stdout.flush()
-    print('')
 
     # 将初始本金设为100w
     cerebro.broker.setcash(1000000.0)
@@ -233,7 +231,7 @@ def backTest(name, save, group, dir, logger, prob):
 
     if save and os.path.exists(f"{dir}.csv"):
         temp_df = pd.read_csv(f"{dir}.csv")
-        temp_df[f"{name} Return"] = df[f"{name} Return"]
+        temp_df[f"{name} Return"] = df[f"{name} Return"].tail(int(len(account_value)/(group+1))).values
         temp_df.to_csv(f"{dir}.csv", mode='w', index = False)
     elif save:
         df.to_csv(f"{dir}.csv", index=False)
@@ -250,7 +248,7 @@ if __name__ == '__main__':
     logging.basicConfig(filename=f'backTest.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
     logger = logging.getLogger()
     logger.setLevel(level=logging.INFO)
-    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='', logger=logger, prob=1)
-    # for a in range(0,10):
-    # print(f"top {a*10} to {a*10+10}%")
-    # backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result_FluxRate", logger=logger, prob=1)
+    # backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='Result', logger=logger, prob=1)
+    for a in range(0,10):
+        print(f"top {a*10} to {a*10+10}%")
+        backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result", logger=logger, prob=1)
