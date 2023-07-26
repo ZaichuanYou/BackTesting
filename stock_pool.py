@@ -95,10 +95,14 @@ class MyStrategy(bt.Strategy):
         group_end = int(len(sorted_rate)/10)*(self.params.group+1)
         long_list=[i[0] for i in sorted_rate[group_start:group_end]]
 
+        # self.log(f"Length of long lise: {len(long_list)}")
 
-        # for stock in sorted_rate:
-        #     print(stock[0], stock[1][0])
-        # print("Long_List", long_list)
+        count = 0
+        for data in self.datas:
+            pos = self.getposition(data).size
+            if pos !=0:
+                count = count+1
+        # self.log(f"Amount of bond hold: {count}")
 
         if self.p.hedge:
             short_list=[]
@@ -108,20 +112,24 @@ class MyStrategy(bt.Strategy):
         # 得到当前的账户价值
         total_value = self.broker.getvalue()
         p_value = total_value*0.5/len(long_list)
+        
+        count = 0
         for data in self.datas:
             #获取仓位
             pos = self.getposition(data).size
-
+            if not pos==0: count = count+1
             if pos!=0 and data._name not in long_list:
                 self.close(data = data)
             if not pos and data._name in long_list:
-                size=int(p_value/100/data.close[0])*100
+                
+                size=int(p_value/data.close[0])
+                if size==0:self.log("ERROR")
                 self.buy(data=data, size=size)
 
             if self.p.hedge and data._name in short_list:
-                size=int(p_value/100/data.close[0])*100
+                size=int(p_value/data.close[0])
                 self.sell(data = data, size = size)
-
+        self.log(f"Hold num: {count}")
 
 
     def log(self, txt, dt=None,doprint=False):
@@ -248,7 +256,7 @@ if __name__ == '__main__':
     logging.basicConfig(filename=f'backTest.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
     logger = logging.getLogger()
     logger.setLevel(level=logging.INFO)
-    # backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='Result', logger=logger, prob=1)
-    for a in range(0,10):
-        print(f"top {a*10} to {a*10+10}%")
-        backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result", logger=logger, prob=1)
+    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='Result', logger=logger, prob=1)
+    # for a in range(0,10):
+    #     print(f"top {a*10} to {a*10+10}%")
+    #     backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result", logger=logger, prob=1)
