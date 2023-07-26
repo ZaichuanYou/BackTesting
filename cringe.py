@@ -7,7 +7,7 @@ warnings.filterwarnings("ignore")
 
 def fill_missing_data(data_dir):
     """
-        This function will detect the missing minutes data in each day's data and fill it with nearest minute data.
+        This function will detect the missing minutes data in each day's data and fill it with nearest minute data.\n
         All change will be in-place.
 
         params:

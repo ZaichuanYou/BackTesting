@@ -3,6 +3,7 @@ import pandas as pd
 import os
 import sys
 import time
+from cringe import extend_data
 
 follow_interval = 5
 adv_moment_num = 10
@@ -13,7 +14,19 @@ weighted_avg = False
 
 
 def analyze_index(data, window, s_dir, d_dir, cols, weight_df, weight_mean):
+    """
+        This will calculate the Amount follow index and store the result at a new column.\n
+        Using weighted average by setting weighted_avg to be true.
 
+        params:
+            data: directory of current data
+            window: look back window of the index calculation
+            s_dir: source directory of the data
+            d_dir: destination directory of the processed data
+            cols: columns that will be keeped in the processed data
+            weight_df: weight of weighted average
+            weight_mean: mean of weight
+    """
     df = pd.read_csv(s_dir+'/{}'.format(data), index_col=0, engine='pyarrow')
     df_result = pd.DataFrame(columns=cols)
     df['time'] = pd.to_datetime(df['time'])
@@ -29,7 +42,7 @@ def analyze_index(data, window, s_dir, d_dir, cols, weight_df, weight_mean):
             i_start = n*session_length
             i_end = (n+1)*session_length
             
-            df_session = df_temp.iloc[i_start:i_end]
+            df_session = df_temp.iloc[i_start:i_end-follow_interval]
 
             # Sort the dataframe by trading volume
             df_session = df_session.sort_values(by='volume', ascending=False)
@@ -37,6 +50,7 @@ def analyze_index(data, window, s_dir, d_dir, cols, weight_df, weight_mean):
             # Get the 10 minutes with the highest trading volume of the day
             # M = df_session.loc[df_session['close']-df_session['open']>0].head(adv_moment_num)
             M = df_session.head(adv_moment_num).sort_values(by='time')
+            df_session = df_session.append(df_temp.iloc[i_end-follow_interval:])
 
             if M['volume'].sum()==0 or M.size == 0:
                 df_result = pd.concat([df_result, df.loc[[i+i_start]]], ignore_index=True)
@@ -103,3 +117,5 @@ if __name__ == '__main__':
         print("\r", end="")
         print(f"Processing Data: {int(ind+1)*100//len(files)}%, time taken last file: {toc - tic:0.4f}s, last file: {file}")
         sys.stdout.flush()
+    
+    extend_data(d_dir, d_dir)

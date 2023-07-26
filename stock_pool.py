@@ -42,14 +42,17 @@ class MyStrategy(bt.Strategy):
     params = dict(
         group = 0,
         printlog=True,
-        hedge = False,
+        hedge=False,
         reverse = False,
         total_trade = 0,
         win_count = 0,
         logger = None,
         base = 0,
         total_trend = [],
-        account_value = []
+        account_value = [],
+        index_mean = [],
+        index_mean_long = [],
+        index_mean_short = []
     )
 
     def __init__(self):
@@ -78,10 +81,16 @@ class MyStrategy(bt.Strategy):
         self.p.account_value.append(self.broker.getvalue())
         rate_list=[]
         bond_list = []
+        index_mean = 0
         for data in self.datas:
             if (not self.indx[data._name] == 0) & (not np.isnan(self.indx[data._name][0])):
                 rate_list.append([data._name, data.indx[0]])
+                index_mean = index_mean+self.indx[data._name][0]
             bond_list.append(data.close[0])
+
+        if len(rate_list)>0:
+            self.log(f'index mean: {index_mean/len(rate_list)}')
+            self.p.index_mean.append(index_mean/len(rate_list))
         self.params.total_trend.append(np.mean(bond_list))
         
         if len(rate_list) == 0:
@@ -97,40 +106,62 @@ class MyStrategy(bt.Strategy):
 
         # self.log(f"Length of long lise: {len(long_list)}")
 
-        count = 0
-        for data in self.datas:
-            pos = self.getposition(data).size
-            if pos !=0:
-                count = count+1
-        # self.log(f"Amount of bond hold: {count}")
-
         if self.p.hedge:
             short_list=[]
-            short_list=[i[0] for i in sorted_rate[len(sorted_rate)-int(len(sorted_rate)/10):]]
+            short_list=[i[0] for i in sorted_rate[-len(long_list):]]
 
 
         # 得到当前的账户价值
         total_value = self.broker.getvalue()
         p_value = total_value*0.5/len(long_list)
         
-        count = 0
+        count_long = 0
+        count_short = 0
+        close_long = 0
+        close_short = 0
+        new_long = 0
+        new_short = 0
+        index_mean_long = 0
+        index_mean_short = 0
         for data in self.datas:
+            if data._name in long_list:
+                index_mean_long = index_mean_long+self.indx[data._name][0]
+            elif self.p.hedge and data._name in short_list:
+                index_mean_short = index_mean_short+self.indx[data._name][0]
+
             #获取仓位
             pos = self.getposition(data).size
-            if not pos==0: count = count+1
-            if pos!=0 and data._name not in long_list:
+
+            if pos>0: count_long = count_long+1
+            elif pos<0: count_short = count_short+1
+
+            if pos>0 and data._name not in long_list:
                 self.close(data = data)
-            if not pos and data._name in long_list:
-                
+                close_long = close_long+1
+            if self.p.hedge and pos<0 and data._name not in short_list:
+                self.close(data = data)
+                close_short = close_short+1
+
+            if not pos>0 and data._name in long_list:
                 size=int(p_value/data.close[0])
                 if size==0:self.log("ERROR")
+                new_long = new_long+1
                 self.buy(data=data, size=size)
 
-            if self.p.hedge and data._name in short_list:
+            if self.p.hedge and not pos<0 and data._name in short_list:
                 size=int(p_value/data.close[0])
-                self.sell(data = data, size = size)
-        self.log(f"Hold num: {count}")
+                self.sell(data=data, size=size)
+                new_short = new_short+1
 
+        self.p.index_mean_long.append(index_mean_long/len(long_list))
+        if self.p.hedge:
+            if index_mean_short/len(short_list)>10:
+                self.log("Large Index!!")
+                self.log(short_list)
+            self.p.index_mean_short.append(index_mean_short/len(short_list))
+            self.log(f"Number of Short: {count_short}, List length: {len(short_list)}, close short: {close_short}, new_short: {new_short}")
+        self.log(f"Number of Long: {count_long}, List length: {len(long_list)}, close long: {close_long}, new long: {new_long}")
+    
 
     def log(self, txt, dt=None,doprint=False):
         if self.params.printlog or doprint:
@@ -194,7 +225,7 @@ def backTest(name, save, group, dir, logger, prob):
     cerebro.addsizer(bt.sizers.FixedSize, stake=100)
 
     # 将文件夹下每一个CSV数据导入策略模型
-    data_Dir = 'C:/Users/21995/Desktop/量化投资/Test'
+    data_Dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
     files = os.listdir(data_Dir)
     for ind, file in enumerate(files):
         if np.random.rand() > prob:
@@ -232,6 +263,10 @@ def backTest(name, save, group, dir, logger, prob):
     
     account_value = np.array(result[0].p.account_value)
     account_value = account_value/(account_value[0]/2)-1
+    index_mean = result[0].p.index_mean
+    index_mean_long = result[0].p.index_mean_long
+    if result[0].p.hedge:
+        index_mean_short = result[0].p.index_mean_short
     total_trend = np.array(result[0].p.total_trend)
     total_trend = total_trend/total_trend[0]
 
@@ -250,13 +285,20 @@ def backTest(name, save, group, dir, logger, prob):
         plt.title("Account value compared to market trend")
         plt.legend()
         plt.show()
+        plt.plot(index_mean, label="Market index mean")
+        plt.plot(index_mean_long, label="Long index mean")
+        if result[0].p.hedge:
+            plt.plot(index_mean_short, label="Short index mean")
+        plt.title("Index mean of the whole market over time")
+        plt.legend()
+        plt.show()
 
 
 if __name__ == '__main__':
     logging.basicConfig(filename=f'backTest.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
     logger = logging.getLogger()
     logger.setLevel(level=logging.INFO)
-    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='Result', logger=logger, prob=1)
-    # for a in range(0,10):
-    #     print(f"top {a*10} to {a*10+10}%")
-    #     backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result", logger=logger, prob=1)
+    # backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='Result', logger=logger, prob=1)
+    for a in range(0,10):
+        print(f"top {a*10} to {a*10+10}%")
+        backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result", logger=logger, prob=1)
