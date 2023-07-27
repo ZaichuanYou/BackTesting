@@ -6,6 +6,7 @@ import os
 import numpy as np
 import sys
 import logging
+from math import sqrt
 from scipy.stats import rankdata
 
 class GenericCVS_extend(GenericCSVData):
@@ -48,6 +49,7 @@ class MyStrategy(bt.Strategy):
         total_trade = 0,
         win_count = 0,
         rankIC = [],
+        rankICIR = [],
         logger = None,
         base = 0,
         total_trend = [],
@@ -91,8 +93,10 @@ class MyStrategy(bt.Strategy):
             corr = pd.DataFrame({"index":rankdata(last_index_list, method='dense'), "return":rankdata(np.array(today_close)-self.p.last_day_data[:,1].astype(np.float64), method='dense')})
             # calculate the correlation
             correlation = corr["index"].corr(corr["return"])
-            self.log(f"Total correlation: {correlation}")
             self.p.rankIC.append(correlation)
+            self.p.rankICIR.append(correlation*sqrt(len(last_index_list)))
+            self.log(f"Total correlation: {correlation}")
+            self.log(f"Total rankICIR: {correlation*sqrt(len(last_index_list))}")
 
         # 提取股票池当日因子截面
         self.p.account_value.append(self.broker.getvalue())
@@ -226,7 +230,8 @@ class MyStrategy(bt.Strategy):
         if not self.p.printlog:
             print(f'策略胜率：{self.p.win_count/self.p.total_trade}%')
         self.log(f'策略胜率：{self.p.win_count/self.p.total_trade}%')
-        self.log(f'rankIC: {np.mean(self.p.rankIC)}')
+        self.log(f'Index rankIC: {np.mean(self.p.rankIC)}')
+        self.log(f"Index rankICIR: {np.mean(self.p.rankICIR)/np.std(self.p.rankICIR)}")
         return
 
 
