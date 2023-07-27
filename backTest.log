@@ -1,6 +1,7 @@
 root - INFO - 2022-02-07,index mean: 1.2365860684433263
 root - INFO - 2022-02-07,Number of Long: 0, List length: 29, close long: 0, new long: 29
-root - INFO - 2022-02-08,Total correlation: -0.12581749321891514
+root - INFO - 2022-02-08,Total correlation: -0.14212960886818612
+root - INFO - 2022-02-08,Total rankICIR: -2.4328670196062725
 root - INFO - 2022-02-08,index mean: 1.2482736961855108
 root - INFO - 2022-02-08,Number of Long: 29, List length: 29, close long: 5, new long: 5
 root - INFO - 2022-02-08,买入:110061
@@ -61,7 +62,8 @@ root - INFO - 2022-02-08,买入:128130
 价格:127.76,                成本:17119.97,                手续费:0.00
 root - INFO - 2022-02-08,买入:128138
 价格:118.74,                成本:17217.30,                手续费:0.00
-root - INFO - 2022-02-09,Total correlation: -0.04493079518828809
+root - INFO - 2022-02-09,Total correlation: -0.07273240775107558
+root - INFO - 2022-02-09,Total rankICIR: -1.244978280621688
 root - INFO - 2022-02-09,index mean: 1.2465951289515842
 root - INFO - 2022-02-09,Number of Long: 29, List length: 29, close long: 2, new long: 2
 root - INFO - 2022-02-09,卖出:110083
@@ -94,7 +96,8 @@ root - INFO - 2022-02-09,策略收益：
 毛收益 66.74, 净收益 66.74
 root - INFO - 2022-02-09,策略收益：
 毛收益 481.27, 净收益 481.27
-root - INFO - 2022-02-10,Total correlation: 0.33258096430411493
+root - INFO - 2022-02-10,Total correlation: 0.30584262278066615
+root - INFO - 2022-02-10,Total rankICIR: 5.2351824231292605
 root - INFO - 2022-02-10,index mean: 1.241348938699014
 root - INFO - 2022-02-10,Number of Long: 29, List length: 29, close long: 4, new long: 4
 root - INFO - 2022-02-10,买入:123106
@@ -109,7 +112,8 @@ root - INFO - 2022-02-10,策略收益：
 毛收益 12.82, 净收益 12.82
 root - INFO - 2022-02-10,策略收益：
 毛收益 157.58, 净收益 157.58
-root - INFO - 2022-02-11,Total correlation: -0.28693416777191677
+root - INFO - 2022-02-11,Total correlation: -0.272074986606306
+root - INFO - 2022-02-11,Total rankICIR: -4.6651142227201206
 root - INFO - 2022-02-11,index mean: 1.230530038457413
 root - INFO - 2022-02-11,Number of Long: 29, List length: 29, close long: 2, new long: 2
 root - INFO - 2022-02-11,卖出:113037
@@ -136,7 +140,8 @@ root - INFO - 2022-02-11,策略收益：
 毛收益 137.08, 净收益 137.08
 root - INFO - 2022-02-11,策略收益：
 毛收益 219.74, 净收益 219.74
-root - INFO - 2022-02-14,Total correlation: -0.18430687180498748
+root - INFO - 2022-02-14,Total correlation: -0.13102850673444597
+root - INFO - 2022-02-14,Total rankICIR: -2.246670882807554
 root - INFO - 2022-02-14,index mean: 1.2415967660418825
 root - INFO - 2022-02-14,Number of Long: 29, List length: 29, close long: 3, new long: 3
 root - INFO - 2022-02-14,买入:113037
@@ -151,7 +156,8 @@ root - INFO - 2022-02-14,策略收益：
 毛收益 -103.85, 净收益 -103.85
 root - INFO - 2022-02-14,策略收益：
 毛收益 -290.87, 净收益 -290.87
-root - INFO - 2022-02-15,Total correlation: -0.3425575460961036
+root - INFO - 2022-02-15,Total correlation: -0.22479673884941262
+root - INFO - 2022-02-15,Total rankICIR: -3.854461142159215
 root - INFO - 2022-02-15,index mean: 1.2499618141121536
 root - INFO - 2022-02-15,Number of Long: 29, List length: 29, close long: 2, new long: 2
 root - INFO - 2022-02-15,买入:110058
@@ -172,7 +178,8 @@ root - INFO - 2022-02-15,策略收益：
 毛收益 -566.05, 净收益 -566.05
 root - INFO - 2022-02-15,策略收益：
 毛收益 -812.14, 净收益 -812.14
-root - INFO - 2022-02-16,Total correlation: 0.06989959942526526
+root - INFO - 2022-02-16,Total correlation: 0.05039932094779255
+root - INFO - 2022-02-16,Total rankICIR: 0.8641683379339865
 root - INFO - 2022-02-16,index mean: 1.2591933865762297
 root - INFO - 2022-02-16,Number of Long: 29, List length: 29, close long: 4, new long: 4
 root - INFO - 2022-02-16,买入:113519
@@ -187,7 +194,8 @@ root - INFO - 2022-02-16,策略收益：
 毛收益 -953.68, 净收益 -953.68
 root - INFO - 2022-02-16,策略收益：
 毛收益 -230.26, 净收益 -230.26
-root - INFO - 2022-02-17,Total correlation: -0.11211286972424145
+root - INFO - 2022-02-17,Total correlation: -0.11317765030464086
+root - INFO - 2022-02-17,Total rankICIR: -1.9405924547346347
 root - INFO - 2022-02-17,index mean: 1.275439595201814
 root - INFO - 2022-02-17,Number of Long: 29, List length: 29, close long: 4, new long: 4
 root - INFO - 2022-02-17,买入:113524
@@ -214,7 +222,8 @@ root - INFO - 2022-02-17,策略收益：
 毛收益 -880.11, 净收益 -880.11
 root - INFO - 2022-02-17,策略收益：
 毛收益 -494.50, 净收益 -494.50
-root - INFO - 2022-02-18,Total correlation: 0.10968422218953305
+root - INFO - 2022-02-18,Total correlation: 0.11546018899993075
+root - INFO - 2022-02-18,Total rankICIR: 1.9830938699291116
 root - INFO - 2022-02-18,index mean: 1.2904912105946598
 root - INFO - 2022-02-18,Number of Long: 29, List length: 29, close long: 2, new long: 2
 root - INFO - 2022-02-18,买入:111001
@@ -241,7 +250,8 @@ root - INFO - 2022-02-18,策略收益：
 毛收益 -940.33, 净收益 -940.33
 root - INFO - 2022-02-18,策略收益：
 毛收益 -407.70, 净收益 -407.70
-root - INFO - 2022-02-21,Total correlation: 0.10737857801829656
+root - INFO - 2022-02-21,Total correlation: 0.046717679284265255
+root - INFO - 2022-02-21,Total rankICIR: 0.8024024922217668
 root - INFO - 2022-02-21,index mean: 1.2897843047228297
 root - INFO - 2022-02-21,Number of Long: 29, List length: 29, close long: 7, new long: 7
 root - INFO - 2022-02-21,卖出:113021
@@ -256,7 +266,8 @@ root - INFO - 2022-02-21,策略收益：
 毛收益 -86.80, 净收益 -86.80
 root - INFO - 2022-02-21,策略收益：
 毛收益 -438.90, 净收益 -438.90
-root - INFO - 2022-02-22,Total correlation: 0.06686330333189107
+root - INFO - 2022-02-22,Total correlation: 0.05827306505272606
+root - INFO - 2022-02-22,Total rankICIR: 1.002567719782168
 root - INFO - 2022-02-22,index mean: 1.293654746807588
 root - INFO - 2022-02-22,Number of Long: 29, List length: 29, close long: 5, new long: 5
 root - INFO - 2022-02-22,卖出:110058
@@ -301,7 +312,8 @@ root - INFO - 2022-02-22,策略收益：
 毛收益 -596.31, 净收益 -596.31
 root - INFO - 2022-02-22,策略收益：
 毛收益 -39.93, 净收益 -39.93
-root - INFO - 2022-02-23,Total correlation: 0.023977856679172294
+root - INFO - 2022-02-23,Total correlation: 0.01084960723527724
+root - INFO - 2022-02-23,Total rankICIR: 0.18697874536014708
 root - INFO - 2022-02-23,index mean: 1.310718387755439
 root - INFO - 2022-02-23,Number of Long: 29, List length: 29, close long: 3, new long: 3
 root - INFO - 2022-02-23,卖出:113584
@@ -334,7 +346,8 @@ root - INFO - 2022-02-23,策略收益：
 毛收益 162.00, 净收益 162.00
 root - INFO - 2022-02-23,策略收益：
 毛收益 -416.16, 净收益 -416.16
-root - INFO - 2022-02-24,Total correlation: 0.19303518432929295
+root - INFO - 2022-02-24,Total correlation: 0.17037210800395838
+root - INFO - 2022-02-24,Total rankICIR: 2.9410785853734533
 root - INFO - 2022-02-24,index mean: 1.3170113878157057
 root - INFO - 2022-02-24,Number of Long: 29, List length: 30, close long: 5, new long: 6
 root - INFO - 2022-02-24,买入:110080
@@ -355,7 +368,8 @@ root - INFO - 2022-02-24,策略收益：
 毛收益 196.52, 净收益 196.52
 root - INFO - 2022-02-24,策略收益：
 毛收益 396.11, 净收益 396.11
-root - INFO - 2022-02-25,Total correlation: -0.17524755472475287
+root - INFO - 2022-02-25,Total correlation: -0.17241213791264345
+root - INFO - 2022-02-25,Total rankICIR: -2.9862658270627076
 root - INFO - 2022-02-25,index mean: 1.3298379785391028
 root - INFO - 2022-02-25,Number of Long: 30, List length: 30, close long: 3, new long: 3
 root - INFO - 2022-02-25,买入:110073
@@ -390,7 +404,8 @@ root - INFO - 2022-02-25,策略收益：
 毛收益 265.54, 净收益 265.54
 root - INFO - 2022-02-25,策略收益：
 毛收益 -73.83, 净收益 -73.83
-root - INFO - 2022-02-28,Total correlation: 0.06246202605181398
+root - INFO - 2022-02-28,Total correlation: 0.08230181954192428
+root - INFO - 2022-02-28,Total rankICIR: 1.427883202322008
 root - INFO - 2022-02-28,index mean: 1.3425797637086254
 root - INFO - 2022-02-28,Number of Long: 30, List length: 30, close long: 4, new long: 4
 root - INFO - 2022-02-28,卖出:110080
@@ -411,7 +426,8 @@ root - INFO - 2022-02-28,策略收益：
 毛收益 33.66, 净收益 33.66
 root - INFO - 2022-02-28,策略收益：
 毛收益 -133.77, 净收益 -133.77
-root - INFO - 2022-03-01,Total correlation: 0.17625873179991805
+root - INFO - 2022-03-01,Total correlation: 0.1361805020791622
+root - INFO - 2022-03-01,Total rankICIR: 2.36264340794508
 root - INFO - 2022-03-01,index mean: 1.3547863598849998
 root - INFO - 2022-03-01,Number of Long: 30, List length: 30, close long: 1, new long: 1
 root - INFO - 2022-03-01,买入:110082
@@ -438,7 +454,8 @@ root - INFO - 2022-03-01,策略收益：
 毛收益 -328.30, 净收益 -328.30
 root - INFO - 2022-03-01,策略收益：
 毛收益 -66.50, 净收益 -66.50
-root - INFO - 2022-03-02,Total correlation: -0.10123126751261671
+root - INFO - 2022-03-02,Total correlation: -0.08669116191062903
+root - INFO - 2022-03-02,Total rankICIR: -1.5040354462504812
 root - INFO - 2022-03-02,index mean: 1.3626703309263803
 root - INFO - 2022-03-02,Number of Long: 30, List length: 30, close long: 4, new long: 4
 root - INFO - 2022-03-02,卖出:128049
@@ -447,7 +464,8 @@ root - INFO - 2022-03-02,买入:128063
 价格:119.13,                成本:16559.49,                手续费:0.00
 root - INFO - 2022-03-02,策略收益：
 毛收益 191.66, 净收益 191.66
-root - INFO - 2022-03-03,Total correlation: -0.06400116863766896
+root - INFO - 2022-03-03,Total correlation: -0.07488420086152442
+root - INFO - 2022-03-03,Total rankICIR: -1.301348665299995
 root - INFO - 2022-03-03,index mean: 1.3715033699873738
 root - INFO - 2022-03-03,Number of Long: 30, List length: 30, close long: 4, new long: 4
 root - INFO - 2022-03-03,卖出:110073
@@ -474,7 +492,8 @@ root - INFO - 2022-03-03,策略收益：
 毛收益 279.30, 净收益 279.30
 root - INFO - 2022-03-03,策略收益：
 毛收益 791.58, 净收益 791.58
-root - INFO - 2022-03-04,Total correlation: -0.27131993313055724
+root - INFO - 2022-03-04,Total correlation: -0.22205983551865563
+root - INFO - 2022-03-04,Total rankICIR: -3.8589885081809796
 root - INFO - 2022-03-04,index mean: 1.3821860021517323
 root - INFO - 2022-03-04,Number of Long: 30, List length: 30, close long: 3, new long: 3
 root - INFO - 2022-03-04,买入:110045
@@ -501,7 +520,8 @@ root - INFO - 2022-03-04,策略收益：
 毛收益 -11.68, 净收益 -11.68
 root - INFO - 2022-03-04,策略收益：
 毛收益 -163.67, 净收益 -163.67
-root - INFO - 2022-03-07,Total correlation: -0.28084108056701396
+root - INFO - 2022-03-07,Total correlation: -0.2553373222517297
+root - INFO - 2022-03-07,Total rankICIR: -4.437289570973983
 root - INFO - 2022-03-07,index mean: 1.3804018442955497
 root - INFO - 2022-03-07,Number of Long: 30, List length: 30, close long: 1, new long: 1
 root - INFO - 2022-03-07,卖出:110045
@@ -522,7 +542,8 @@ root - INFO - 2022-03-07,策略收益：
 毛收益 -336.88, 净收益 -336.88
 root - INFO - 2022-03-07,策略收益：
 毛收益 -177.80, 净收益 -177.80
-root - INFO - 2022-03-08,Total correlation: -0.12529363119021728
+root - INFO - 2022-03-08,Total correlation: -0.03701233250648996
+root - INFO - 2022-03-08,Total rankICIR: -0.6432057624014527
 root - INFO - 2022-03-08,index mean: 1.3839894757731095
 root - INFO - 2022-03-08,Number of Long: 30, List length: 30, close long: 4, new long: 4
 root - INFO - 2022-03-08,买入:127046
@@ -531,7 +552,8 @@ root - INFO - 2022-03-08,卖出:128130
 价格:123.50,                成本: 16411.77,                手续费0.00
 root - INFO - 2022-03-08,策略收益：
 毛收益 -480.27, 净收益 -480.27
-root - INFO - 2022-03-09,Total correlation: -0.20523941055825884
+root - INFO - 2022-03-09,Total correlation: -0.1646532191887205
+root - INFO - 2022-03-09,Total rankICIR: -2.861367879518652
 root - INFO - 2022-03-09,index mean: 1.3908583473652762
 root - INFO - 2022-03-09,Number of Long: 30, List length: 30, close long: 4, new long: 4
 root - INFO - 2022-03-09,买入:123011
@@ -558,7 +580,8 @@ root - INFO - 2022-03-09,策略收益：
 毛收益 -406.85, 净收益 -406.85
 root - INFO - 2022-03-09,策略收益：
 毛收益 -434.24, 净收益 -434.24
-root - INFO - 2022-03-10,Total correlation: 0.025160647122604934
+root - INFO - 2022-03-10,Total correlation: 0.018342956140189104
+root - INFO - 2022-03-10,Total rankICIR: 0.31823839496237916
 root - INFO - 2022-03-10,index mean: 1.4034314436833202
 root - INFO - 2022-03-10,Number of Long: 30, List length: 30, close long: 3, new long: 3
 root - INFO - 2022-03-10,买入:110062
@@ -585,7 +608,8 @@ root - INFO - 2022-03-10,策略收益：
 毛收益 -676.08, 净收益 -676.08
 root - INFO - 2022-03-10,策略收益：
 毛收益 212.86, 净收益 212.86
-root - INFO - 2022-03-11,Total correlation: 0.04031116158494455
+root - INFO - 2022-03-11,Total correlation: 0.07026237155409014
+root - INFO - 2022-03-11,Total rankICIR: 1.2210298352760731
 root - INFO - 2022-03-11,index mean: 1.4229495579076117
 root - INFO - 2022-03-11,Number of Long: 30, List length: 30, close long: 2, new long: 2
 root - INFO - 2022-03-11,卖出:113049
@@ -606,7 +630,8 @@ root - INFO - 2022-03-11,策略收益：
 毛收益 -900.09, 净收益 -900.09
 root - INFO - 2022-03-11,策略收益：
 毛收益 916.64, 净收益 916.64
-root - INFO - 2022-03-14,Total correlation: -0.0330554681369594
+root - INFO - 2022-03-14,Total correlation: -0.05078061435326609
+root - INFO - 2022-03-14,Total rankICIR: -0.882472990984274
 root - INFO - 2022-03-14,index mean: 1.4317575998630103
 root - INFO - 2022-03-14,Number of Long: 30, List length: 30, close long: 3, new long: 3
 root - INFO - 2022-03-14,卖出:113584
@@ -621,7 +646,8 @@ root - INFO - 2022-03-14,策略收益：
 毛收益 -512.82, 净收益 -512.82
 root - INFO - 2022-03-14,策略收益：
 毛收益 -215.18, 净收益 -215.18
-root - INFO - 2022-03-15,Total correlation: -0.20990812752517363
+root - INFO - 2022-03-15,Total correlation: -0.17469515097425126
+root - INFO - 2022-03-15,Total rankICIR: -3.0358780482296654
 root - INFO - 2022-03-15,index mean: 1.4309015531899891
 root - INFO - 2022-03-15,Number of Long: 30, List length: 30, close long: 5, new long: 5
 root - INFO - 2022-03-15,买入:113566
@@ -642,7 +668,8 @@ root - INFO - 2022-03-15,策略收益：
 毛收益 -170.41, 净收益 -170.41
 root - INFO - 2022-03-15,策略收益：
 毛收益 -679.47, 净收益 -679.47
-root - INFO - 2022-03-16,Total correlation: -0.1202655437108605
+root - INFO - 2022-03-16,Total correlation: -0.08026552803791964
+root - INFO - 2022-03-16,Total rankICIR: -1.394866161086515
 root - INFO - 2022-03-16,index mean: 1.4309907609911852
 root - INFO - 2022-03-16,Number of Long: 30, List length: 30, close long: 4, new long: 4
 root - INFO - 2022-03-16,卖出:110073
@@ -675,7 +702,8 @@ root - INFO - 2022-03-16,策略收益：
 毛收益 -84.60, 净收益 -84.60
 root - INFO - 2022-03-16,策略收益：
 毛收益 -125.30, 净收益 -125.30
-root - INFO - 2022-03-17,Total correlation: 0.1800464901363093
+root - INFO - 2022-03-17,Total correlation: 0.12224651360221415
+root - INFO - 2022-03-17,Total rankICIR: 2.127932249070113
 root - INFO - 2022-03-17,index mean: 1.427050374308407
 root - INFO - 2022-03-17,Number of Long: 30, List length: 30, close long: 3, new long: 3
 root - INFO - 2022-03-17,买入:113584
@@ -702,7 +730,8 @@ root - INFO - 2022-03-17,策略收益：
 毛收益 163.27, 净收益 163.27
 root - INFO - 2022-03-17,策略收益：
 毛收益 -759.22, 净收益 -759.22
-root - INFO - 2022-03-18,Total correlation: 0.09657592929008871
+root - INFO - 2022-03-18,Total correlation: 0.09539883493403366
+root - INFO - 2022-03-18,Total rankICIR: 1.6605975205183265
 root - INFO - 2022-03-18,index mean: 1.4350008194906443
 root - INFO - 2022-03-18,Number of Long: 30, List length: 30, close long: 6, new long: 6
 root - INFO - 2022-03-18,买入:110073
@@ -723,7 +752,8 @@ root - INFO - 2022-03-18,策略收益：
 毛收益 26.82, 净收益 26.82
 root - INFO - 2022-03-18,策略收益：
 毛收益 119.52, 净收益 119.52
-root - INFO - 2022-03-21,Total correlation: 0.011910312804774422
+root - INFO - 2022-03-21,Total correlation: -0.022379464331933364
+root - INFO - 2022-03-21,Total rankICIR: -0.3895569899342536
 root - INFO - 2022-03-21,index mean: 1.443288897671828
 root - INFO - 2022-03-21,Number of Long: 30, List length: 30, close long: 5, new long: 5
 root - INFO - 2022-03-21,卖出:110073
@@ -762,7 +792,8 @@ root - INFO - 2022-03-21,策略收益：
 毛收益 461.16, 净收益 461.16
 root - INFO - 2022-03-21,策略收益：
 毛收益 716.26, 净收益 716.26
-root - INFO - 2022-03-22,Total correlation: -0.16102007787014957
+root - INFO - 2022-03-22,Total correlation: -0.13773695316037213
+root - INFO - 2022-03-22,Total rankICIR: -2.4015258384690292
 root - INFO - 2022-03-22,index mean: 1.4415532634090444
 root - INFO - 2022-03-22,Number of Long: 30, List length: 30, close long: 5, new long: 5
 root - INFO - 2022-03-22,买入:113037
@@ -795,7 +826,8 @@ root - INFO - 2022-03-22,策略收益：
 毛收益 -51.16, 净收益 -51.16
 root - INFO - 2022-03-22,策略收益：
 毛收益 134.64, 净收益 134.64
-root - INFO - 2022-03-23,Total correlation: -0.05498671831508876
+root - INFO - 2022-03-23,Total correlation: -0.06674497475631946
+root - INFO - 2022-03-23,Total rankICIR: -1.1637383998078794
 root - INFO - 2022-03-23,index mean: 1.4430805688199044
 root - INFO - 2022-03-23,Number of Long: 30, List length: 30, close long: 6, new long: 6
 root - INFO - 2022-03-23,买入:110073
@@ -828,7 +860,8 @@ root - INFO - 2022-03-23,策略收益：
 毛收益 209.30, 净收益 209.30
 root - INFO - 2022-03-23,策略收益：
 毛收益 -15.58, 净收益 -15.58
-root - INFO - 2022-03-24,Total correlation: -0.21480598366110504
+root - INFO - 2022-03-24,Total correlation: -0.17404727530561512
+root - INFO - 2022-03-24,Total rankICIR: -3.034617937823114
 root - INFO - 2022-03-24,index mean: 1.4462224510251194
 root - INFO - 2022-03-24,Number of Long: 30, List length: 30, close long: 3, new long: 3
 root - INFO - 2022-03-24,卖出:110062
@@ -867,7 +900,8 @@ root - INFO - 2022-03-24,策略收益：
 毛收益 251.52, 净收益 251.52
 root - INFO - 2022-03-24,策略收益：
 毛收益 630.49, 净收益 630.49
-root - INFO - 2022-03-25,Total correlation: -0.09122454806083242
+root - INFO - 2022-03-25,Total correlation: -0.0725117248566962
+root - INFO - 2022-03-25,Total rankICIR: -1.2642851234886603
 root - INFO - 2022-03-25,index mean: 1.4481603360711794
 root - INFO - 2022-03-25,Number of Long: 30, List length: 30, close long: 3, new long: 3
 root - INFO - 2022-03-25,卖出:110073
@@ -888,7 +922,8 @@ root - INFO - 2022-03-25,策略收益：
 毛收益 0.00, 净收益 0.00
 root - INFO - 2022-03-25,策略收益：
 毛收益 -39.48, 净收益 -39.48
-root - INFO - 2022-03-28,Total correlation: -0.25090819522205804
+root - INFO - 2022-03-28,Total correlation: -0.2145567619747307
+root - INFO - 2022-03-28,Total rankICIR: -3.740924972404646
 root - INFO - 2022-03-28,index mean: 1.4421679183558638
 root - INFO - 2022-03-28,Number of Long: 30, List length: 30, close long: 3, new long: 3
 root - INFO - 2022-03-28,买入:111001
@@ -909,7 +944,8 @@ root - INFO - 2022-03-28,策略收益：
 毛收益 708.62, 净收益 708.62
 root - INFO - 2022-03-28,策略收益：
 毛收益 -170.02, 净收益 -170.02
-root - INFO - 2022-03-29,Total correlation: 0.06900983200016013
+root - INFO - 2022-03-29,Total correlation: 0.04632484332527661
+root - INFO - 2022-03-29,Total rankICIR: 0.8090286078248311
 root - INFO - 2022-03-29,index mean: 1.4324435749389417
 root - INFO - 2022-03-29,Number of Long: 30, List length: 30, close long: 5, new long: 5
 root - INFO - 2022-03-29,卖出:111001
@@ -930,7 +966,8 @@ root - INFO - 2022-03-29,策略收益：
 毛收益 -30.21, 净收益 -30.21
 root - INFO - 2022-03-29,策略收益：
 毛收益 -407.30, 净收益 -407.30
-root - INFO - 2022-03-30,Total correlation: -0.013009040898436934
+root - INFO - 2022-03-30,Total correlation: -0.012099680251738314
+root - INFO - 2022-03-30,Total rankICIR: -0.2113118311152108
 root - INFO - 2022-03-30,index mean: 1.4330123621371107
 root - INFO - 2022-03-30,Number of Long: 30, List length: 30, close long: 5, new long: 5
 root - INFO - 2022-03-30,买入:110060
@@ -963,7 +1000,8 @@ root - INFO - 2022-03-30,策略收益：
 毛收益 17.03, 净收益 17.03
 root - INFO - 2022-03-30,策略收益：
 毛收益 -518.38, 净收益 -518.38
-root - INFO - 2022-03-31,Total correlation: 0.10754730894016715
+root - INFO - 2022-03-31,Total correlation: 0.07296393104265002
+root - INFO - 2022-03-31,Total rankICIR: 1.2742602740904068
 root - INFO - 2022-03-31,index mean: 1.4379003547963758
 root - INFO - 2022-03-31,Number of Long: 30, List length: 30, close long: 5, new long: 5
 root - INFO - 2022-03-31,买入:110073
@@ -996,7 +1034,8 @@ root - INFO - 2022-03-31,策略收益：
 毛收益 113.68, 净收益 113.68
 root - INFO - 2022-03-31,策略收益：
 毛收益 -962.07, 净收益 -962.07
-root - INFO - 2022-04-01,Total correlation: -0.06599367776240726
+root - INFO - 2022-04-01,Total correlation: -0.06286606100593818
+root - INFO - 2022-04-01,Total rankICIR: -1.0979085554146637
 root - INFO - 2022-04-01,index mean: 1.5258304607618767
 root - INFO - 2022-04-01,Number of Long: 30, List length: 30, close long: 13, new long: 13
 root - INFO - 2022-04-01,卖出:113042
@@ -1029,7 +1068,8 @@ root - INFO - 2022-04-01,策略收益：
 毛收益 -344.89, 净收益 -344.89
 root - INFO - 2022-04-01,策略收益：
 毛收益 746.51, 净收益 746.51
-root - INFO - 2022-04-06,Total correlation: -0.11259965506583812
+root - INFO - 2022-04-06,Total correlation: -0.1634171615151669
+root - INFO - 2022-04-06,Total rankICIR: -2.85395803169749
 root - INFO - 2022-04-06,index mean: 1.5246222515586227
 root - INFO - 2022-04-06,Number of Long: 30, List length: 30, close long: 1, new long: 1
 root - INFO - 2022-04-06,买入:110058
@@ -1110,7 +1150,8 @@ root - INFO - 2022-04-06,策略收益：
 毛收益 -211.20, 净收益 -211.20
 root - INFO - 2022-04-06,策略收益：
 毛收益 246.56, 净收益 246.56
-root - INFO - 2022-04-07,Total correlation: -0.11168069646016797
+root - INFO - 2022-04-07,Total correlation: -0.10598348782294094
+root - INFO - 2022-04-07,Total rankICIR: -1.8509220420617984
 root - INFO - 2022-04-07,index mean: 1.5239727148535072
 root - INFO - 2022-04-07,Number of Long: 30, List length: 30, close long: 4, new long: 4
 root - INFO - 2022-04-07,买入:113033
@@ -1119,7 +1160,8 @@ root - INFO - 2022-04-07,卖出:128118
 价格:108.82,                成本: 17327.30,                手续费0.00
 root - INFO - 2022-04-07,策略收益：
 毛收益 -460.04, 净收益 -460.04
-root - INFO - 2022-04-08,Total correlation: -0.24497225636865225
+root - INFO - 2022-04-08,Total correlation: -0.21429900691942003
+root - INFO - 2022-04-08,Total rankICIR: -3.7425712594188685
 root - INFO - 2022-04-08,index mean: 1.538775916808297
 root - INFO - 2022-04-08,Number of Long: 30, List length: 30, close long: 2, new long: 2
 root - INFO - 2022-04-08,卖出:110060
@@ -1146,7 +1188,8 @@ root - INFO - 2022-04-08,策略收益：
 毛收益 -170.24, 净收益 -170.24
 root - INFO - 2022-04-08,策略收益：
 毛收益 309.18, 净收益 309.18
-root - INFO - 2022-04-11,Total correlation: -0.25541301424851764
+root - INFO - 2022-04-11,Total correlation: -0.24006504187620478
+root - INFO - 2022-04-11,Total rankICIR: -4.199423132442518
 root - INFO - 2022-04-11,index mean: 1.5367647241796716
 root - INFO - 2022-04-11,Number of Long: 30, List length: 30, close long: 3, new long: 3
 root - INFO - 2022-04-11,买入:113024
@@ -1161,7 +1204,8 @@ root - INFO - 2022-04-11,策略收益：
 毛收益 33.12, 净收益 33.12
 root - INFO - 2022-04-11,策略收益：
 毛收益 -437.95, 净收益 -437.95
-root - INFO - 2022-04-12,Total correlation: -0.22729057530604485
+root - INFO - 2022-04-12,Total correlation: -0.1945717465712189
+root - INFO - 2022-04-12,Total rankICIR: -3.403615483058425
 root - INFO - 2022-04-12,index mean: 1.5456638189649845
 root - INFO - 2022-04-12,Number of Long: 30, List length: 30, close long: 3, new long: 3
 root - INFO - 2022-04-12,卖出:113024
@@ -1182,7 +1226,8 @@ root - INFO - 2022-04-12,策略收益：
 毛收益 -158.36, 净收益 -158.36
 root - INFO - 2022-04-12,策略收益：
 毛收益 -517.66, 净收益 -517.66
-root - INFO - 2022-04-13,Total correlation: -0.04408449222315781
+root - INFO - 2022-04-13,Total correlation: -0.05159345349036861
+root - INFO - 2022-04-13,Total rankICIR: -0.9039903340303416
 root - INFO - 2022-04-13,index mean: 1.5409662350085631
 root - INFO - 2022-04-13,Number of Long: 30, List length: 30, close long: 2, new long: 2
 root - INFO - 2022-04-13,买入:110047
@@ -1203,7 +1248,8 @@ root - INFO - 2022-04-13,策略收益：
 毛收益 -430.92, 净收益 -430.92
 root - INFO - 2022-04-13,策略收益：
 毛收益 -8.10, 净收益 -8.10
-root - INFO - 2022-04-14,Total correlation: -0.05910421369980006
+root - INFO - 2022-04-14,Total correlation: -0.0644565895506726
+root - INFO - 2022-04-14,Total rankICIR: -1.1312085556798066
 root - INFO - 2022-04-14,index mean: 1.5375601995152302
 root - INFO - 2022-04-14,Number of Long: 30, List length: 30, close long: 3, new long: 3
 root - INFO - 2022-04-14,卖出:113043
@@ -1218,7 +1264,8 @@ root - INFO - 2022-04-14,策略收益：
 毛收益 100.32, 净收益 100.32
 root - INFO - 2022-04-14,策略收益：
 毛收益 55.55, 净收益 55.55
-root - INFO - 2022-04-15,Total correlation: -0.06389939854567188
+root - INFO - 2022-04-15,Total correlation: -0.05948487494871034
+root - INFO - 2022-04-15,Total rankICIR: -1.043955318526814
 root - INFO - 2022-04-15,index mean: 1.5434670461251148
 root - INFO - 2022-04-15,Number of Long: 30, List length: 30, close long: 4, new long: 4
 root - INFO - 2022-04-15,卖出:110047
@@ -1239,7 +1286,8 @@ root - INFO - 2022-04-15,策略收益：
 毛收益 42.84, 净收益 42.84
 root - INFO - 2022-04-15,策略收益：
 毛收益 -164.45, 净收益 -164.45
-root - INFO - 2022-04-18,Total correlation: -0.16499765989232937
+root - INFO - 2022-04-18,Total correlation: -0.1626220779631488
+root - INFO - 2022-04-18,Total rankICIR: -2.854005885460672
 root - INFO - 2022-04-18,index mean: 1.5453675798415136
 root - INFO - 2022-04-18,Number of Long: 30, List length: 30, close long: 3, new long: 3
 root - INFO - 2022-04-18,买入:110073
@@ -1266,7 +1314,8 @@ root - INFO - 2022-04-18,策略收益：
 毛收益 -122.40, 净收益 -122.40
 root - INFO - 2022-04-18,策略收益：
 毛收益 -196.08, 净收益 -196.08
-root - INFO - 2022-04-19,Total correlation: 0.2830573456027679
+root - INFO - 2022-04-19,Total correlation: 0.2581487100434798
+root - INFO - 2022-04-19,Total rankICIR: 4.537840208470082
 root - INFO - 2022-04-19,index mean: 1.5313261599829322
 root - INFO - 2022-04-19,Number of Long: 30, List length: 30, close long: 5, new long: 5
 root - INFO - 2022-04-19,买入:110045
@@ -1287,7 +1336,8 @@ root - INFO - 2022-04-19,策略收益：
 毛收益 -117.45, 净收益 -117.45
 root - INFO - 2022-04-19,策略收益：
 毛收益 -1770.45, 净收益 -1770.45
-root - INFO - 2022-04-20,Total correlation: 0.0031326938985968378
+root - INFO - 2022-04-20,Total correlation: -0.007086524499615635
+root - INFO - 2022-04-20,Total rankICIR: -0.12456973272207283
 root - INFO - 2022-04-20,index mean: 1.5616405012289376
 root - INFO - 2022-04-20,Number of Long: 30, List length: 31, close long: 3, new long: 4
 root - INFO - 2022-04-20,买入:110083
@@ -1320,7 +1370,8 @@ root - INFO - 2022-04-20,策略收益：
 毛收益 422.10, 净收益 422.10
 root - INFO - 2022-04-20,策略收益：
 毛收益 473.76, 净收益 473.76
-root - INFO - 2022-04-21,Total correlation: -0.20973686538054526
+root - INFO - 2022-04-21,Total correlation: -0.18651189348081562
+root - INFO - 2022-04-21,Total rankICIR: -3.2838807510379735
 root - INFO - 2022-04-21,index mean: 1.5588997417347015
 root - INFO - 2022-04-21,Number of Long: 31, List length: 31, close long: 2, new long: 2
 root - INFO - 2022-04-21,卖出:110058
@@ -1343,7 +1394,8 @@ root - INFO - 2022-04-21,策略收益：
 毛收益 -46.93, 净收益 -46.93
 root - INFO - 2022-04-21,策略收益：
 毛收益 360.87, 净收益 360.87
-root - INFO - 2022-04-22,Total correlation: -0.3938747528727443
+root - INFO - 2022-04-22,Total correlation: -0.3713304816671263
+root - INFO - 2022-04-22,Total rankICIR: -6.5590040329247925
 root - INFO - 2022-04-22,index mean: 1.558528173178548
 root - INFO - 2022-04-22,Number of Long: 31, List length: 31, close long: 3, new long: 3
 root - INFO - 2022-04-22,买入:113054
@@ -1358,7 +1410,8 @@ root - INFO - 2022-04-22,策略收益：
 毛收益 -150.35, 净收益 -150.35
 root - INFO - 2022-04-22,策略收益：
 毛收益 -178.50, 净收益 -178.50
-root - INFO - 2022-04-25,Total correlation: -0.3384678125436397
+root - INFO - 2022-04-25,Total correlation: -0.32351647457160165
+root - INFO - 2022-04-25,Total rankICIR: -5.723590710115585
 root - INFO - 2022-04-25,index mean: 1.5533790780948868
 root - INFO - 2022-04-25,Number of Long: 31, List length: 31, close long: 5, new long: 5
 root - INFO - 2022-04-25,卖出:113561
@@ -1379,7 +1432,8 @@ root - INFO - 2022-04-25,策略收益：
 毛收益 -319.21, 净收益 -319.21
 root - INFO - 2022-04-25,策略收益：
 毛收益 47.33, 净收益 47.33
-root - INFO - 2022-04-26,Total correlation: -0.3482932997790819
+root - INFO - 2022-04-26,Total correlation: -0.32968665626045096
+root - INFO - 2022-04-26,Total rankICIR: -5.832752367619388
 root - INFO - 2022-04-26,index mean: 1.5513422105328123
 root - INFO - 2022-04-26,Number of Long: 31, List length: 31, close long: 4, new long: 4
 root - INFO - 2022-04-26,买入:110059
@@ -1412,7 +1466,8 @@ root - INFO - 2022-04-26,策略收益：
 毛收益 -309.12, 净收益 -309.12
 root - INFO - 2022-04-26,策略收益：
 毛收益 -302.98, 净收益 -302.98
-root - INFO - 2022-04-27,Total correlation: 0.07417061543432774
+root - INFO - 2022-04-27,Total correlation: 0.08659814067213183
+root - INFO - 2022-04-27,Total rankICIR: 1.5320775058538696
 root - INFO - 2022-04-27,index mean: 1.5579297088793747
 root - INFO - 2022-04-27,Number of Long: 31, List length: 31, close long: 4, new long: 4
 root - INFO - 2022-04-27,卖出:110062
@@ -1439,7 +1494,8 @@ root - INFO - 2022-04-27,策略收益：
 毛收益 -840.96, 净收益 -840.96
 root - INFO - 2022-04-27,策略收益：
 毛收益 -54.00, 净收益 -54.00
-root - INFO - 2022-04-28,Total correlation: 0.29631142150616757
+root - INFO - 2022-04-28,Total correlation: 0.2741107613413834
+root - INFO - 2022-04-28,Total rankICIR: 4.849514415714922
 root - INFO - 2022-04-28,index mean: 1.5652357106614672
 root - INFO - 2022-04-28,Number of Long: 31, List length: 31, close long: 2, new long: 2
 root - INFO - 2022-04-28,买入:110062
@@ -1466,7 +1522,8 @@ root - INFO - 2022-04-28,策略收益：
 毛收益 54.05, 净收益 54.05
 root - INFO - 2022-04-28,策略收益：
 毛收益 -419.86, 净收益 -419.86
-root - INFO - 2022-04-29,Total correlation: 0.15690960483139452
+root - INFO - 2022-04-29,Total correlation: 0.14499714620998275
+root - INFO - 2022-04-29,Total rankICIR: 2.569355976979111
 root - INFO - 2022-04-29,index mean: 1.568463425847632
 root - INFO - 2022-04-29,Number of Long: 31, List length: 31, close long: 4, new long: 4
 root - INFO - 2022-04-29,买入:113535
@@ -1481,7 +1538,8 @@ root - INFO - 2022-04-29,策略收益：
 毛收益 307.85, 净收益 307.85
 root - INFO - 2022-04-29,策略收益：
 毛收益 -250.42, 净收益 -250.42
-root - INFO - 2022-05-05,Total correlation: 0.19084696461649145
+root - INFO - 2022-05-05,Total correlation: 0.1668429330178175
+root - INFO - 2022-05-05,Total rankICIR: 2.9564643054784563
 root - INFO - 2022-05-05,index mean: 1.558866324743361
 root - INFO - 2022-05-05,Number of Long: 31, List length: 31, close long: 3, new long: 3
 root - INFO - 2022-05-05,卖出:113037
@@ -1508,7 +1566,8 @@ root - INFO - 2022-05-05,策略收益：
 毛收益 262.12, 净收益 262.12
 root - INFO - 2022-05-05,策略收益：
 毛收益 382.20, 净收益 382.20
-root - INFO - 2022-05-06,Total correlation: -0.02606129192092546
+root - INFO - 2022-05-06,Total correlation: -0.01734581054904206
+root - INFO - 2022-05-06,Total rankICIR: -0.3073685460345988
 root - INFO - 2022-05-06,index mean: 1.485989514526788
 root - INFO - 2022-05-06,Number of Long: 31, List length: 31, close long: 12, new long: 12
 root - INFO - 2022-05-06,卖出:110081
@@ -1529,7 +1588,8 @@ root - INFO - 2022-05-06,策略收益：
 毛收益 -527.16, 净收益 -527.16
 root - INFO - 2022-05-06,策略收益：
 毛收益 -15.10, 净收益 -15.10
-root - INFO - 2022-05-09,Total correlation: 0.23395582082382338
+root - INFO - 2022-05-09,Total correlation: 0.21160471928834423
+root - INFO - 2022-05-09,Total rankICIR: 3.7556112053707285
 root - INFO - 2022-05-09,index mean: 1.5019279570595394
 root - INFO - 2022-05-09,Number of Long: 31, List length: 31, close long: 3, new long: 3
 root - INFO - 2022-05-09,卖出:110083
@@ -1604,7 +1664,8 @@ root - INFO - 2022-05-09,策略收益：
 毛收益 255.89, 净收益 255.89
 root - INFO - 2022-05-09,策略收益：
 毛收益 70.12, 净收益 70.12
-root - INFO - 2022-05-10,Total correlation: -0.11973955784987717
+root - INFO - 2022-05-10,Total correlation: -0.08586481338420135
+root - INFO - 2022-05-10,Total rankICIR: -1.523949259625685
 root - INFO - 2022-05-10,index mean: 1.4986396285029102
 root - INFO - 2022-05-10,Number of Long: 31, List length: 31, close long: 4, new long: 4
 root - INFO - 2022-05-10,卖出:113563
@@ -1625,7 +1686,8 @@ root - INFO - 2022-05-10,策略收益：
 毛收益 -710.30, 净收益 -710.30
 root - INFO - 2022-05-10,策略收益：
 毛收益 313.87, 净收益 313.87
-root - INFO - 2022-05-11,Total correlation: 0.24588948946261188
+root - INFO - 2022-05-11,Total correlation: 0.22309056993399926
+root - INFO - 2022-05-11,Total rankICIR: 3.9657447164862503
 root - INFO - 2022-05-11,index mean: 1.4972779281458728
 root - INFO - 2022-05-11,Number of Long: 31, List length: 31, close long: 2, new long: 2
 root - INFO - 2022-05-11,买入:113639
@@ -1652,7 +1714,8 @@ root - INFO - 2022-05-11,策略收益：
 毛收益 31.24, 净收益 31.24
 root - INFO - 2022-05-11,策略收益：
 毛收益 879.70, 净收益 879.70
-root - INFO - 2022-05-12,Total correlation: 0.011545815302214898
+root - INFO - 2022-05-12,Total correlation: -0.009191129480341467
+root - INFO - 2022-05-12,Total rankICIR: -0.1636434079834426
 root - INFO - 2022-05-12,index mean: 1.5014250767739934
 root - INFO - 2022-05-12,Number of Long: 31, List length: 31, close long: 5, new long: 5
 root - INFO - 2022-05-12,买入:113628
@@ -1667,7 +1730,8 @@ root - INFO - 2022-05-12,策略收益：
 毛收益 -67.97, 净收益 -67.97
 root - INFO - 2022-05-12,策略收益：
 毛收益 -1182.62, 净收益 -1182.62
-root - INFO - 2022-05-13,Total correlation: 0.01214115443142039
+root - INFO - 2022-05-13,Total correlation: 0.011238477217716838
+root - INFO - 2022-05-13,Total rankICIR: 0.20041075748337123
 root - INFO - 2022-05-13,index mean: 1.4951154440669563
 root - INFO - 2022-05-13,Number of Long: 31, List length: 31, close long: 3, new long: 3
 root - INFO - 2022-05-13,卖出:110062
@@ -1700,7 +1764,8 @@ root - INFO - 2022-05-13,策略收益：
 毛收益 525.64, 净收益 525.64
 root - INFO - 2022-05-13,策略收益：
 毛收益 38.33, 净收益 38.33
-root - INFO - 2022-05-16,Total correlation: 0.040433014436780816
+root - INFO - 2022-05-16,Total correlation: 0.016979322211564136
+root - INFO - 2022-05-16,Total rankICIR: 0.30278468871293446
 root - INFO - 2022-05-16,index mean: 1.4902674816071029
 root - INFO - 2022-05-16,Number of Long: 31, List length: 31, close long: 3, new long: 3
 root - INFO - 2022-05-16,买入:110062
@@ -1721,7 +1786,8 @@ root - INFO - 2022-05-16,策略收益：
 毛收益 78.00, 净收益 78.00
 root - INFO - 2022-05-16,策略收益：
 毛收益 73.98, 净收益 73.98
-root - INFO - 2022-05-17,Total correlation: -0.15086274609631914
+root - INFO - 2022-05-17,Total correlation: -0.1303273052581771
+root - INFO - 2022-05-17,Total rankICIR: -2.327720101768837
 root - INFO - 2022-05-17,index mean: 1.4927324135642699
 root - INFO - 2022-05-17,Number of Long: 31, List length: 32, close long: 3, new long: 4
 root - INFO - 2022-05-17,卖出:110062
@@ -1742,7 +1808,8 @@ root - INFO - 2022-05-17,策略收益：
 毛收益 -139.38, 净收益 -139.38
 root - INFO - 2022-05-17,策略收益：
 毛收益 -82.58, 净收益 -82.58
-root - INFO - 2022-05-18,Total correlation: 0.13612636492640626
+root - INFO - 2022-05-18,Total correlation: 0.10193104913133919
+root - INFO - 2022-05-18,Total rankICIR: 1.8233980390043625
 root - INFO - 2022-05-18,index mean: 1.5007872982992807
 root - INFO - 2022-05-18,Number of Long: 32, List length: 32, close long: 3, new long: 3
 root - INFO - 2022-05-18,卖出:113589
@@ -1765,7 +1832,8 @@ root - INFO - 2022-05-18,策略收益：
 毛收益 253.50, 净收益 253.50
 root - INFO - 2022-05-18,策略收益：
 毛收益 1382.16, 净收益 1382.16
-root - INFO - 2022-05-19,Total correlation: -0.12037997177942192
+root - INFO - 2022-05-19,Total correlation: -0.0887296257554916
+root - INFO - 2022-05-19,Total rankICIR: -1.587243798459163
 root - INFO - 2022-05-19,index mean: 1.5021095204787243
 root - INFO - 2022-05-19,Number of Long: 32, List length: 32, close long: 5, new long: 5
 root - INFO - 2022-05-19,买入:113043
@@ -1786,7 +1854,8 @@ root - INFO - 2022-05-19,策略收益：
 毛收益 -20.23, 净收益 -20.23
 root - INFO - 2022-05-19,策略收益：
 毛收益 1065.96, 净收益 1065.96
-root - INFO - 2022-05-20,Total correlation: 0.1851342348267106
+root - INFO - 2022-05-20,Total correlation: 0.1467674290358159
+root - INFO - 2022-05-20,Total rankICIR: 2.6295546601043354
 root - INFO - 2022-05-20,index mean: 1.5242394695847243
 root - INFO - 2022-05-20,Number of Long: 32, List length: 32, close long: 5, new long: 5
 root - INFO - 2022-05-20,买入:110062
@@ -1819,7 +1888,8 @@ root - INFO - 2022-05-20,策略收益：
 毛收益 -0.31, 净收益 -0.31
 root - INFO - 2022-05-20,策略收益：
 毛收益 50.22, 净收益 50.22
-root - INFO - 2022-05-23,Total correlation: -0.10641240646337499
+root - INFO - 2022-05-23,Total correlation: -0.12181486294554177
+root - INFO - 2022-05-23,Total rankICIR: -2.1858895646143797
 root - INFO - 2022-05-23,index mean: 1.5047779954653089
 root - INFO - 2022-05-23,Number of Long: 32, List length: 32, close long: 3, new long: 3
 root - INFO - 2022-05-23,卖出:110045
@@ -1852,7 +1922,8 @@ root - INFO - 2022-05-23,策略收益：
 毛收益 -6.00, 净收益 -6.00
 root - INFO - 2022-05-23,策略收益：
 毛收益 -462.81, 净收益 -462.81
-root - INFO - 2022-05-24,Total correlation: -0.18322769057227864
+root - INFO - 2022-05-24,Total correlation: -0.18295668127408607
+root - INFO - 2022-05-24,Total rankICIR: -3.288134205438289
 root - INFO - 2022-05-24,index mean: 1.5129169098774926
 root - INFO - 2022-05-24,Number of Long: 32, List length: 32, close long: 2, new long: 2
 root - INFO - 2022-05-24,卖出:113042
@@ -1873,7 +1944,8 @@ root - INFO - 2022-05-24,策略收益：
 毛收益 216.84, 净收益 216.84
 root - INFO - 2022-05-24,策略收益：
 毛收益 -9.52, 净收益 -9.52
-root - INFO - 2022-05-25,Total correlation: -0.39116328708456083
+root - INFO - 2022-05-25,Total correlation: -0.36319542761260554
+root - INFO - 2022-05-25,Total rankICIR: -6.5475986863565945
 root - INFO - 2022-05-25,index mean: 1.5057025824483838
 root - INFO - 2022-05-25,Number of Long: 32, List length: 32, close long: 5, new long: 5
 root - INFO - 2022-05-25,买入:123104
@@ -1888,7 +1960,8 @@ root - INFO - 2022-05-25,策略收益：
 毛收益 51.57, 净收益 51.57
 root - INFO - 2022-05-25,策略收益：
 毛收益 21.70, 净收益 21.70
-root - INFO - 2022-05-26,Total correlation: 0.1623175659747724
+root - INFO - 2022-05-26,Total correlation: 0.15387831436911195
+root - INFO - 2022-05-26,Total rankICIR: 2.7740807631990014
 root - INFO - 2022-05-26,index mean: 1.5543667255904055
 root - INFO - 2022-05-26,Number of Long: 32, List length: 32, close long: 5, new long: 5
 root - INFO - 2022-05-26,买入:113042
@@ -1921,7 +1994,8 @@ root - INFO - 2022-05-26,策略收益：
 毛收益 -282.49, 净收益 -282.49
 root - INFO - 2022-05-26,策略收益：
 毛收益 -56.58, 净收益 -56.58
-root - INFO - 2022-05-27,Total correlation: 0.15079027688206242
+root - INFO - 2022-05-27,Total correlation: 0.11121605278077885
+root - INFO - 2022-05-27,Total rankICIR: 2.0111355994901974
 root - INFO - 2022-05-27,index mean: 1.5607811766898527
 root - INFO - 2022-05-27,Number of Long: 32, List length: 32, close long: 3, new long: 3
 root - INFO - 2022-05-27,卖出:113042
@@ -1954,7 +2028,8 @@ root - INFO - 2022-05-27,策略收益：
 毛收益 72.59, 净收益 72.59
 root - INFO - 2022-05-27,策略收益：
 毛收益 356.84, 净收益 356.84
-root - INFO - 2022-05-30,Total correlation: -0.2746060951484356
+root - INFO - 2022-05-30,Total correlation: -0.2639486744550946
+root - INFO - 2022-05-30,Total rankICIR: -4.780313807783471
 root - INFO - 2022-05-30,index mean: 1.5696940877922256
 root - INFO - 2022-05-30,Number of Long: 32, List length: 32, close long: 6, new long: 6
 root - INFO - 2022-05-30,买入:110058
@@ -1975,7 +2050,8 @@ root - INFO - 2022-05-30,策略收益：
 毛收益 176.83, 净收益 176.83
 root - INFO - 2022-05-30,策略收益：
 毛收益 3.46, 净收益 3.46
-root - INFO - 2022-05-31,Total correlation: -0.032990162269339464
+root - INFO - 2022-05-31,Total correlation: -0.038410579772369245
+root - INFO - 2022-05-31,Total rankICIR: -0.6956451864359083
 root - INFO - 2022-05-31,index mean: 1.5623484410662887
 root - INFO - 2022-05-31,Number of Long: 32, List length: 32, close long: 3, new long: 3
 root - INFO - 2022-05-31,买入:113606
@@ -2014,7 +2090,8 @@ root - INFO - 2022-05-31,策略收益：
 毛收益 842.00, 净收益 842.00
 root - INFO - 2022-05-31,策略收益：
 毛收益 84.46, 净收益 84.46
-root - INFO - 2022-06-01,Total correlation: 0.1967310843391885
+root - INFO - 2022-06-01,Total correlation: 0.1789418337058431
+root - INFO - 2022-06-01,Total rankICIR: 3.2407744430618974
 root - INFO - 2022-06-01,index mean: 1.5584769884551375
 root - INFO - 2022-06-01,Number of Long: 32, List length: 32, close long: 6, new long: 6
 root - INFO - 2022-06-01,卖出:110063
@@ -2035,7 +2112,8 @@ root - INFO - 2022-06-01,策略收益：
 毛收益 -106.50, 净收益 -106.50
 root - INFO - 2022-06-01,策略收益：
 毛收益 141.93, 净收益 141.93
-root - INFO - 2022-06-02,Total correlation: 0.09218757028629586
+root - INFO - 2022-06-02,Total correlation: 0.09951329693715778
+root - INFO - 2022-06-02,Total rankICIR: 1.8022624602635886
 root - INFO - 2022-06-02,index mean: 1.5671359786881462
 root - INFO - 2022-06-02,Number of Long: 32, List length: 32, close long: 4, new long: 4
 root - INFO - 2022-06-02,买入:110063
@@ -2074,7 +2152,8 @@ root - INFO - 2022-06-02,策略收益：
 毛收益 -23.33, 净收益 -23.33
 root - INFO - 2022-06-02,策略收益：
 毛收益 -207.13, 净收益 -207.13
-root - INFO - 2022-06-06,Total correlation: 0.2307714911847581
+root - INFO - 2022-06-06,Total correlation: 0.21798053595828343
+root - INFO - 2022-06-06,Total rankICIR: 3.947795411439737
 root - INFO - 2022-06-06,index mean: 1.5507747746782357
 root - INFO - 2022-06-06,Number of Long: 32, List length: 32, close long: 3, new long: 3
 root - INFO - 2022-06-06,卖出:110058
@@ -2101,7 +2180,8 @@ root - INFO - 2022-06-06,策略收益：
 毛收益 9.11, 净收益 9.11
 root - INFO - 2022-06-06,策略收益：
 毛收益 -106.65, 净收益 -106.65
-root - INFO - 2022-06-07,Total correlation: 0.05578025304388798
+root - INFO - 2022-06-07,Total correlation: 0.02521640766384463
+root - INFO - 2022-06-07,Total rankICIR: 0.4566885663927862
 root - INFO - 2022-06-07,index mean: 1.5368206520500811
 root - INFO - 2022-06-07,Number of Long: 32, List length: 32, close long: 4, new long: 4
 root - INFO - 2022-06-07,卖出:110063
@@ -2122,7 +2202,8 @@ root - INFO - 2022-06-07,策略收益：
 毛收益 -8.52, 净收益 -8.52
 root - INFO - 2022-06-07,策略收益：
 毛收益 54.00, 净收益 54.00
-root - INFO - 2022-06-08,Total correlation: -0.02115724031226156
+root - INFO - 2022-06-08,Total correlation: -0.028637475653562842
+root - INFO - 2022-06-08,Total rankICIR: -0.5194367611990559
 root - INFO - 2022-06-08,index mean: 1.5467839365241889
 root - INFO - 2022-06-08,Number of Long: 32, List length: 32, close long: 3, new long: 3
 root - INFO - 2022-06-08,买入:110063
@@ -2149,7 +2230,8 @@ root - INFO - 2022-06-08,策略收益：
 毛收益 -83.75, 净收益 -83.75
 root - INFO - 2022-06-08,策略收益：
 毛收益 -21.46, 净收益 -21.46
-root - INFO - 2022-06-09,Total correlation: -0.154396619499815
+root - INFO - 2022-06-09,Total correlation: -0.127191179344786
+root - INFO - 2022-06-09,Total rankICIR: -2.307039036931465
 root - INFO - 2022-06-09,index mean: 1.535118238125074
 root - INFO - 2022-06-09,Number of Long: 32, List length: 33, close long: 4, new long: 5
 root - INFO - 2022-06-09,买入:123010
@@ -2170,7 +2252,8 @@ root - INFO - 2022-06-09,策略收益：
 毛收益 10.01, 净收益 10.01
 root - INFO - 2022-06-09,策略收益：
 毛收益 285.65, 净收益 285.65
-root - INFO - 2022-06-10,Total correlation: -0.11081916198677591
+root - INFO - 2022-06-10,Total correlation: -0.11316278768392836
+root - INFO - 2022-06-10,Total rankICIR: -2.0557041252114296
 root - INFO - 2022-06-10,index mean: 1.536948428485492
 root - INFO - 2022-06-10,Number of Long: 33, List length: 33, close long: 6, new long: 6
 root - INFO - 2022-06-10,买入:110045
@@ -2199,7 +2282,8 @@ root - INFO - 2022-06-10,策略收益：
 毛收益 114.40, 净收益 114.40
 root - INFO - 2022-06-10,策略收益：
 毛收益 -122.37, 净收益 -122.37
-root - INFO - 2022-06-13,Total correlation: 0.20304717398373393
+root - INFO - 2022-06-13,Total correlation: 0.19471370051816153
+root - INFO - 2022-06-13,Total rankICIR: 3.537150025928668
 root - INFO - 2022-06-13,index mean: 1.5496058123545369
 root - INFO - 2022-06-13,Number of Long: 33, List length: 33, close long: 4, new long: 4
 root - INFO - 2022-06-13,卖出:110045
@@ -2238,7 +2322,8 @@ root - INFO - 2022-06-13,策略收益：
 毛收益 48.50, 净收益 48.50
 root - INFO - 2022-06-13,策略收益：
 毛收益 -2.09, 净收益 -2.09
-root - INFO - 2022-06-14,Total correlation: -0.09836904462452549
+root - INFO - 2022-06-14,Total correlation: -0.07622922340281202
+root - INFO - 2022-06-14,Total rankICIR: -1.3868691645923987
 root - INFO - 2022-06-14,index mean: 1.55441001295942
 root - INFO - 2022-06-14,Number of Long: 33, List length: 33, close long: 3, new long: 3
 root - INFO - 2022-06-14,卖出:113530
@@ -2265,7 +2350,8 @@ root - INFO - 2022-06-14,策略收益：
 毛收益 384.72, 净收益 384.72
 root - INFO - 2022-06-14,策略收益：
 毛收益 -97.72, 净收益 -97.72
-root - INFO - 2022-06-15,Total correlation: -0.01260312512474636
+root - INFO - 2022-06-15,Total correlation: -0.05219079961554392
+root - INFO - 2022-06-15,Total rankICIR: -0.9509616266796854
 root - INFO - 2022-06-15,index mean: 1.5502734186155729
 root - INFO - 2022-06-15,Number of Long: 33, List length: 33, close long: 4, new long: 4
 root - INFO - 2022-06-15,买入:113042
@@ -2286,7 +2372,8 @@ root - INFO - 2022-06-15,策略收益：
 毛收益 188.35, 净收益 188.35
 root - INFO - 2022-06-15,策略收益：
 毛收益 764.92, 净收益 764.92
-root - INFO - 2022-06-16,Total correlation: 0.015300492115496526
+root - INFO - 2022-06-16,Total correlation: -0.009387759374353353
+root - INFO - 2022-06-16,Total rankICIR: -0.17156756309872095
 root - INFO - 2022-06-16,index mean: 1.5577427819314391
 root - INFO - 2022-06-16,Number of Long: 33, List length: 33, close long: 4, new long: 4
 root - INFO - 2022-06-16,卖出:113566
@@ -2313,7 +2400,8 @@ root - INFO - 2022-06-16,策略收益：
 毛收益 57.57, 净收益 57.57
 root - INFO - 2022-06-16,策略收益：
 毛收益 91.06, 净收益 91.06
-root - INFO - 2022-06-17,Total correlation: 0.13343351882733942
+root - INFO - 2022-06-17,Total correlation: 0.10719778675806918
+root - INFO - 2022-06-17,Total rankICIR: 1.9591110413314274
 root - INFO - 2022-06-17,index mean: 1.5545020798021465
 root - INFO - 2022-06-17,Number of Long: 33, List length: 33, close long: 3, new long: 3
 root - INFO - 2022-06-17,卖出:110063
@@ -2340,7 +2428,8 @@ root - INFO - 2022-06-17,策略收益：
 毛收益 92.16, 净收益 92.16
 root - INFO - 2022-06-17,策略收益：
 毛收益 -76.96, 净收益 -76.96
-root - INFO - 2022-06-20,Total correlation: -0.23249995989237904
+root - INFO - 2022-06-20,Total correlation: -0.2306298916027221
+root - INFO - 2022-06-20,Total rankICIR: -4.221220109367541
 root - INFO - 2022-06-20,index mean: 1.5329600209155354
 root - INFO - 2022-06-20,Number of Long: 33, List length: 33, close long: 4, new long: 4
 root - INFO - 2022-06-20,买入:110075
@@ -2361,7 +2450,8 @@ root - INFO - 2022-06-20,策略收益：
 毛收益 309.23, 净收益 309.23
 root - INFO - 2022-06-20,策略收益：
 毛收益 343.08, 净收益 343.08
-root - INFO - 2022-06-21,Total correlation: -0.15920352450510997
+root - INFO - 2022-06-21,Total correlation: -0.17348895623619925
+root - INFO - 2022-06-21,Total rankICIR: -3.180105096765056
 root - INFO - 2022-06-21,index mean: 1.53730964843305
 root - INFO - 2022-06-21,Number of Long: 33, List length: 33, close long: 5, new long: 5
 root - INFO - 2022-06-21,买入:110063
@@ -2388,7 +2478,8 @@ root - INFO - 2022-06-21,策略收益：
 毛收益 312.73, 净收益 312.73
 root - INFO - 2022-06-21,策略收益：
 毛收益 -97.27, 净收益 -97.27
-root - INFO - 2022-06-22,Total correlation: 0.14485009701064044
+root - INFO - 2022-06-22,Total correlation: 0.16883233131686717
+root - INFO - 2022-06-22,Total rankICIR: 3.099349609996974
 root - INFO - 2022-06-22,index mean: 1.531571293947953
 root - INFO - 2022-06-22,Number of Long: 33, List length: 33, close long: 2, new long: 2
 root - INFO - 2022-06-22,卖出:110075
@@ -2421,7 +2512,8 @@ root - INFO - 2022-06-22,策略收益：
 毛收益 -55.21, 净收益 -55.21
 root - INFO - 2022-06-22,策略收益：
 毛收益 56.72, 净收益 56.72
-root - INFO - 2022-06-23,Total correlation: 0.05661445105514599
+root - INFO - 2022-06-23,Total correlation: 0.05727968675925762
+root - INFO - 2022-06-23,Total rankICIR: 1.0515152721836392
 root - INFO - 2022-06-23,index mean: 1.5307381810532603
 root - INFO - 2022-06-23,Number of Long: 33, List length: 33, close long: 3, new long: 3
 root - INFO - 2022-06-23,卖出:110063
@@ -2436,7 +2528,8 @@ root - INFO - 2022-06-23,策略收益：
 毛收益 -214.13, 净收益 -214.13
 root - INFO - 2022-06-23,策略收益：
 毛收益 -28.75, 净收益 -28.75
-root - INFO - 2022-06-24,Total correlation: 0.09071845964429294
+root - INFO - 2022-06-24,Total correlation: 0.048601944562579096
+root - INFO - 2022-06-24,Total rankICIR: 0.8935358790553606
 root - INFO - 2022-06-24,index mean: 1.4989826646392992
 root - INFO - 2022-06-24,Number of Long: 33, List length: 33, close long: 3, new long: 3
 root - INFO - 2022-06-24,买入:110047
@@ -2457,7 +2550,8 @@ root - INFO - 2022-06-24,策略收益：
 毛收益 326.12, 净收益 326.12
 root - INFO - 2022-06-24,策略收益：
 毛收益 833.47, 净收益 833.47
-root - INFO - 2022-06-27,Total correlation: 0.008389774431670952
+root - INFO - 2022-06-27,Total correlation: -0.016807058265245572
+root - INFO - 2022-06-27,Total rankICIR: -0.30899400664996646
 root - INFO - 2022-06-27,index mean: 1.490112506105987
 root - INFO - 2022-06-27,Number of Long: 33, List length: 34, close long: 3, new long: 4
 root - INFO - 2022-06-27,卖出:110047
@@ -2478,7 +2572,8 @@ root - INFO - 2022-06-27,策略收益：
 毛收益 476.77, 净收益 476.77
 root - INFO - 2022-06-27,策略收益：
 毛收益 735.53, 净收益 735.53
-root - INFO - 2022-06-28,Total correlation: 0.03815451533793926
+root - INFO - 2022-06-28,Total correlation: 0.01789268480339999
+root - INFO - 2022-06-28,Total rankICIR: 0.32992480601055013
 root - INFO - 2022-06-28,index mean: 1.4888349055076842
 root - INFO - 2022-06-28,Number of Long: 34, List length: 34, close long: 3, new long: 3
 root - INFO - 2022-06-28,卖出:110063
@@ -2501,7 +2596,8 @@ root - INFO - 2022-06-28,策略收益：
 毛收益 23.40, 净收益 23.40
 root - INFO - 2022-06-28,策略收益：
 毛收益 -22.22, 净收益 -22.22
-root - INFO - 2022-06-29,Total correlation: -0.04039788711134025
+root - INFO - 2022-06-29,Total correlation: -0.06558931152976594
+root - INFO - 2022-06-29,Total rankICIR: -1.20940714714382
 root - INFO - 2022-06-29,index mean: 1.4942101052628072
 root - INFO - 2022-06-29,Number of Long: 34, List length: 34, close long: 3, new long: 3
 root - INFO - 2022-06-29,买入:110079
@@ -2522,7 +2618,8 @@ root - INFO - 2022-06-29,策略收益：
 毛收益 989.53, 净收益 989.53
 root - INFO - 2022-06-29,策略收益：
 毛收益 186.00, 净收益 186.00
-root - INFO - 2022-06-30,Total correlation: -0.4114822483185126
+root - INFO - 2022-06-30,Total correlation: -0.38552726269277315
+root - INFO - 2022-06-30,Total rankICIR: -7.108771475788911
 root - INFO - 2022-06-30,index mean: 1.504670665645419
 root - INFO - 2022-06-30,Number of Long: 34, List length: 34, close long: 2, new long: 2
 root - INFO - 2022-06-30,卖出:113037
@@ -2543,7 +2640,8 @@ root - INFO - 2022-06-30,策略收益：
 毛收益 240.81, 净收益 240.81
 root - INFO - 2022-06-30,策略收益：
 毛收益 423.34, 净收益 423.34
-root - INFO - 2022-07-01,Total correlation: -0.15202612540670185
+root - INFO - 2022-07-01,Total correlation: -0.16037887898918557
+root - INFO - 2022-07-01,Total rankICIR: -2.957240409703185
 root - INFO - 2022-07-01,index mean: 1.510775318232458
 root - INFO - 2022-07-01,Number of Long: 34, List length: 34, close long: 2, new long: 2
 root - INFO - 2022-07-01,买入:113596
@@ -2558,7 +2656,8 @@ root - INFO - 2022-07-01,策略收益：
 毛收益 267.97, 净收益 267.97
 root - INFO - 2022-07-01,策略收益：
 毛收益 522.26, 净收益 522.26
-root - INFO - 2022-07-04,Total correlation: -0.052073443552184226
+root - INFO - 2022-07-04,Total correlation: -0.050197157211313154
+root - INFO - 2022-07-04,Total rankICIR: -0.9255898450788437
 root - INFO - 2022-07-04,index mean: 1.521583758925446
 root - INFO - 2022-07-04,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-07-04,卖出:110059
@@ -2573,7 +2672,8 @@ root - INFO - 2022-07-04,策略收益：
 毛收益 54.76, 净收益 54.76
 root - INFO - 2022-07-04,策略收益：
 毛收益 5.72, 净收益 5.72
-root - INFO - 2022-07-05,Total correlation: 0.18858505039478976
+root - INFO - 2022-07-05,Total correlation: 0.1627085111157587
+root - INFO - 2022-07-05,Total rankICIR: 3.0001967036233426
 root - INFO - 2022-07-05,index mean: 1.5173933415806984
 root - INFO - 2022-07-05,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-07-05,卖出:110079
@@ -2600,7 +2700,8 @@ root - INFO - 2022-07-05,策略收益：
 毛收益 281.38, 净收益 281.38
 root - INFO - 2022-07-05,策略收益：
 毛收益 425.18, 净收益 425.18
-root - INFO - 2022-07-06,Total correlation: -0.06391401399125109
+root - INFO - 2022-07-06,Total correlation: -0.0125609676045437
+root - INFO - 2022-07-06,Total rankICIR: -0.2316127985134128
 root - INFO - 2022-07-06,index mean: 1.5062009128903586
 root - INFO - 2022-07-06,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-07-06,卖出:113584
@@ -2627,7 +2728,8 @@ root - INFO - 2022-07-06,策略收益：
 毛收益 -279.15, 净收益 -279.15
 root - INFO - 2022-07-06,策略收益：
 毛收益 452.22, 净收益 452.22
-root - INFO - 2022-07-07,Total correlation: -0.1813679084426116
+root - INFO - 2022-07-07,Total correlation: -0.1253181001463986
+root - INFO - 2022-07-07,Total rankICIR: -2.3107515912064085
 root - INFO - 2022-07-07,index mean: 1.511500466582071
 root - INFO - 2022-07-07,Number of Long: 34, List length: 34, close long: 3, new long: 3
 root - INFO - 2022-07-07,买入:113042
@@ -2654,7 +2756,8 @@ root - INFO - 2022-07-07,策略收益：
 毛收益 144.48, 净收益 144.48
 root - INFO - 2022-07-07,策略收益：
 毛收益 -1.13, 净收益 -1.13
-root - INFO - 2022-07-08,Total correlation: 0.251515446556969
+root - INFO - 2022-07-08,Total correlation: 0.21154438623728547
+root - INFO - 2022-07-08,Total rankICIR: 3.906417838102044
 root - INFO - 2022-07-08,index mean: 1.510514113037852
 root - INFO - 2022-07-08,Number of Long: 34, List length: 34, close long: 3, new long: 3
 root - INFO - 2022-07-08,卖出:113024
@@ -2675,7 +2778,8 @@ root - INFO - 2022-07-08,策略收益：
 毛收益 -65.28, 净收益 -65.28
 root - INFO - 2022-07-08,策略收益：
 毛收益 146.50, 净收益 146.50
-root - INFO - 2022-07-11,Total correlation: -0.3401142883170302
+root - INFO - 2022-07-11,Total correlation: -0.33588264754891
+root - INFO - 2022-07-11,Total rankICIR: -6.211559087714383
 root - INFO - 2022-07-11,index mean: 1.4878280135557644
 root - INFO - 2022-07-11,Number of Long: 34, List length: 34, close long: 3, new long: 3
 root - INFO - 2022-07-11,买入:113037
@@ -2696,7 +2800,8 @@ root - INFO - 2022-07-11,策略收益：
 毛收益 -30.72, 净收益 -30.72
 root - INFO - 2022-07-11,策略收益：
 毛收益 140.97, 净收益 140.97
-root - INFO - 2022-07-12,Total correlation: -0.3035360038046771
+root - INFO - 2022-07-12,Total correlation: -0.26452164884651636
+root - INFO - 2022-07-12,Total rankICIR: -4.891862868713724
 root - INFO - 2022-07-12,index mean: 1.4812006233035058
 root - INFO - 2022-07-12,Number of Long: 34, List length: 34, close long: 1, new long: 1
 root - INFO - 2022-07-12,买入:113056
@@ -2717,7 +2822,8 @@ root - INFO - 2022-07-12,策略收益：
 毛收益 -77.49, 净收益 -77.49
 root - INFO - 2022-07-12,策略收益：
 毛收益 933.31, 净收益 933.31
-root - INFO - 2022-07-13,Total correlation: -0.2781304465462452
+root - INFO - 2022-07-13,Total correlation: -0.24116773470572717
+root - INFO - 2022-07-13,Total rankICIR: -4.459973282652875
 root - INFO - 2022-07-13,index mean: 1.4818953618801955
 root - INFO - 2022-07-13,Number of Long: 34, List length: 34, close long: 2, new long: 2
 root - INFO - 2022-07-13,卖出:113056
@@ -2726,7 +2832,8 @@ root - INFO - 2022-07-13,买入:123126
 价格:114.15,                成本:14611.20,                手续费:0.00
 root - INFO - 2022-07-13,策略收益：
 毛收益 -40.88, 净收益 -40.88
-root - INFO - 2022-07-14,Total correlation: 0.2537827640834622
+root - INFO - 2022-07-14,Total correlation: 0.25483227489394983
+root - INFO - 2022-07-14,Total rankICIR: 4.712674931294112
 root - INFO - 2022-07-14,index mean: 1.4598367500877152
 root - INFO - 2022-07-14,Number of Long: 34, List length: 34, close long: 2, new long: 2
 root - INFO - 2022-07-14,买入:110058
@@ -2741,7 +2848,8 @@ root - INFO - 2022-07-14,策略收益：
 毛收益 -273.79, 净收益 -273.79
 root - INFO - 2022-07-14,策略收益：
 毛收益 149.47, 净收益 149.47
-root - INFO - 2022-07-15,Total correlation: 0.0719728033601629
+root - INFO - 2022-07-15,Total correlation: 0.06331451946641996
+root - INFO - 2022-07-15,Total rankICIR: 1.170890731170153
 root - INFO - 2022-07-15,index mean: 1.4625224410131146
 root - INFO - 2022-07-15,Number of Long: 34, List length: 34, close long: 1, new long: 1
 root - INFO - 2022-07-15,买入:113632
@@ -2756,7 +2864,8 @@ root - INFO - 2022-07-15,策略收益：
 毛收益 47.54, 净收益 47.54
 root - INFO - 2022-07-15,策略收益：
 毛收益 -67.94, 净收益 -67.94
-root - INFO - 2022-07-18,Total correlation: 0.017380983818948537
+root - INFO - 2022-07-18,Total correlation: 0.0008680207911003794
+root - INFO - 2022-07-18,Total rankICIR: 0.01605251855858216
 root - INFO - 2022-07-18,index mean: 1.4583230795734587
 root - INFO - 2022-07-18,Number of Long: 34, List length: 34, close long: 3, new long: 3
 root - INFO - 2022-07-18,买入:110067
@@ -2765,7 +2874,8 @@ root - INFO - 2022-07-18,卖出:127047
 价格:103.35,                成本: 14930.91,                手续费0.00
 root - INFO - 2022-07-18,策略收益：
 毛收益 -359.13, 净收益 -359.13
-root - INFO - 2022-07-19,Total correlation: 0.34733204543599033
+root - INFO - 2022-07-19,Total correlation: 0.28610206103773905
+root - INFO - 2022-07-19,Total rankICIR: 5.298684321622158
 root - INFO - 2022-07-19,index mean: 1.4469454695731727
 root - INFO - 2022-07-19,Number of Long: 34, List length: 34, close long: 3, new long: 3
 root - INFO - 2022-07-19,买入:110045
@@ -2786,7 +2896,8 @@ root - INFO - 2022-07-19,策略收益：
 毛收益 231.00, 净收益 231.00
 root - INFO - 2022-07-19,策略收益：
 毛收益 395.49, 净收益 395.49
-root - INFO - 2022-07-20,Total correlation: 0.08626217934232623
+root - INFO - 2022-07-20,Total correlation: 0.04549044657205424
+root - INFO - 2022-07-20,Total rankICIR: 0.8424948606124836
 root - INFO - 2022-07-20,index mean: 1.4590338413837582
 root - INFO - 2022-07-20,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-07-20,卖出:113623
@@ -2807,7 +2918,8 @@ root - INFO - 2022-07-20,策略收益：
 毛收益 147.32, 净收益 147.32
 root - INFO - 2022-07-20,策略收益：
 毛收益 -99.79, 净收益 -99.79
-root - INFO - 2022-07-21,Total correlation: 0.08276556779804749
+root - INFO - 2022-07-21,Total correlation: 0.05710199799451166
+root - INFO - 2022-07-21,Total rankICIR: 1.057543802408708
 root - INFO - 2022-07-21,index mean: 1.459965062424016
 root - INFO - 2022-07-21,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-07-21,卖出:110058
@@ -2834,7 +2946,8 @@ root - INFO - 2022-07-21,策略收益：
 毛收益 -54.61, 净收益 -54.61
 root - INFO - 2022-07-21,策略收益：
 毛收益 -4.48, 净收益 -4.48
-root - INFO - 2022-07-22,Total correlation: -0.12858121403589093
+root - INFO - 2022-07-22,Total correlation: -0.11369727117984804
+root - INFO - 2022-07-22,Total rankICIR: -2.105702930019845
 root - INFO - 2022-07-22,index mean: 1.4629352434708398
 root - INFO - 2022-07-22,Number of Long: 34, List length: 34, close long: 3, new long: 3
 root - INFO - 2022-07-22,卖出:110067
@@ -2861,7 +2974,8 @@ root - INFO - 2022-07-22,策略收益：
 毛收益 254.19, 净收益 254.19
 root - INFO - 2022-07-22,策略收益：
 毛收益 -24.18, 净收益 -24.18
-root - INFO - 2022-07-25,Total correlation: -0.1803492762673726
+root - INFO - 2022-07-25,Total correlation: -0.146687316297388
+root - INFO - 2022-07-25,Total rankICIR: -2.7166871158725243
 root - INFO - 2022-07-25,index mean: 1.4646960823622308
 root - INFO - 2022-07-25,Number of Long: 34, List length: 34, close long: 3, new long: 3
 root - INFO - 2022-07-25,买入:110073
@@ -2882,7 +2996,8 @@ root - INFO - 2022-07-25,策略收益：
 毛收益 -71.81, 净收益 -71.81
 root - INFO - 2022-07-25,策略收益：
 毛收益 0.72, 净收益 0.72
-root - INFO - 2022-07-26,Total correlation: -0.17463157453711245
+root - INFO - 2022-07-26,Total correlation: -0.14650383671566194
+root - INFO - 2022-07-26,Total rankICIR: -2.7132890264651874
 root - INFO - 2022-07-26,index mean: 1.4540764065179848
 root - INFO - 2022-07-26,Number of Long: 34, List length: 34, close long: 2, new long: 2
 root - INFO - 2022-07-26,买入:113594
@@ -2903,7 +3018,8 @@ root - INFO - 2022-07-26,策略收益：
 毛收益 -100.82, 净收益 -100.82
 root - INFO - 2022-07-26,策略收益：
 毛收益 86.18, 净收益 86.18
-root - INFO - 2022-07-27,Total correlation: 0.30355942686073684
+root - INFO - 2022-07-27,Total correlation: 0.27086552403790676
+root - INFO - 2022-07-27,Total rankICIR: 5.016499707418425
 root - INFO - 2022-07-27,index mean: 1.448481233551028
 root - INFO - 2022-07-27,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-07-27,卖出:110073
@@ -2918,7 +3034,8 @@ root - INFO - 2022-07-27,策略收益：
 毛收益 5.60, 净收益 5.60
 root - INFO - 2022-07-27,策略收益：
 毛收益 -73.60, 净收益 -73.60
-root - INFO - 2022-07-28,Total correlation: 0.2674806746072619
+root - INFO - 2022-07-28,Total correlation: 0.22749594679627397
+root - INFO - 2022-07-28,Total rankICIR: 4.213283896486856
 root - INFO - 2022-07-28,index mean: 1.4534844270796996
 root - INFO - 2022-07-28,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-07-28,买入:113054
@@ -2945,7 +3062,8 @@ root - INFO - 2022-07-28,策略收益：
 毛收益 91.74, 净收益 91.74
 root - INFO - 2022-07-28,策略收益：
 毛收益 192.29, 净收益 192.29
-root - INFO - 2022-07-29,Total correlation: -0.014139558084787462
+root - INFO - 2022-07-29,Total correlation: -0.033908634576705746
+root - INFO - 2022-07-29,Total rankICIR: -0.6279967007141054
 root - INFO - 2022-07-29,index mean: 1.4415162846655591
 root - INFO - 2022-07-29,Number of Long: 34, List length: 34, close long: 2, new long: 2
 root - INFO - 2022-07-29,买入:113058
@@ -2972,7 +3090,8 @@ root - INFO - 2022-07-29,策略收益：
 毛收益 226.66, 净收益 226.66
 root - INFO - 2022-07-29,策略收益：
 毛收益 347.98, 净收益 347.98
-root - INFO - 2022-08-01,Total correlation: -0.18115774693955244
+root - INFO - 2022-08-01,Total correlation: -0.15349806647610958
+root - INFO - 2022-08-01,Total rankICIR: -2.8428239743753267
 root - INFO - 2022-08-01,index mean: 1.43007525054431
 root - INFO - 2022-08-01,Number of Long: 34, List length: 34, close long: 6, new long: 6
 root - INFO - 2022-08-01,卖出:113054
@@ -2987,7 +3106,8 @@ root - INFO - 2022-08-01,策略收益：
 毛收益 -65.00, 净收益 -65.00
 root - INFO - 2022-08-01,策略收益：
 毛收益 343.63, 净收益 343.63
-root - INFO - 2022-08-02,Total correlation: -0.23056088832776758
+root - INFO - 2022-08-02,Total correlation: -0.1966376497153823
+root - INFO - 2022-08-02,Total rankICIR: -3.64708509062275
 root - INFO - 2022-08-02,index mean: 1.4285402658829585
 root - INFO - 2022-08-02,Number of Long: 34, List length: 34, close long: 6, new long: 6
 root - INFO - 2022-08-02,买入:110060
@@ -3026,7 +3146,8 @@ root - INFO - 2022-08-02,策略收益：
 毛收益 132.75, 净收益 132.75
 root - INFO - 2022-08-02,策略收益：
 毛收益 -199.25, 净收益 -199.25
-root - INFO - 2022-08-03,Total correlation: 0.017474709270829107
+root - INFO - 2022-08-03,Total correlation: -0.015878158283391355
+root - INFO - 2022-08-03,Total rankICIR: -0.2944959646625328
 root - INFO - 2022-08-03,index mean: 1.4406317117342866
 root - INFO - 2022-08-03,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-08-03,卖出:110045
@@ -3065,7 +3186,8 @@ root - INFO - 2022-08-03,策略收益：
 毛收益 0.25, 净收益 0.25
 root - INFO - 2022-08-03,策略收益：
 毛收益 -66.69, 净收益 -66.69
-root - INFO - 2022-08-04,Total correlation: -0.267104933037387
+root - INFO - 2022-08-04,Total correlation: -0.24698093017360054
+root - INFO - 2022-08-04,Total rankICIR: -4.58081384418527
 root - INFO - 2022-08-04,index mean: 1.447649744478253
 root - INFO - 2022-08-04,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-08-04,买入:113021
@@ -3092,7 +3214,8 @@ root - INFO - 2022-08-04,策略收益：
 毛收益 24.79, 净收益 24.79
 root - INFO - 2022-08-04,策略收益：
 毛收益 -453.10, 净收益 -453.10
-root - INFO - 2022-08-05,Total correlation: 0.08276972130561876
+root - INFO - 2022-08-05,Total correlation: 0.06784689386722154
+root - INFO - 2022-08-05,Total rankICIR: 1.260200122029576
 root - INFO - 2022-08-05,index mean: 1.4441949365073599
 root - INFO - 2022-08-05,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-08-05,买入:110059
@@ -3119,7 +3242,8 @@ root - INFO - 2022-08-05,策略收益：
 毛收益 103.32, 净收益 103.32
 root - INFO - 2022-08-05,策略收益：
 毛收益 12.00, 净收益 12.00
-root - INFO - 2022-08-08,Total correlation: -0.18411887438560998
+root - INFO - 2022-08-08,Total correlation: -0.20253770692176148
+root - INFO - 2022-08-08,Total rankICIR: -3.761970938240784
 root - INFO - 2022-08-08,index mean: 1.4429645082545668
 root - INFO - 2022-08-08,Number of Long: 34, List length: 34, close long: 1, new long: 1
 root - INFO - 2022-08-08,卖出:110059
@@ -3146,7 +3270,8 @@ root - INFO - 2022-08-08,策略收益：
 毛收益 -130.94, 净收益 -130.94
 root - INFO - 2022-08-08,策略收益：
 毛收益 304.27, 净收益 304.27
-root - INFO - 2022-08-09,Total correlation: 0.28529676432172296
+root - INFO - 2022-08-09,Total correlation: 0.27809517408253803
+root - INFO - 2022-08-09,Total rankICIR: 5.165388602763495
 root - INFO - 2022-08-09,index mean: 1.4524543956129905
 root - INFO - 2022-08-09,Number of Long: 34, List length: 34, close long: 3, new long: 3
 root - INFO - 2022-08-09,卖出:113044
@@ -3155,7 +3280,8 @@ root - INFO - 2022-08-09,买入:127026
 价格:123.53,                成本:14823.60,                手续费:0.00
 root - INFO - 2022-08-09,策略收益：
 毛收益 94.80, 净收益 94.80
-root - INFO - 2022-08-10,Total correlation: -0.03284128216999846
+root - INFO - 2022-08-10,Total correlation: -0.05109499289876503
+root - INFO - 2022-08-10,Total rankICIR: -0.9490473714557525
 root - INFO - 2022-08-10,index mean: 1.4567359792725392
 root - INFO - 2022-08-10,Number of Long: 34, List length: 34, close long: 2, new long: 2
 root - INFO - 2022-08-10,买入:110073
@@ -3176,7 +3302,8 @@ root - INFO - 2022-08-10,策略收益：
 毛收益 1343.78, 净收益 1343.78
 root - INFO - 2022-08-10,策略收益：
 毛收益 875.00, 净收益 875.00
-root - INFO - 2022-08-11,Total correlation: 0.1416411930922439
+root - INFO - 2022-08-11,Total correlation: 0.13838319783514616
+root - INFO - 2022-08-11,Total rankICIR: 2.5703538195865203
 root - INFO - 2022-08-11,index mean: 1.4579365317747692
 root - INFO - 2022-08-11,Number of Long: 34, List length: 34, close long: 5, new long: 5
 root - INFO - 2022-08-11,卖出:110083
@@ -3191,7 +3318,8 @@ root - INFO - 2022-08-11,策略收益：
 毛收益 27.28, 净收益 27.28
 root - INFO - 2022-08-11,策略收益：
 毛收益 -13.30, 净收益 -13.30
-root - INFO - 2022-08-12,Total correlation: -0.23404404448803015
+root - INFO - 2022-08-12,Total correlation: -0.25366908256820936
+root - INFO - 2022-08-12,Total rankICIR: -4.718517690339305
 root - INFO - 2022-08-12,index mean: 1.4516005100777625
 root - INFO - 2022-08-12,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-08-12,买入:110059
@@ -3224,7 +3352,8 @@ root - INFO - 2022-08-12,策略收益：
 毛收益 -96.62, 净收益 -96.62
 root - INFO - 2022-08-12,策略收益：
 毛收益 127.64, 净收益 127.64
-root - INFO - 2022-08-15,Total correlation: -0.3940638438066963
+root - INFO - 2022-08-15,Total correlation: -0.3979835056235438
+root - INFO - 2022-08-15,Total rankICIR: -7.402921131482372
 root - INFO - 2022-08-15,index mean: 1.4510887476412155
 root - INFO - 2022-08-15,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-08-15,卖出:110059
@@ -3251,7 +3380,8 @@ root - INFO - 2022-08-15,策略收益：
 毛收益 479.16, 净收益 479.16
 root - INFO - 2022-08-15,策略收益：
 毛收益 63.60, 净收益 63.60
-root - INFO - 2022-08-16,Total correlation: 0.08018673195662387
+root - INFO - 2022-08-16,Total correlation: 0.06054975044502869
+root - INFO - 2022-08-16,Total rankICIR: 1.1279168767234011
 root - INFO - 2022-08-16,index mean: 1.4500542662386113
 root - INFO - 2022-08-16,Number of Long: 34, List length: 34, close long: 4, new long: 4
 root - INFO - 2022-08-16,买入:110083
@@ -3278,7 +3408,8 @@ root - INFO - 2022-08-16,策略收益：
 毛收益 819.55, 净收益 819.55
 root - INFO - 2022-08-16,策略收益：
 毛收益 -89.27, 净收益 -89.27
-root - INFO - 2022-08-17,Total correlation: 0.08331472808363062
+root - INFO - 2022-08-17,Total correlation: 0.07475715273758946
+root - INFO - 2022-08-17,Total rankICIR: 1.3965788656626292
 root - INFO - 2022-08-17,index mean: 1.4450678783613158
 root - INFO - 2022-08-17,Number of Long: 34, List length: 35, close long: 4, new long: 5
 root - INFO - 2022-08-17,卖出:110083
@@ -3305,7 +3436,8 @@ root - INFO - 2022-08-17,策略收益：
 毛收益 56.85, 净收益 56.85
 root - INFO - 2022-08-17,策略收益：
 毛收益 -18.21, 净收益 -18.21
-root - INFO - 2022-08-18,Total correlation: -0.09092847152680357
+root - INFO - 2022-08-18,Total correlation: -0.07650458606549256
+root - INFO - 2022-08-18,Total rankICIR: -1.4353532647214169
 root - INFO - 2022-08-18,index mean: 1.4408219250602743
 root - INFO - 2022-08-18,Number of Long: 35, List length: 35, close long: 5, new long: 5
 root - INFO - 2022-08-18,买入:110064
@@ -3334,7 +3466,8 @@ root - INFO - 2022-08-18,策略收益：
 毛收益 -110.11, 净收益 -110.11
 root - INFO - 2022-08-18,策略收益：
 毛收益 -31.23, 净收益 -31.23
-root - INFO - 2022-08-19,Total correlation: -0.1137950096081175
+root - INFO - 2022-08-19,Total correlation: -0.08093106924551682
+root - INFO - 2022-08-19,Total rankICIR: -1.5184014505941337
 root - INFO - 2022-08-19,index mean: 1.4250634184296977
 root - INFO - 2022-08-19,Number of Long: 35, List length: 35, close long: 4, new long: 4
 root - INFO - 2022-08-19,卖出:110083
@@ -3367,7 +3500,8 @@ root - INFO - 2022-08-19,策略收益：
 毛收益 266.87, 净收益 266.87
 root - INFO - 2022-08-19,策略收益：
 毛收益 -323.56, 净收益 -323.56
-root - INFO - 2022-08-22,Total correlation: -0.45357555166845537
+root - INFO - 2022-08-22,Total correlation: -0.43495468076840815
+root - INFO - 2022-08-22,Total rankICIR: -8.172056518146995
 root - INFO - 2022-08-22,index mean: 1.4191553171037719
 root - INFO - 2022-08-22,Number of Long: 35, List length: 35, close long: 3, new long: 3
 root - INFO - 2022-08-22,买入:110059
@@ -3394,7 +3528,8 @@ root - INFO - 2022-08-22,策略收益：
 毛收益 -251.68, 净收益 -251.68
 root - INFO - 2022-08-22,策略收益：
 毛收益 56.41, 净收益 56.41
-root - INFO - 2022-08-23,Total correlation: 0.24723405869902482
+root - INFO - 2022-08-23,Total correlation: 0.19769027966319946
+root - INFO - 2022-08-23,Total rankICIR: 3.714263140338854
 root - INFO - 2022-08-23,index mean: 1.4250087503460926
 root - INFO - 2022-08-23,Number of Long: 35, List length: 35, close long: 4, new long: 4
 root - INFO - 2022-08-23,买入:113030
@@ -3415,7 +3550,8 @@ root - INFO - 2022-08-23,策略收益：
 毛收益 284.83, 净收益 284.83
 root - INFO - 2022-08-23,策略收益：
 毛收益 639.36, 净收益 639.36
-root - INFO - 2022-08-24,Total correlation: -0.23108605080125044
+root - INFO - 2022-08-24,Total correlation: -0.22769671275842507
+root - INFO - 2022-08-24,Total rankICIR: -4.2840880852698895
 root - INFO - 2022-08-24,index mean: 1.422282293574858
 root - INFO - 2022-08-24,Number of Long: 35, List length: 35, close long: 3, new long: 3
 root - INFO - 2022-08-24,买入:110063
@@ -3442,7 +3578,8 @@ root - INFO - 2022-08-24,策略收益：
 毛收益 -223.52, 净收益 -223.52
 root - INFO - 2022-08-24,策略收益：
 毛收益 -262.11, 净收益 -262.11
-root - INFO - 2022-08-25,Total correlation: -0.5536990765753489
+root - INFO - 2022-08-25,Total correlation: -0.533184336442505
+root - INFO - 2022-08-25,Total rankICIR: -10.07422138808084
 root - INFO - 2022-08-25,index mean: 1.4024780179252907
 root - INFO - 2022-08-25,Number of Long: 35, List length: 35, close long: 3, new long: 3
 root - INFO - 2022-08-25,卖出:113623
@@ -3463,7 +3600,8 @@ root - INFO - 2022-08-25,策略收益：
 毛收益 -340.83, 净收益 -340.83
 root - INFO - 2022-08-25,策略收益：
 毛收益 239.36, 净收益 239.36
-root - INFO - 2022-08-26,Total correlation: -0.17527595022522807
+root - INFO - 2022-08-26,Total correlation: -0.18068149989265686
+root - INFO - 2022-08-26,Total rankICIR: -3.413876414288496
 root - INFO - 2022-08-26,index mean: 1.3999329770861262
 root - INFO - 2022-08-26,Number of Long: 35, List length: 35, close long: 3, new long: 3
 root - INFO - 2022-08-26,买入:113052
@@ -3484,7 +3622,8 @@ root - INFO - 2022-08-26,策略收益：
 毛收益 -131.06, 净收益 -131.06
 root - INFO - 2022-08-26,策略收益：
 毛收益 -787.75, 净收益 -787.75
-root - INFO - 2022-08-29,Total correlation: -0.15710992940577148
+root - INFO - 2022-08-29,Total correlation: -0.1361884154829467
+root - INFO - 2022-08-29,Total rankICIR: -2.5732043390871215
 root - INFO - 2022-08-29,index mean: 1.4056331005898333
 root - INFO - 2022-08-29,Number of Long: 35, List length: 35, close long: 5, new long: 5
 root - INFO - 2022-08-29,买入:113563
@@ -3505,7 +3644,8 @@ root - INFO - 2022-08-29,策略收益：
 毛收益 -488.54, 净收益 -488.54
 root - INFO - 2022-08-29,策略收益：
 毛收益 -354.39, 净收益 -354.39
-root - INFO - 2022-08-30,Total correlation: 0.061076990243462366
+root - INFO - 2022-08-30,Total correlation: 0.06192273177614209
+root - INFO - 2022-08-30,Total rankICIR: 1.1732682860763743
 root - INFO - 2022-08-30,index mean: 1.405650696911832
 root - INFO - 2022-08-30,Number of Long: 35, List length: 36, close long: 4, new long: 5
 root - INFO - 2022-08-30,卖出:110059
@@ -3538,7 +3678,8 @@ root - INFO - 2022-08-30,策略收益：
 毛收益 175.09, 净收益 175.09
 root - INFO - 2022-08-30,策略收益：
 毛收益 1274.39, 净收益 1274.39
-root - INFO - 2022-08-31,Total correlation: -0.3320161986275898
+root - INFO - 2022-08-31,Total correlation: -0.3184448439674174
+root - INFO - 2022-08-31,Total rankICIR: -6.042066096443816
 root - INFO - 2022-08-31,index mean: 1.400539078219709
 root - INFO - 2022-08-31,Number of Long: 36, List length: 36, close long: 5, new long: 5
 root - INFO - 2022-08-31,买入:110045
@@ -3567,7 +3708,8 @@ root - INFO - 2022-08-31,策略收益：
 毛收益 -218.44, 净收益 -218.44
 root - INFO - 2022-08-31,策略收益：
 毛收益 -21.17, 净收益 -21.17
-root - INFO - 2022-09-01,Total correlation: -0.4734633583799173
+root - INFO - 2022-09-01,Total correlation: -0.4660241719972119
+root - INFO - 2022-09-01,Total rankICIR: -8.842186969231498
 root - INFO - 2022-09-01,index mean: 1.3807769360979638
 root - INFO - 2022-09-01,Number of Long: 36, List length: 36, close long: 8, new long: 8
 root - INFO - 2022-09-01,买入:113024
@@ -3600,7 +3742,8 @@ root - INFO - 2022-09-01,策略收益：
 毛收益 -195.00, 净收益 -195.00
 root - INFO - 2022-09-01,策略收益：
 毛收益 51.74, 净收益 51.74
-root - INFO - 2022-09-02,Total correlation: -0.20548210095817263
+root - INFO - 2022-09-02,Total correlation: -0.1951023284644686
+root - INFO - 2022-09-02,Total rankICIR: -3.701806408500134
 root - INFO - 2022-09-02,index mean: 1.3725486682774897
 root - INFO - 2022-09-02,Number of Long: 36, List length: 36, close long: 4, new long: 4
 root - INFO - 2022-09-02,卖出:110064
@@ -3651,7 +3794,8 @@ root - INFO - 2022-09-02,策略收益：
 毛收益 -758.74, 净收益 -758.74
 root - INFO - 2022-09-02,策略收益：
 毛收益 -570.36, 净收益 -570.36
-root - INFO - 2022-09-05,Total correlation: 0.3745907964935288
+root - INFO - 2022-09-05,Total correlation: 0.3638934971206053
+root - INFO - 2022-09-05,Total rankICIR: 6.90439365975022
 root - INFO - 2022-09-05,index mean: 1.3715289775544215
 root - INFO - 2022-09-05,Number of Long: 36, List length: 36, close long: 6, new long: 6
 root - INFO - 2022-09-05,买入:118004
@@ -3678,7 +3822,8 @@ root - INFO - 2022-09-05,策略收益：
 毛收益 -48.06, 净收益 -48.06
 root - INFO - 2022-09-05,策略收益：
 毛收益 15.12, 净收益 15.12
-root - INFO - 2022-09-06,Total correlation: -0.011444123152961684
+root - INFO - 2022-09-06,Total correlation: -0.028333551956419414
+root - INFO - 2022-09-06,Total rankICIR: -0.5375913503100311
 root - INFO - 2022-09-06,index mean: 1.355952872301027
 root - INFO - 2022-09-06,Number of Long: 36, List length: 36, close long: 4, new long: 4
 root - INFO - 2022-09-06,买入:110070
@@ -3717,7 +3862,8 @@ root - INFO - 2022-09-06,策略收益：
 毛收益 154.58, 净收益 154.58
 root - INFO - 2022-09-06,策略收益：
 毛收益 264.08, 净收益 264.08
-root - INFO - 2022-09-07,Total correlation: 0.39876243002085954
+root - INFO - 2022-09-07,Total correlation: 0.3808866837964284
+root - INFO - 2022-09-07,Total rankICIR: 7.226816707350379
 root - INFO - 2022-09-07,index mean: 1.3429773035555903
 root - INFO - 2022-09-07,Number of Long: 36, List length: 36, close long: 4, new long: 4
 root - INFO - 2022-09-07,卖出:113017
@@ -3744,7 +3890,8 @@ root - INFO - 2022-09-07,策略收益：
 毛收益 160.01, 净收益 160.01
 root - INFO - 2022-09-07,策略收益：
 毛收益 -132.13, 净收益 -132.13
-root - INFO - 2022-09-08,Total correlation: 0.16740485476804098
+root - INFO - 2022-09-08,Total correlation: 0.17250417106139046
+root - INFO - 2022-09-08,Total rankICIR: 3.2821156942062597
 root - INFO - 2022-09-08,index mean: 4.084002249649646
 root - INFO - 2022-09-08,Number of Long: 36, List length: 36, close long: 6, new long: 6
 root - INFO - 2022-09-08,买入:113057
@@ -3771,7 +3918,8 @@ root - INFO - 2022-09-08,策略收益：
 毛收益 -7.24, 净收益 -7.24
 root - INFO - 2022-09-08,策略收益：
 毛收益 177.60, 净收益 177.60
-root - INFO - 2022-09-09,Total correlation: -0.3737860812290966
+root - INFO - 2022-09-09,Total correlation: -0.3551439577714
+root - INFO - 2022-09-09,Total rankICIR: -6.785015786323558
 root - INFO - 2022-09-09,index mean: 1.3514376958691465
 root - INFO - 2022-09-09,Number of Long: 36, List length: 36, close long: 4, new long: 4
 root - INFO - 2022-09-09,卖出:110070
@@ -3810,7 +3958,8 @@ root - INFO - 2022-09-09,策略收益：
 毛收益 -225.35, 净收益 -225.35
 root - INFO - 2022-09-09,策略收益：
 毛收益 -29.62, 净收益 -29.62
-root - INFO - 2022-09-13,Total correlation: 0.13635121720298918
+root - INFO - 2022-09-13,Total correlation: 0.11424524274288479
+root - INFO - 2022-09-13,Total rankICIR: 2.1826522979219445
 root - INFO - 2022-09-13,index mean: 1.346455774177856
 root - INFO - 2022-09-13,Number of Long: 36, List length: 36, close long: 4, new long: 4
 root - INFO - 2022-09-13,卖出:110073
@@ -3837,7 +3986,8 @@ root - INFO - 2022-09-13,策略收益：
 毛收益 398.03, 净收益 398.03
 root - INFO - 2022-09-13,策略收益：
 毛收益 -16.65, 净收益 -16.65
-root - INFO - 2022-09-14,Total correlation: -0.3308152634302204
+root - INFO - 2022-09-14,Total correlation: -0.3065240620596561
+root - INFO - 2022-09-14,Total rankICIR: -5.856133983001622
 root - INFO - 2022-09-14,index mean: 1.340501985632788
 root - INFO - 2022-09-14,Number of Long: 36, List length: 36, close long: 4, new long: 4
 root - INFO - 2022-09-14,买入:113017
@@ -3864,7 +4014,8 @@ root - INFO - 2022-09-14,策略收益：
 毛收益 314.60, 净收益 314.60
 root - INFO - 2022-09-14,策略收益：
 毛收益 -3.51, 净收益 -3.51
-root - INFO - 2022-09-15,Total correlation: -0.1517329548039474
+root - INFO - 2022-09-15,Total correlation: -0.16331383612431627
+root - INFO - 2022-09-15,Total rankICIR: -3.1243776531476235
 root - INFO - 2022-09-15,index mean: 1.3286931256820098
 root - INFO - 2022-09-15,Number of Long: 36, List length: 36, close long: 3, new long: 3
 root - INFO - 2022-09-15,卖出:113017
@@ -3891,7 +4042,8 @@ root - INFO - 2022-09-15,策略收益：
 毛收益 -274.66, 净收益 -274.66
 root - INFO - 2022-09-15,策略收益：
 毛收益 -26.11, 净收益 -26.11
-root - INFO - 2022-09-16,Total correlation: -0.4511127613478524
+root - INFO - 2022-09-16,Total correlation: -0.4212797702859385
+root - INFO - 2022-09-16,Total rankICIR: -8.070559377189882
 root - INFO - 2022-09-16,index mean: 1.3188952858181664
 root - INFO - 2022-09-16,Number of Long: 36, List length: 36, close long: 4, new long: 4
 root - INFO - 2022-09-16,卖出:113043
@@ -3912,7 +4064,8 @@ root - INFO - 2022-09-16,策略收益：
 毛收益 -246.62, 净收益 -246.62
 root - INFO - 2022-09-16,策略收益：
 毛收益 110.57, 净收益 110.57
-root - INFO - 2022-09-19,Total correlation: -0.23104966691109652
+root - INFO - 2022-09-19,Total correlation: -0.1879395262390246
+root - INFO - 2022-09-19,Total rankICIR: -3.600403372807315
 root - INFO - 2022-09-19,index mean: 1.3179530932846164
 root - INFO - 2022-09-19,Number of Long: 36, List length: 36, close long: 5, new long: 5
 root - INFO - 2022-09-19,买入:110075
@@ -3939,7 +4092,8 @@ root - INFO - 2022-09-19,策略收益：
 毛收益 2.93, 净收益 2.93
 root - INFO - 2022-09-19,策略收益：
 毛收益 -193.99, 净收益 -193.99
-root - INFO - 2022-09-20,Total correlation: 0.014071609318950053
+root - INFO - 2022-09-20,Total correlation: 0.016685489055177596
+root - INFO - 2022-09-20,Total rankICIR: 0.3196479861016422
 root - INFO - 2022-09-20,index mean: 1.3128960498634321
 root - INFO - 2022-09-20,Number of Long: 36, List length: 36, close long: 4, new long: 4
 root - INFO - 2022-09-20,卖出:110063
@@ -3972,7 +4126,8 @@ root - INFO - 2022-09-20,策略收益：
 毛收益 -189.10, 净收益 -189.10
 root - INFO - 2022-09-20,策略收益：
 毛收益 -348.04, 净收益 -348.04
-root - INFO - 2022-09-21,Total correlation: 0.09272565530054343
+root - INFO - 2022-09-21,Total correlation: 0.1296144062613473
+root - INFO - 2022-09-21,Total rankICIR: 2.4864354216945235
 root - INFO - 2022-09-21,index mean: 1.3048842051096565
 root - INFO - 2022-09-21,Number of Long: 36, List length: 36, close long: 4, new long: 4
 root - INFO - 2022-09-21,买入:123093
@@ -3999,7 +4154,8 @@ root - INFO - 2022-09-21,策略收益：
 毛收益 -39.03, 净收益 -39.03
 root - INFO - 2022-09-21,策略收益：
 毛收益 -365.75, 净收益 -365.75
-root - INFO - 2022-09-22,Total correlation: 0.27297040627422103
+root - INFO - 2022-09-22,Total correlation: 0.23157308952642994
+root - INFO - 2022-09-22,Total rankICIR: 4.448373786851671
 root - INFO - 2022-09-22,index mean: 1.3056510481072858
 root - INFO - 2022-09-22,Number of Long: 36, List length: 37, close long: 5, new long: 6
 root - INFO - 2022-09-22,买入:113043
@@ -4026,7 +4182,8 @@ root - INFO - 2022-09-22,策略收益：
 毛收益 21.35, 净收益 21.35
 root - INFO - 2022-09-22,策略收益：
 毛收益 62.83, 净收益 62.83
-root - INFO - 2022-09-23,Total correlation: -0.13670394296870775
+root - INFO - 2022-09-23,Total correlation: -0.11863901242640312
+root - INFO - 2022-09-23,Total rankICIR: -2.282066968719263
 root - INFO - 2022-09-23,index mean: 1.2933722442647313
 root - INFO - 2022-09-23,Number of Long: 37, List length: 37, close long: 4, new long: 4
 root - INFO - 2022-09-23,买入:110076
@@ -4061,7 +4218,8 @@ root - INFO - 2022-09-23,策略收益：
 毛收益 144.59, 净收益 144.59
 root - INFO - 2022-09-23,策略收益：
 毛收益 -20.38, 净收益 -20.38
-root - INFO - 2022-09-26,Total correlation: -0.28515853750271775
+root - INFO - 2022-09-26,Total correlation: -0.2563518565953137
+root - INFO - 2022-09-26,Total rankICIR: -4.937685469420835
 root - INFO - 2022-09-26,index mean: 1.2891197019461387
 root - INFO - 2022-09-26,Number of Long: 37, List length: 37, close long: 2, new long: 2
 root - INFO - 2022-09-26,买入:110058
@@ -4088,7 +4246,8 @@ root - INFO - 2022-09-26,策略收益：
 毛收益 455.64, 净收益 455.64
 root - INFO - 2022-09-26,策略收益：
 毛收益 -1255.77, 净收益 -1255.77
-root - INFO - 2022-09-27,Total correlation: 0.03295203932763852
+root - INFO - 2022-09-27,Total correlation: 0.06972444172589724
+root - INFO - 2022-09-27,Total rankICIR: 1.3447963310195157
 root - INFO - 2022-09-27,index mean: 1.2775417448547821
 root - INFO - 2022-09-27,Number of Long: 37, List length: 37, close long: 3, new long: 3
 root - INFO - 2022-09-27,卖出:113046
@@ -4103,7 +4262,8 @@ root - INFO - 2022-09-27,策略收益：
 毛收益 -569.74, 净收益 -569.74
 root - INFO - 2022-09-27,策略收益：
 毛收益 56.01, 净收益 56.01
-root - INFO - 2022-09-28,Total correlation: -0.22546611470212027
+root - INFO - 2022-09-28,Total correlation: -0.22288725097456266
+root - INFO - 2022-09-28,Total rankICIR: -4.298893614952938
 root - INFO - 2022-09-28,index mean: 1.273528224355666
 root - INFO - 2022-09-28,Number of Long: 37, List length: 37, close long: 4, new long: 4
 root - INFO - 2022-09-28,买入:110059
@@ -4124,7 +4284,8 @@ root - INFO - 2022-09-28,策略收益：
 毛收益 -91.99, 净收益 -91.99
 root - INFO - 2022-09-28,策略收益：
 毛收益 -313.24, 净收益 -313.24
-root - INFO - 2022-09-29,Total correlation: -0.41206669763187825
+root - INFO - 2022-09-29,Total correlation: -0.3941233817436308
+root - INFO - 2022-09-29,Total rankICIR: -7.611786816103979
 root - INFO - 2022-09-29,index mean: 1.2818686397842185
 root - INFO - 2022-09-29,Number of Long: 37, List length: 37, close long: 4, new long: 4
 root - INFO - 2022-09-29,卖出:110058
@@ -4151,7 +4312,8 @@ root - INFO - 2022-09-29,策略收益：
 毛收益 -49.48, 净收益 -49.48
 root - INFO - 2022-09-29,策略收益：
 毛收益 -44.28, 净收益 -44.28
-root - INFO - 2022-09-30,Total correlation: -0.15460720353302776
+root - INFO - 2022-09-30,Total correlation: -0.14719308226191832
+root - INFO - 2022-09-30,Total rankICIR: -2.85038178138674
 root - INFO - 2022-09-30,index mean: 1.267417285895883
 root - INFO - 2022-09-30,Number of Long: 37, List length: 37, close long: 2, new long: 2
 root - INFO - 2022-09-30,买入:110058
@@ -4178,7 +4340,8 @@ root - INFO - 2022-09-30,策略收益：
 毛收益 -374.07, 净收益 -374.07
 root - INFO - 2022-09-30,策略收益：
 毛收益 -59.74, 净收益 -59.74
-root - INFO - 2022-10-10,Total correlation: -0.29070543223201417
+root - INFO - 2022-10-10,Total correlation: -0.29030080704328687
+root - INFO - 2022-10-10,Total rankICIR: -5.629141499581785
 root - INFO - 2022-10-10,index mean: 1.2596478093087284
 root - INFO - 2022-10-10,Number of Long: 37, List length: 37, close long: 3, new long: 3
 root - INFO - 2022-10-10,卖出:110058
@@ -4193,7 +4356,8 @@ root - INFO - 2022-10-10,策略收益：
 毛收益 -72.31, 净收益 -72.31
 root - INFO - 2022-10-10,策略收益：
 毛收益 -23.16, 净收益 -23.16
-root - INFO - 2022-10-11,Total correlation: -0.2662995478427202
+root - INFO - 2022-10-11,Total correlation: -0.2361945933743439
+root - INFO - 2022-10-11,Total rankICIR: -4.579983090925789
 root - INFO - 2022-10-11,index mean: 1.2538658475717714
 root - INFO - 2022-10-11,Number of Long: 37, List length: 37, close long: 5, new long: 5
 root - INFO - 2022-10-11,买入:110058
@@ -4214,7 +4378,8 @@ root - INFO - 2022-10-11,策略收益：
 毛收益 -25.15, 净收益 -25.15
 root - INFO - 2022-10-11,策略收益：
 毛收益 810.24, 净收益 810.24
-root - INFO - 2022-10-12,Total correlation: 0.27827950839903426
+root - INFO - 2022-10-12,Total correlation: 0.258590510865855
+root - INFO - 2022-10-12,Total rankICIR: 5.0075837103536225
 root - INFO - 2022-10-12,index mean: 1.2571941262330424
 root - INFO - 2022-10-12,Number of Long: 37, List length: 37, close long: 3, new long: 3
 root - INFO - 2022-10-12,卖出:110045
@@ -4247,7 +4412,8 @@ root - INFO - 2022-10-12,策略收益：
 毛收益 108.29, 净收益 108.29
 root - INFO - 2022-10-12,策略收益：
 毛收益 -84.91, 净收益 -84.91
-root - INFO - 2022-10-13,Total correlation: 0.403962970292208
+root - INFO - 2022-10-13,Total correlation: 0.3591705433231479
+root - INFO - 2022-10-13,Total rankICIR: 6.973830486542103
 root - INFO - 2022-10-13,index mean: 1.2565546159081054
 root - INFO - 2022-10-13,Number of Long: 37, List length: 37, close long: 4, new long: 4
 root - INFO - 2022-10-13,买入:111005
@@ -4268,7 +4434,8 @@ root - INFO - 2022-10-13,策略收益：
 毛收益 -754.92, 净收益 -754.92
 root - INFO - 2022-10-13,策略收益：
 毛收益 128.40, 净收益 128.40
-root - INFO - 2022-10-14,Total correlation: 0.08061568833909134
+root - INFO - 2022-10-14,Total correlation: 0.04756955362237828
+root - INFO - 2022-10-14,Total rankICIR: 0.9236336594130736
 root - INFO - 2022-10-14,index mean: 1.2480223911890644
 root - INFO - 2022-10-14,Number of Long: 37, List length: 37, close long: 5, new long: 5
 root - INFO - 2022-10-14,买入:110045
@@ -4295,7 +4462,8 @@ root - INFO - 2022-10-14,策略收益：
 毛收益 -18.37, 净收益 -18.37
 root - INFO - 2022-10-14,策略收益：
 毛收益 185.61, 净收益 185.61
-root - INFO - 2022-10-17,Total correlation: 0.07961052859716175
+root - INFO - 2022-10-17,Total correlation: 0.06503242416668682
+root - INFO - 2022-10-17,Total rankICIR: 1.2627012729697566
 root - INFO - 2022-10-17,index mean: 1.2480489863044495
 root - INFO - 2022-10-17,Number of Long: 37, List length: 37, close long: 3, new long: 3
 root - INFO - 2022-10-17,卖出:110072
@@ -4328,7 +4496,8 @@ root - INFO - 2022-10-17,策略收益：
 毛收益 -46.32, 净收益 -46.32
 root - INFO - 2022-10-17,策略收益：
 毛收益 136.08, 净收益 136.08
-root - INFO - 2022-10-18,Total correlation: 0.016394303281331575
+root - INFO - 2022-10-18,Total correlation: -0.004906176402874862
+root - INFO - 2022-10-18,Total rankICIR: -0.09526071446215144
 root - INFO - 2022-10-18,index mean: 1.246961229346346
 root - INFO - 2022-10-18,Number of Long: 37, List length: 37, close long: 5, new long: 5
 root - INFO - 2022-10-18,卖出:113542
@@ -4349,7 +4518,8 @@ root - INFO - 2022-10-18,策略收益：
 毛收益 187.08, 净收益 187.08
 root - INFO - 2022-10-18,策略收益：
 毛收益 110.11, 净收益 110.11
-root - INFO - 2022-10-19,Total correlation: 0.08446401194785456
+root - INFO - 2022-10-19,Total correlation: 0.09154731882418171
+root - INFO - 2022-10-19,Total rankICIR: 1.7798833048019833
 root - INFO - 2022-10-19,index mean: 1.2679205208309123
 root - INFO - 2022-10-19,Number of Long: 37, List length: 37, close long: 4, new long: 4
 root - INFO - 2022-10-19,卖出:110045
@@ -4382,7 +4552,8 @@ root - INFO - 2022-10-19,策略收益：
 毛收益 297.95, 净收益 297.95
 root - INFO - 2022-10-19,策略收益：
 毛收益 169.50, 净收益 169.50
-root - INFO - 2022-10-20,Total correlation: -0.2631601235567922
+root - INFO - 2022-10-20,Total correlation: -0.23436714036630715
+root - INFO - 2022-10-20,Total rankICIR: -4.562641286276957
 root - INFO - 2022-10-20,index mean: 1.268419983015272
 root - INFO - 2022-10-20,Number of Long: 37, List length: 37, close long: 4, new long: 4
 root - INFO - 2022-10-20,卖出:110058
@@ -4409,7 +4580,8 @@ root - INFO - 2022-10-20,策略收益：
 毛收益 -6.43, 净收益 -6.43
 root - INFO - 2022-10-20,策略收益：
 毛收益 -102.31, 净收益 -102.31
-root - INFO - 2022-10-21,Total correlation: -0.061809294958202386
+root - INFO - 2022-10-21,Total correlation: -0.08022893645723807
+root - INFO - 2022-10-21,Total rankICIR: -1.561890703883459
 root - INFO - 2022-10-21,index mean: 1.2784035108442586
 root - INFO - 2022-10-21,Number of Long: 37, List length: 38, close long: 3, new long: 4
 root - INFO - 2022-10-21,买入:110076
@@ -4436,7 +4608,8 @@ root - INFO - 2022-10-21,策略收益：
 毛收益 -221.37, 净收益 -221.37
 root - INFO - 2022-10-21,策略收益：
 毛收益 92.81, 净收益 92.81
-root - INFO - 2022-10-24,Total correlation: -0.141704040529057
+root - INFO - 2022-10-24,Total correlation: -0.12041394075844672
+root - INFO - 2022-10-24,Total rankICIR: -2.34729983364118
 root - INFO - 2022-10-24,index mean: 1.272722974601663
 root - INFO - 2022-10-24,Number of Long: 38, List length: 38, close long: 3, new long: 3
 root - INFO - 2022-10-24,卖出:110076
@@ -4459,7 +4632,8 @@ root - INFO - 2022-10-24,策略收益：
 毛收益 20.54, 净收益 20.54
 root - INFO - 2022-10-24,策略收益：
 毛收益 -348.60, 净收益 -348.60
-root - INFO - 2022-10-25,Total correlation: -0.3089457142684984
+root - INFO - 2022-10-25,Total correlation: -0.2784552695586515
+root - INFO - 2022-10-25,Total rankICIR: -5.435230027536817
 root - INFO - 2022-10-25,index mean: 1.2763984037810825
 root - INFO - 2022-10-25,Number of Long: 38, List length: 38, close long: 3, new long: 3
 root - INFO - 2022-10-25,卖出:113059
@@ -4480,7 +4654,8 @@ root - INFO - 2022-10-25,策略收益：
 毛收益 -37.18, 净收益 -37.18
 root - INFO - 2022-10-25,策略收益：
 毛收益 -273.35, 净收益 -273.35
-root - INFO - 2022-10-26,Total correlation: 0.1743090286171049
+root - INFO - 2022-10-26,Total correlation: 0.15444223371224367
+root - INFO - 2022-10-26,Total rankICIR: 3.0145921372690534
 root - INFO - 2022-10-26,index mean: 1.2739328854532272
 root - INFO - 2022-10-26,Number of Long: 38, List length: 38, close long: 4, new long: 4
 root - INFO - 2022-10-26,买入:113052
@@ -4501,7 +4676,8 @@ root - INFO - 2022-10-26,策略收益：
 毛收益 -41.81, 净收益 -41.81
 root - INFO - 2022-10-26,策略收益：
 毛收益 45.10, 净收益 45.10
-root - INFO - 2022-10-27,Total correlation: 0.14412727658373678
+root - INFO - 2022-10-27,Total correlation: 0.10956511739421936
+root - INFO - 2022-10-27,Total rankICIR: 2.1386257727337563
 root - INFO - 2022-10-27,index mean: 1.2738582136217123
 root - INFO - 2022-10-27,Number of Long: 38, List length: 38, close long: 5, new long: 5
 root - INFO - 2022-10-27,买入:110070
@@ -4528,7 +4704,8 @@ root - INFO - 2022-10-27,策略收益：
 毛收益 -83.54, 净收益 -83.54
 root - INFO - 2022-10-27,策略收益：
 毛收益 142.58, 净收益 142.58
-root - INFO - 2022-10-28,Total correlation: -0.2356943949951668
+root - INFO - 2022-10-28,Total correlation: -0.20068976291162832
+root - INFO - 2022-10-28,Total rankICIR: -3.9173078941024344
 root - INFO - 2022-10-28,index mean: 1.2725004746719415
 root - INFO - 2022-10-28,Number of Long: 38, List length: 38, close long: 6, new long: 6
 root - INFO - 2022-10-28,买入:113043
@@ -4561,7 +4738,8 @@ root - INFO - 2022-10-28,策略收益：
 毛收益 -258.88, 净收益 -258.88
 root - INFO - 2022-10-28,策略收益：
 毛收益 -154.25, 净收益 -154.25
-root - INFO - 2022-10-31,Total correlation: -0.31415471161889763
+root - INFO - 2022-10-31,Total correlation: -0.28028371625770526
+root - INFO - 2022-10-31,Total rankICIR: -5.470919883283484
 root - INFO - 2022-10-31,index mean: 1.2788327708437484
 root - INFO - 2022-10-31,Number of Long: 38, List length: 38, close long: 5, new long: 5
 root - INFO - 2022-10-31,买入:113606
@@ -4600,7 +4778,8 @@ root - INFO - 2022-10-31,策略收益：
 毛收益 29.48, 净收益 29.48
 root - INFO - 2022-10-31,策略收益：
 毛收益 563.30, 净收益 563.30
-root - INFO - 2022-11-01,Total correlation: 0.15213519027452618
+root - INFO - 2022-11-01,Total correlation: 0.1471805208697218
+root - INFO - 2022-11-01,Total rankICIR: 2.872849157308277
 root - INFO - 2022-11-01,index mean: 1.2795417289275022
 root - INFO - 2022-11-01,Number of Long: 38, List length: 38, close long: 3, new long: 3
 root - INFO - 2022-11-01,买入:113017
@@ -4633,7 +4812,8 @@ root - INFO - 2022-11-01,策略收益：
 毛收益 -391.03, 净收益 -391.03
 root - INFO - 2022-11-01,策略收益：
 毛收益 -130.42, 净收益 -130.42
-root - INFO - 2022-11-02,Total correlation: 0.28540179130486837
+root - INFO - 2022-11-02,Total correlation: 0.23468255500853794
+root - INFO - 2022-11-02,Total rankICIR: 4.5808207255090005
 root - INFO - 2022-11-02,index mean: 1.2723632352085381
 root - INFO - 2022-11-02,Number of Long: 38, List length: 38, close long: 4, new long: 4
 root - INFO - 2022-11-02,卖出:113017
@@ -4654,7 +4834,8 @@ root - INFO - 2022-11-02,策略收益：
 毛收益 -145.70, 净收益 -145.70
 root - INFO - 2022-11-02,策略收益：
 毛收益 157.07, 净收益 157.07
-root - INFO - 2022-11-03,Total correlation: 0.21318604926162155
+root - INFO - 2022-11-03,Total correlation: 0.18447849020250257
+root - INFO - 2022-11-03,Total rankICIR: 3.6008764746041253
 root - INFO - 2022-11-03,index mean: 1.2649651585189925
 root - INFO - 2022-11-03,Number of Long: 38, List length: 38, close long: 6, new long: 6
 root - INFO - 2022-11-03,买入:110072
@@ -4681,7 +4862,8 @@ root - INFO - 2022-11-03,策略收益：
 毛收益 178.36, 净收益 178.36
 root - INFO - 2022-11-03,策略收益：
 毛收益 82.53, 净收益 82.53
-root - INFO - 2022-11-04,Total correlation: -0.06135221520168392
+root - INFO - 2022-11-04,Total correlation: -0.08056903812898285
+root - INFO - 2022-11-04,Total rankICIR: -1.5726448848408965
 root - INFO - 2022-11-04,index mean: 1.2668132548440028
 root - INFO - 2022-11-04,Number of Long: 38, List length: 38, close long: 3, new long: 3
 root - INFO - 2022-11-04,卖出:110059
@@ -4720,7 +4902,8 @@ root - INFO - 2022-11-04,策略收益：
 毛收益 173.45, 净收益 173.45
 root - INFO - 2022-11-04,策略收益：
 毛收益 231.08, 净收益 231.08
-root - INFO - 2022-11-07,Total correlation: 0.2971776364066846
+root - INFO - 2022-11-07,Total correlation: 0.2391429061171707
+root - INFO - 2022-11-07,Total rankICIR: 4.667883305856009
 root - INFO - 2022-11-07,index mean: 1.2866030028247015
 root - INFO - 2022-11-07,Number of Long: 38, List length: 38, close long: 6, new long: 6
 root - INFO - 2022-11-07,买入:110058
@@ -4741,7 +4924,8 @@ root - INFO - 2022-11-07,策略收益：
 毛收益 413.33, 净收益 413.33
 root - INFO - 2022-11-07,策略收益：
 毛收益 222.77, 净收益 222.77
-root - INFO - 2022-11-08,Total correlation: -0.2576374308964617
+root - INFO - 2022-11-08,Total correlation: -0.2116938385312802
+root - INFO - 2022-11-08,Total rankICIR: -4.137518029682186
 root - INFO - 2022-11-08,index mean: 1.2911726580943501
 root - INFO - 2022-11-08,Number of Long: 38, List length: 38, close long: 5, new long: 5
 root - INFO - 2022-11-08,卖出:110058
@@ -4780,7 +4964,8 @@ root - INFO - 2022-11-08,策略收益：
 毛收益 -69.26, 净收益 -69.26
 root - INFO - 2022-11-08,策略收益：
 毛收益 235.59, 净收益 235.59
-root - INFO - 2022-11-09,Total correlation: -0.024028243247324374
+root - INFO - 2022-11-09,Total correlation: -0.03830242778833404
+root - INFO - 2022-11-09,Total rankICIR: -0.7495932885412249
 root - INFO - 2022-11-09,index mean: 1.2836005164174569
 root - INFO - 2022-11-09,Number of Long: 38, List length: 38, close long: 5, new long: 5
 root - INFO - 2022-11-09,买入:110058
@@ -4813,7 +4998,8 @@ root - INFO - 2022-11-09,策略收益：
 毛收益 141.30, 净收益 141.30
 root - INFO - 2022-11-09,策略收益：
 毛收益 250.43, 净收益 250.43
-root - INFO - 2022-11-10,Total correlation: -0.2060662448297045
+root - INFO - 2022-11-10,Total correlation: -0.19311951103726563
+root - INFO - 2022-11-10,Total rankICIR: -3.784354091336679
 root - INFO - 2022-11-10,index mean: 1.2817126556169052
 root - INFO - 2022-11-10,Number of Long: 38, List length: 38, close long: 3, new long: 3
 root - INFO - 2022-11-10,卖出:113535
@@ -4846,7 +5032,8 @@ root - INFO - 2022-11-10,策略收益：
 毛收益 -3.78, 净收益 -3.78
 root - INFO - 2022-11-10,策略收益：
 毛收益 172.66, 净收益 172.66
-root - INFO - 2022-11-11,Total correlation: 0.11190056028647564
+root - INFO - 2022-11-11,Total correlation: 0.08335127666067615
+root - INFO - 2022-11-11,Total rankICIR: 1.633344777825673
 root - INFO - 2022-11-11,index mean: 1.2747013096278015
 root - INFO - 2022-11-11,Number of Long: 38, List length: 38, close long: 4, new long: 4
 root - INFO - 2022-11-11,买入:113524
@@ -4867,7 +5054,8 @@ root - INFO - 2022-11-11,策略收益：
 毛收益 4.32, 净收益 4.32
 root - INFO - 2022-11-11,策略收益：
 毛收益 113.04, 净收益 113.04
-root - INFO - 2022-11-14,Total correlation: -0.27480401199883475
+root - INFO - 2022-11-14,Total correlation: -0.2860337039903102
+root - INFO - 2022-11-14,Total rankICIR: -5.6123865449637655
 root - INFO - 2022-11-14,index mean: 1.2761050415143447
 root - INFO - 2022-11-14,Number of Long: 38, List length: 38, close long: 4, new long: 4
 root - INFO - 2022-11-14,买入:113576
@@ -4894,7 +5082,8 @@ root - INFO - 2022-11-14,策略收益：
 毛收益 130.41, 净收益 130.41
 root - INFO - 2022-11-14,策略收益：
 毛收益 51.65, 净收益 51.65
-root - INFO - 2022-11-15,Total correlation: -0.3020426438843608
+root - INFO - 2022-11-15,Total correlation: -0.27521464442661897
+root - INFO - 2022-11-15,Total rankICIR: -5.400101267119448
 root - INFO - 2022-11-15,index mean: 1.2728320900580758
 root - INFO - 2022-11-15,Number of Long: 38, List length: 38, close long: 4, new long: 4
 root - INFO - 2022-11-15,买入:113535
@@ -4921,7 +5110,8 @@ root - INFO - 2022-11-15,策略收益：
 毛收益 147.40, 净收益 147.40
 root - INFO - 2022-11-15,策略收益：
 毛收益 -11.72, 净收益 -11.72
-root - INFO - 2022-11-16,Total correlation: 0.1872186858953285
+root - INFO - 2022-11-16,Total correlation: 0.17415634883251463
+root - INFO - 2022-11-16,Total rankICIR: 3.4171943210606153
 root - INFO - 2022-11-16,index mean: 1.2605558292450556
 root - INFO - 2022-11-16,Number of Long: 38, List length: 38, close long: 4, new long: 4
 root - INFO - 2022-11-16,买入:110063
@@ -4948,7 +5138,8 @@ root - INFO - 2022-11-16,策略收益：
 毛收益 34.28, 净收益 34.28
 root - INFO - 2022-11-16,策略收益：
 毛收益 86.44, 净收益 86.44
-root - INFO - 2022-11-17,Total correlation: -0.31922248057325436
+root - INFO - 2022-11-17,Total correlation: -0.2682834055529561
+root - INFO - 2022-11-17,Total rankICIR: -5.270932600432818
 root - INFO - 2022-11-17,index mean: 1.2674014811655643
 root - INFO - 2022-11-17,Number of Long: 38, List length: 38, close long: 6, new long: 6
 root - INFO - 2022-11-17,卖出:111005
@@ -4975,7 +5166,8 @@ root - INFO - 2022-11-17,策略收益：
 毛收益 -19.72, 净收益 -19.72
 root - INFO - 2022-11-17,策略收益：
 毛收益 -136.61, 净收益 -136.61
-root - INFO - 2022-11-18,Total correlation: 0.07694374365772629
+root - INFO - 2022-11-18,Total correlation: 0.09845574074465148
+root - INFO - 2022-11-18,Total rankICIR: 1.9368524018930031
 root - INFO - 2022-11-18,index mean: 1.2629057188468757
 root - INFO - 2022-11-18,Number of Long: 38, List length: 38, close long: 4, new long: 4
 root - INFO - 2022-11-18,买入:110045
@@ -5014,7 +5206,8 @@ root - INFO - 2022-11-18,策略收益：
 毛收益 -17.86, 净收益 -17.86
 root - INFO - 2022-11-18,策略收益：
 毛收益 -29.87, 净收益 -29.87
-root - INFO - 2022-11-21,Total correlation: -0.21766691712631286
+root - INFO - 2022-11-21,Total correlation: -0.17999870807934878
+root - INFO - 2022-11-21,Total rankICIR: -3.5409913880523343
 root - INFO - 2022-11-21,index mean: 1.2723174614019197
 root - INFO - 2022-11-21,Number of Long: 38, List length: 38, close long: 3, new long: 3
 root - INFO - 2022-11-21,卖出:113050
@@ -5041,7 +5234,8 @@ root - INFO - 2022-11-21,策略收益：
 毛收益 -146.95, 净收益 -146.95
 root - INFO - 2022-11-21,策略收益：
 毛收益 -139.83, 净收益 -139.83
-root - INFO - 2022-11-22,Total correlation: 0.09106513166592053
+root - INFO - 2022-11-22,Total correlation: 0.07334041412434332
+root - INFO - 2022-11-22,Total rankICIR: 1.4464990694047608
 root - INFO - 2022-11-22,index mean: 1.2801857388979248
 root - INFO - 2022-11-22,Number of Long: 38, List length: 38, close long: 4, new long: 4
 root - INFO - 2022-11-22,买入:118004
@@ -5062,7 +5256,8 @@ root - INFO - 2022-11-22,策略收益：
 毛收益 -348.04, 净收益 -348.04
 root - INFO - 2022-11-22,策略收益：
 毛收益 99.06, 净收益 99.06
-root - INFO - 2022-11-23,Total correlation: -0.2932732439056779
+root - INFO - 2022-11-23,Total correlation: -0.2701534465852172
+root - INFO - 2022-11-23,Total rankICIR: -5.328258829019864
 root - INFO - 2022-11-23,index mean: 1.285802477979957
 root - INFO - 2022-11-23,Number of Long: 38, List length: 39, close long: 3, new long: 4
 root - INFO - 2022-11-23,卖出:113608
@@ -5089,7 +5284,8 @@ root - INFO - 2022-11-23,策略收益：
 毛收益 -54.86, 净收益 -54.86
 root - INFO - 2022-11-23,策略收益：
 毛收益 -175.76, 净收益 -175.76
-root - INFO - 2022-11-24,Total correlation: 0.20013166064497806
+root - INFO - 2022-11-24,Total correlation: 0.16104642525906687
+root - INFO - 2022-11-24,Total rankICIR: 3.184486909329534
 root - INFO - 2022-11-24,index mean: 1.2946293017123511
 root - INFO - 2022-11-24,Number of Long: 39, List length: 39, close long: 2, new long: 2
 root - INFO - 2022-11-24,买入:113050
@@ -5112,7 +5308,8 @@ root - INFO - 2022-11-24,策略收益：
 毛收益 -146.74, 净收益 -146.74
 root - INFO - 2022-11-24,策略收益：
 毛收益 5.47, 净收益 5.47
-root - INFO - 2022-11-25,Total correlation: 0.034666483133375774
+root - INFO - 2022-11-25,Total correlation: 0.04420540204133428
+root - INFO - 2022-11-25,Total rankICIR: 0.8752223073581434
 root - INFO - 2022-11-25,index mean: 1.30626834847937
 root - INFO - 2022-11-25,Number of Long: 39, List length: 39, close long: 2, new long: 2
 root - INFO - 2022-11-25,卖出:113633
@@ -5127,7 +5324,8 @@ root - INFO - 2022-11-25,策略收益：
 毛收益 -27.36, 净收益 -27.36
 root - INFO - 2022-11-25,策略收益：
 毛收益 190.81, 净收益 190.81
-root - INFO - 2022-11-28,Total correlation: -0.31572872592462714
+root - INFO - 2022-11-28,Total correlation: -0.2932848072386625
+root - INFO - 2022-11-28,Total rankICIR: -5.814144770790338
 root - INFO - 2022-11-28,index mean: 1.3071997685949077
 root - INFO - 2022-11-28,Number of Long: 39, List length: 39, close long: 5, new long: 5
 root - INFO - 2022-11-28,买入:113577
@@ -5142,7 +5340,8 @@ root - INFO - 2022-11-28,策略收益：
 毛收益 -28.11, 净收益 -28.11
 root - INFO - 2022-11-28,策略收益：
 毛收益 -193.64, 净收益 -193.64
-root - INFO - 2022-11-29,Total correlation: 0.23275604015391066
+root - INFO - 2022-11-29,Total correlation: 0.18641146075895426
+root - INFO - 2022-11-29,Total rankICIR: 3.7048545069143297
 root - INFO - 2022-11-29,index mean: 1.311400877806453
 root - INFO - 2022-11-29,Number of Long: 39, List length: 39, close long: 4, new long: 4
 root - INFO - 2022-11-29,卖出:110058
@@ -5175,7 +5374,8 @@ root - INFO - 2022-11-29,策略收益：
 毛收益 55.14, 净收益 55.14
 root - INFO - 2022-11-29,策略收益：
 毛收益 -198.56, 净收益 -198.56
-root - INFO - 2022-11-30,Total correlation: 0.02036892081142905
+root - INFO - 2022-11-30,Total correlation: -0.01641096099534387
+root - INFO - 2022-11-30,Total rankICIR: -0.32657400042427803
 root - INFO - 2022-11-30,index mean: 1.324329934173333
 root - INFO - 2022-11-30,Number of Long: 39, List length: 39, close long: 6, new long: 6
 root - INFO - 2022-11-30,买入:110082
@@ -5202,7 +5402,8 @@ root - INFO - 2022-11-30,策略收益：
 毛收益 83.51, 净收益 83.51
 root - INFO - 2022-11-30,策略收益：
 毛收益 138.04, 净收益 138.04
-root - INFO - 2022-12-01,Total correlation: 0.15089358108808493
+root - INFO - 2022-12-01,Total correlation: 0.11138779156449373
+root - INFO - 2022-12-01,Total rankICIR: 2.219386023997897
 root - INFO - 2022-12-01,index mean: 1.3246720311180982
 root - INFO - 2022-12-01,Number of Long: 39, List length: 39, close long: 7, new long: 7
 root - INFO - 2022-12-01,买入:113048
@@ -5241,7 +5442,8 @@ root - INFO - 2022-12-01,策略收益：
 毛收益 80.85, 净收益 80.85
 root - INFO - 2022-12-01,策略收益：
 毛收益 356.85, 净收益 356.85
-root - INFO - 2022-12-02,Total correlation: 0.17123780754564616
+root - INFO - 2022-12-02,Total correlation: 0.1625328018856046
+root - INFO - 2022-12-02,Total rankICIR: 3.242519213842303
 root - INFO - 2022-12-02,index mean: 1.3269171168101142
 root - INFO - 2022-12-02,Number of Long: 39, List length: 40, close long: 5, new long: 6
 root - INFO - 2022-12-02,卖出:113048
@@ -5286,7 +5488,8 @@ root - INFO - 2022-12-02,策略收益：
 毛收益 348.43, 净收益 348.43
 root - INFO - 2022-12-02,策略收益：
 毛收益 -19.03, 净收益 -19.03
-root - INFO - 2022-12-05,Total correlation: -0.16508157942553262
+root - INFO - 2022-12-05,Total correlation: -0.1802849220233
+root - INFO - 2022-12-05,Total rankICIR: -3.6102027500803735
 root - INFO - 2022-12-05,index mean: 1.3122724467244626
 root - INFO - 2022-12-05,Number of Long: 40, List length: 40, close long: 4, new long: 4
 root - INFO - 2022-12-05,卖出:110045
@@ -5321,7 +5524,8 @@ root - INFO - 2022-12-05,策略收益：
 毛收益 -2.02, 净收益 -2.02
 root - INFO - 2022-12-05,策略收益：
 毛收益 84.49, 净收益 84.49
-root - INFO - 2022-12-06,Total correlation: -0.18873072109145372
+root - INFO - 2022-12-06,Total correlation: -0.18892191163881344
+root - INFO - 2022-12-06,Total rankICIR: -3.783158332346496
 root - INFO - 2022-12-06,index mean: 1.3155730071128915
 root - INFO - 2022-12-06,Number of Long: 40, List length: 40, close long: 4, new long: 4
 root - INFO - 2022-12-06,卖出:110072
@@ -5348,7 +5552,8 @@ root - INFO - 2022-12-06,策略收益：
 毛收益 40.32, 净收益 40.32
 root - INFO - 2022-12-06,策略收益：
 毛收益 66.82, 净收益 66.82
-root - INFO - 2022-12-07,Total correlation: 0.04287050935843397
+root - INFO - 2022-12-07,Total correlation: 0.053417713535362274
+root - INFO - 2022-12-07,Total rankICIR: 1.072353115394574
 root - INFO - 2022-12-07,index mean: 1.317892694185273
 root - INFO - 2022-12-07,Number of Long: 40, List length: 40, close long: 2, new long: 2
 root - INFO - 2022-12-07,买入:113042
@@ -5375,7 +5580,8 @@ root - INFO - 2022-12-07,策略收益：
 毛收益 -34.22, 净收益 -34.22
 root - INFO - 2022-12-07,策略收益：
 毛收益 -34.16, 净收益 -34.16
-root - INFO - 2022-12-08,Total correlation: -0.011801503910188074
+root - INFO - 2022-12-08,Total correlation: 0.047070863895396615
+root - INFO - 2022-12-08,Total rankICIR: 0.9449409980666296
 root - INFO - 2022-12-08,index mean: 1.3227336426947403
 root - INFO - 2022-12-08,Number of Long: 40, List length: 40, close long: 4, new long: 4
 root - INFO - 2022-12-08,卖出:110063
@@ -5390,7 +5596,8 @@ root - INFO - 2022-12-08,策略收益：
 毛收益 -44.22, 净收益 -44.22
 root - INFO - 2022-12-08,策略收益：
 毛收益 200.90, 净收益 200.90
-root - INFO - 2022-12-09,Total correlation: -0.17731347143217469
+root - INFO - 2022-12-09,Total correlation: -0.16823450983296914
+root - INFO - 2022-12-09,Total rankICIR: -3.377284215222636
 root - INFO - 2022-12-09,index mean: 1.3354036596117829
 root - INFO - 2022-12-09,Number of Long: 40, List length: 40, close long: 3, new long: 3
 root - INFO - 2022-12-09,买入:123101
@@ -5417,7 +5624,8 @@ root - INFO - 2022-12-09,策略收益：
 毛收益 -3.88, 净收益 -3.88
 root - INFO - 2022-12-09,策略收益：
 毛收益 -211.20, 净收益 -211.20
-root - INFO - 2022-12-12,Total correlation: -0.05590457040062221
+root - INFO - 2022-12-12,Total correlation: -0.027411028944085473
+root - INFO - 2022-12-12,Total rankICIR: -0.5509548630700074
 root - INFO - 2022-12-12,index mean: 1.3433935902972962
 root - INFO - 2022-12-12,Number of Long: 40, List length: 40, close long: 4, new long: 4
 root - INFO - 2022-12-12,卖出:113043
@@ -5438,7 +5646,8 @@ root - INFO - 2022-12-12,策略收益：
 毛收益 -244.01, 净收益 -244.01
 root - INFO - 2022-12-12,策略收益：
 毛收益 1008.39, 净收益 1008.39
-root - INFO - 2022-12-13,Total correlation: -0.036740251476114635
+root - INFO - 2022-12-13,Total correlation: -0.02384731350248592
+root - INFO - 2022-12-13,Total rankICIR: -0.4805100526337134
 root - INFO - 2022-12-13,index mean: 1.3455883872444852
 root - INFO - 2022-12-13,Number of Long: 40, List length: 40, close long: 5, new long: 5
 root - INFO - 2022-12-13,买入:113043
@@ -5465,7 +5674,8 @@ root - INFO - 2022-12-13,策略收益：
 毛收益 -126.48, 净收益 -126.48
 root - INFO - 2022-12-13,策略收益：
 毛收益 197.34, 净收益 197.34
-root - INFO - 2022-12-14,Total correlation: -0.1509173584611447
+root - INFO - 2022-12-14,Total correlation: -0.11776933937177345
+root - INFO - 2022-12-14,Total rankICIR: -2.3759070351127014
 root - INFO - 2022-12-14,index mean: 1.3501388643077226
 root - INFO - 2022-12-14,Number of Long: 40, List length: 40, close long: 7, new long: 7
 root - INFO - 2022-12-14,买入:113606
@@ -5498,7 +5708,8 @@ root - INFO - 2022-12-14,策略收益：
 毛收益 -40.74, 净收益 -40.74
 root - INFO - 2022-12-14,策略收益：
 毛收益 -135.52, 净收益 -135.52
-root - INFO - 2022-12-15,Total correlation: -0.3008603299020318
+root - INFO - 2022-12-15,Total correlation: -0.26546810791021924
+root - INFO - 2022-12-15,Total rankICIR: -5.362192933633792
 root - INFO - 2022-12-15,index mean: 1.3465117919172185
 root - INFO - 2022-12-15,Number of Long: 40, List length: 41, close long: 3, new long: 4
 root - INFO - 2022-12-15,卖出:110059
@@ -5543,7 +5754,8 @@ root - INFO - 2022-12-15,策略收益：
 毛收益 4.80, 净收益 4.80
 root - INFO - 2022-12-15,策略收益：
 毛收益 -154.22, 净收益 -154.22
-root - INFO - 2022-12-16,Total correlation: -0.09616597942387775
+root - INFO - 2022-12-16,Total correlation: -0.07489758865964438
+root - INFO - 2022-12-16,Total rankICIR: -1.516560583254757
 root - INFO - 2022-12-16,index mean: 1.3446620182567037
 root - INFO - 2022-12-16,Number of Long: 41, List length: 41, close long: 2, new long: 2
 root - INFO - 2022-12-16,买入:110059
@@ -5566,7 +5778,8 @@ root - INFO - 2022-12-16,策略收益：
 毛收益 -91.51, 净收益 -91.51
 root - INFO - 2022-12-16,策略收益：
 毛收益 -81.59, 净收益 -81.59
-root - INFO - 2022-12-19,Total correlation: -0.2576216902761481
+root - INFO - 2022-12-19,Total correlation: -0.2444488039948077
+root - INFO - 2022-12-19,Total rankICIR: -4.955743587527121
 root - INFO - 2022-12-19,index mean: 1.3357947757075956
 root - INFO - 2022-12-19,Number of Long: 41, List length: 41, close long: 7, new long: 7
 root - INFO - 2022-12-19,卖出:110059
@@ -5581,7 +5794,8 @@ root - INFO - 2022-12-19,策略收益：
 毛收益 -3.83, 净收益 -3.83
 root - INFO - 2022-12-19,策略收益：
 毛收益 -46.90, 净收益 -46.90
-root - INFO - 2022-12-20,Total correlation: -0.21229750872492845
+root - INFO - 2022-12-20,Total correlation: -0.1697471787275452
+root - INFO - 2022-12-20,Total rankICIR: -3.441307458790923
 root - INFO - 2022-12-20,index mean: 1.3250996307867269
 root - INFO - 2022-12-20,Number of Long: 41, List length: 41, close long: 4, new long: 4
 root - INFO - 2022-12-20,买入:113578
@@ -5626,7 +5840,8 @@ root - INFO - 2022-12-20,策略收益：
 毛收益 -302.18, 净收益 -302.18
 root - INFO - 2022-12-20,策略收益：
 毛收益 -116.25, 净收益 -116.25
-root - INFO - 2022-12-21,Total correlation: -0.03409769918835039
+root - INFO - 2022-12-21,Total correlation: -0.022311948298421397
+root - INFO - 2022-12-21,Total rankICIR: -0.45233313846561973
 root - INFO - 2022-12-21,index mean: 1.3188178669025394
 root - INFO - 2022-12-21,Number of Long: 41, List length: 41, close long: 4, new long: 4
 root - INFO - 2022-12-21,买入:113566
@@ -5653,7 +5868,8 @@ root - INFO - 2022-12-21,策略收益：
 毛收益 -896.54, 净收益 -896.54
 root - INFO - 2022-12-21,策略收益：
 毛收益 -404.14, 净收益 -404.14
-root - INFO - 2022-12-22,Total correlation: -0.12943733253052644
+root - INFO - 2022-12-22,Total correlation: -0.12306268374079399
+root - INFO - 2022-12-22,Total rankICIR: -2.497899665989111
 root - INFO - 2022-12-22,index mean: 1.3055686675392948
 root - INFO - 2022-12-22,Number of Long: 41, List length: 41, close long: 4, new long: 4
 root - INFO - 2022-12-22,卖出:110072
@@ -5680,7 +5896,8 @@ root - INFO - 2022-12-22,策略收益：
 毛收益 -279.04, 净收益 -279.04
 root - INFO - 2022-12-22,策略收益：
 毛收益 39.48, 净收益 39.48
-root - INFO - 2022-12-23,Total correlation: -0.16626146853098667
+root - INFO - 2022-12-23,Total correlation: -0.13246463347700374
+root - INFO - 2022-12-23,Total rankICIR: -2.6919994571818426
 root - INFO - 2022-12-23,index mean: 1.2995772941610804
 root - INFO - 2022-12-23,Number of Long: 41, List length: 41, close long: 5, new long: 5
 root - INFO - 2022-12-23,卖出:113043
@@ -5707,7 +5924,8 @@ root - INFO - 2022-12-23,策略收益：
 毛收益 -457.50, 净收益 -457.50
 root - INFO - 2022-12-23,策略收益：
 毛收益 -109.08, 净收益 -109.08
-root - INFO - 2022-12-26,Total correlation: 0.10985009609471494
+root - INFO - 2022-12-26,Total correlation: 0.11222157817500131
+root - INFO - 2022-12-26,Total rankICIR: 2.2833713232298427
 root - INFO - 2022-12-26,index mean: 1.2967992053784767
 root - INFO - 2022-12-26,Number of Long: 41, List length: 41, close long: 3, new long: 3
 root - INFO - 2022-12-26,买入:113549
@@ -5740,7 +5958,8 @@ root - INFO - 2022-12-26,策略收益：
 毛收益 -338.45, 净收益 -338.45
 root - INFO - 2022-12-26,策略收益：
 毛收益 -494.39, 净收益 -494.39
-root - INFO - 2022-12-27,Total correlation: 0.12010556368829967
+root - INFO - 2022-12-27,Total correlation: 0.09164042209473754
+root - INFO - 2022-12-27,Total rankICIR: 1.8646067473181809
 root - INFO - 2022-12-27,index mean: 1.3040387935648061
 root - INFO - 2022-12-27,Number of Long: 41, List length: 41, close long: 3, new long: 3
 root - INFO - 2022-12-27,卖出:113593
@@ -5761,7 +5980,8 @@ root - INFO - 2022-12-27,策略收益：
 毛收益 -354.26, 净收益 -354.26
 root - INFO - 2022-12-27,策略收益：
 毛收益 -92.84, 净收益 -92.84
-root - INFO - 2022-12-28,Total correlation: -0.005828856123194099
+root - INFO - 2022-12-28,Total correlation: -0.012905607058193826
+root - INFO - 2022-12-28,Total rankICIR: -0.2625902571036632
 root - INFO - 2022-12-28,index mean: 1.2949911854338114
 root - INFO - 2022-12-28,Number of Long: 41, List length: 41, close long: 7, new long: 7
 root - INFO - 2022-12-28,买入:113624
@@ -5782,7 +6002,8 @@ root - INFO - 2022-12-28,策略收益：
 毛收益 49.66, 净收益 49.66
 root - INFO - 2022-12-28,策略收益：
 毛收益 52.60, 净收益 52.60
-root - INFO - 2022-12-29,Total correlation: 0.021825567434588498
+root - INFO - 2022-12-29,Total correlation: 0.029139635464936673
+root - INFO - 2022-12-29,Total rankICIR: 0.593619505522855
 root - INFO - 2022-12-29,index mean: 1.288595904357403
 root - INFO - 2022-12-29,Number of Long: 41, List length: 41, close long: 4, new long: 4
 root - INFO - 2022-12-29,买入:110073
@@ -5827,7 +6048,8 @@ root - INFO - 2022-12-29,策略收益：
 毛收益 266.07, 净收益 266.07
 root - INFO - 2022-12-29,策略收益：
 毛收益 239.17, 净收益 239.17
-root - INFO - 2022-12-30,Total correlation: -0.08101421367150709
+root - INFO - 2022-12-30,Total correlation: -0.05880595962445099
+root - INFO - 2022-12-30,Total rankICIR: -1.197968475483104
 root - INFO - 2022-12-30,index mean: 1.2855104686788255
 root - INFO - 2022-12-30,Number of Long: 41, List length: 41, close long: 2, new long: 2
 root - INFO - 2022-12-30,买入:110072
@@ -5854,7 +6076,8 @@ root - INFO - 2022-12-30,策略收益：
 毛收益 60.95, 净收益 60.95
 root - INFO - 2022-12-30,策略收益：
 毛收益 -137.38, 净收益 -137.38
-root - INFO - 2023-01-03,Total correlation: -0.136376971178032
+root - INFO - 2023-01-03,Total correlation: -0.11305086567003801
+root - INFO - 2023-01-03,Total rankICIR: -2.303021225462146
 root - INFO - 2023-01-03,index mean: 1.2857119210023287
 root - INFO - 2023-01-03,Number of Long: 41, List length: 41, close long: 4, new long: 4
 root - INFO - 2023-01-03,卖出:113549
@@ -5869,7 +6092,8 @@ root - INFO - 2023-01-03,策略收益：
 毛收益 92.98, 净收益 92.98
 root - INFO - 2023-01-03,策略收益：
 毛收益 -135.82, 净收益 -135.82
-root - INFO - 2023-01-04,Total correlation: 0.18143084430530687
+root - INFO - 2023-01-04,Total correlation: 0.14010221487958524
+root - INFO - 2023-01-04,Total rankICIR: 2.8540991056511458
 root - INFO - 2023-01-04,index mean: 1.2778303136455293
 root - INFO - 2023-01-04,Number of Long: 41, List length: 41, close long: 5, new long: 5
 root - INFO - 2023-01-04,买入:110062
@@ -5896,7 +6120,8 @@ root - INFO - 2023-01-04,策略收益：
 毛收益 153.81, 净收益 153.81
 root - INFO - 2023-01-04,策略收益：
 毛收益 121.57, 净收益 121.57
-root - INFO - 2023-01-05,Total correlation: -0.028733537117241074
+root - INFO - 2023-01-05,Total correlation: -0.037446576566365075
+root - INFO - 2023-01-05,Total rankICIR: -0.7637632985165672
 root - INFO - 2023-01-05,index mean: 1.2792429892256796
 root - INFO - 2023-01-05,Number of Long: 41, List length: 41, close long: 3, new long: 3
 root - INFO - 2023-01-05,卖出:113037
@@ -5929,7 +6154,8 @@ root - INFO - 2023-01-05,策略收益：
 毛收益 12.42, 净收益 12.42
 root - INFO - 2023-01-05,策略收益：
 毛收益 -220.21, 净收益 -220.21
-root - INFO - 2023-01-06,Total correlation: 0.18925162688710478
+root - INFO - 2023-01-06,Total correlation: 0.1436835332475447
+root - INFO - 2023-01-06,Total rankICIR: 2.9305805592447522
 root - INFO - 2023-01-06,index mean: 1.2734039843447613
 root - INFO - 2023-01-06,Number of Long: 41, List length: 41, close long: 3, new long: 3
 root - INFO - 2023-01-06,卖出:113633
@@ -5950,7 +6176,8 @@ root - INFO - 2023-01-06,策略收益：
 毛收益 635.68, 净收益 635.68
 root - INFO - 2023-01-06,策略收益：
 毛收益 171.30, 净收益 171.30
-root - INFO - 2023-01-09,Total correlation: 0.11511964808933016
+root - INFO - 2023-01-09,Total correlation: 0.08473807998135906
+root - INFO - 2023-01-09,Total rankICIR: 1.730400559683406
 root - INFO - 2023-01-09,index mean: 1.2539180440592212
 root - INFO - 2023-01-09,Number of Long: 41, List length: 42, close long: 4, new long: 5
 root - INFO - 2023-01-09,卖出:113561
@@ -5971,7 +6198,8 @@ root - INFO - 2023-01-09,策略收益：
 毛收益 -121.06, 净收益 -121.06
 root - INFO - 2023-01-09,策略收益：
 毛收益 109.39, 净收益 109.39
-root - INFO - 2023-01-10,Total correlation: -0.16725240885638887
+root - INFO - 2023-01-10,Total correlation: -0.12768472124477545
+root - INFO - 2023-01-10,Total rankICIR: -2.6167581043209793
 root - INFO - 2023-01-10,index mean: 1.2415148612153797
 root - INFO - 2023-01-10,Number of Long: 42, List length: 42, close long: 6, new long: 6
 root - INFO - 2023-01-10,买入:113037
@@ -6000,7 +6228,8 @@ root - INFO - 2023-01-10,策略收益：
 毛收益 291.75, 净收益 291.75
 root - INFO - 2023-01-10,策略收益：
 毛收益 -146.97, 净收益 -146.97
-root - INFO - 2023-01-11,Total correlation: 0.007849302139950417
+root - INFO - 2023-01-11,Total correlation: 0.0173267908062323
+root - INFO - 2023-01-11,Total rankICIR: 0.3550935446470876
 root - INFO - 2023-01-11,index mean: 1.2372547757719405
 root - INFO - 2023-01-11,Number of Long: 42, List length: 42, close long: 9, new long: 9
 root - INFO - 2023-01-11,卖出:113574
@@ -6039,7 +6268,8 @@ root - INFO - 2023-01-11,策略收益：
 毛收益 32.70, 净收益 32.70
 root - INFO - 2023-01-11,策略收益：
 毛收益 244.09, 净收益 244.09
-root - INFO - 2023-01-12,Total correlation: 0.011567724977973743
+root - INFO - 2023-01-12,Total correlation: 0.020323985995879815
+root - INFO - 2023-01-12,Total rankICIR: 0.4170133274204347
 root - INFO - 2023-01-12,index mean: 1.2348222262923925
 root - INFO - 2023-01-12,Number of Long: 42, List length: 42, close long: 6, new long: 6
 root - INFO - 2023-01-12,卖出:110072
@@ -6096,7 +6326,8 @@ root - INFO - 2023-01-12,策略收益：
 毛收益 243.51, 净收益 243.51
 root - INFO - 2023-01-12,策略收益：
 毛收益 -304.95, 净收益 -304.95
-root - INFO - 2023-01-13,Total correlation: -0.06046934569010289
+root - INFO - 2023-01-13,Total correlation: -0.08273527420446852
+root - INFO - 2023-01-13,Total rankICIR: -1.697585896685908
 root - INFO - 2023-01-13,index mean: 1.234029573838959
 root - INFO - 2023-01-13,Number of Long: 42, List length: 42, close long: 6, new long: 6
 root - INFO - 2023-01-13,卖出:110062
@@ -6135,7 +6366,8 @@ root - INFO - 2023-01-13,策略收益：
 毛收益 -22.57, 净收益 -22.57
 root - INFO - 2023-01-13,策略收益：
 毛收益 8.81, 净收益 8.81
-root - INFO - 2023-01-16,Total correlation: -0.0670876165466462
+root - INFO - 2023-01-16,Total correlation: -0.08336647000291096
+root - INFO - 2023-01-16,Total rankICIR: -1.7145951707839566
 root - INFO - 2023-01-16,index mean: 1.236544198389622
 root - INFO - 2023-01-16,Number of Long: 42, List length: 42, close long: 4, new long: 4
 root - INFO - 2023-01-16,买入:110058
@@ -6174,7 +6406,8 @@ root - INFO - 2023-01-16,策略收益：
 毛收益 -413.59, 净收益 -413.59
 root - INFO - 2023-01-16,策略收益：
 毛收益 19.69, 净收益 19.69
-root - INFO - 2023-01-17,Total correlation: 0.16597987462454
+root - INFO - 2023-01-17,Total correlation: 0.11353720452452357
+root - INFO - 2023-01-17,Total rankICIR: 2.337874130052181
 root - INFO - 2023-01-17,index mean: 1.2484024208592273
 root - INFO - 2023-01-17,Number of Long: 42, List length: 42, close long: 7, new long: 7
 root - INFO - 2023-01-17,卖出:113042
@@ -6201,7 +6434,8 @@ root - INFO - 2023-01-17,策略收益：
 毛收益 49.77, 净收益 49.77
 root - INFO - 2023-01-17,策略收益：
 毛收益 64.78, 净收益 64.78
-root - INFO - 2023-01-18,Total correlation: -0.028971065954678247
+root - INFO - 2023-01-18,Total correlation: -0.044424870711030295
+root - INFO - 2023-01-18,Total rankICIR: -0.9147640758038682
 root - INFO - 2023-01-18,index mean: 1.2474105331312584
 root - INFO - 2023-01-18,Number of Long: 42, List length: 42, close long: 7, new long: 7
 root - INFO - 2023-01-18,买入:110072
@@ -6246,7 +6480,8 @@ root - INFO - 2023-01-18,策略收益：
 毛收益 158.77, 净收益 158.77
 root - INFO - 2023-01-18,策略收益：
 毛收益 40.61, 净收益 40.61
-root - INFO - 2023-01-19,Total correlation: -0.028566092242456265
+root - INFO - 2023-01-19,Total correlation: -0.039361465983422675
+root - INFO - 2023-01-19,Total rankICIR: -0.8105021911447221
 root - INFO - 2023-01-19,index mean: 1.2518833244897145
 root - INFO - 2023-01-19,Number of Long: 42, List length: 42, close long: 6, new long: 6
 root - INFO - 2023-01-19,卖出:110058
@@ -6291,7 +6526,8 @@ root - INFO - 2023-01-19,策略收益：
 毛收益 32.98, 净收益 32.98
 root - INFO - 2023-01-19,策略收益：
 毛收益 815.03, 净收益 815.03
-root - INFO - 2023-01-20,Total correlation: 0.15431614134038818
+root - INFO - 2023-01-20,Total correlation: 0.08583784287208303
+root - INFO - 2023-01-20,Total rankICIR: 1.7716731144782913
 root - INFO - 2023-01-20,index mean: 1.2453968310393382
 root - INFO - 2023-01-20,Number of Long: 42, List length: 42, close long: 4, new long: 4
 root - INFO - 2023-01-20,卖出:110072
@@ -6330,7 +6566,8 @@ root - INFO - 2023-01-20,策略收益：
 毛收益 847.04, 净收益 847.04
 root - INFO - 2023-01-20,策略收益：
 毛收益 78.04, 净收益 78.04
-root - INFO - 2023-01-30,Total correlation: 0.1714974439129387
+root - INFO - 2023-01-30,Total correlation: 0.12369960532306756
+root - INFO - 2023-01-30,Total rankICIR: 2.5561259625601997
 root - INFO - 2023-01-30,index mean: 1.2437908792993262
 root - INFO - 2023-01-30,Number of Long: 42, List length: 42, close long: 2, new long: 2
 root - INFO - 2023-01-30,买入:110072
@@ -6357,7 +6594,8 @@ root - INFO - 2023-01-30,策略收益：
 毛收益 685.19, 净收益 685.19
 root - INFO - 2023-01-30,策略收益：
 毛收益 35.51, 净收益 35.51
-root - INFO - 2023-01-31,Total correlation: 0.07226446681265622
+root - INFO - 2023-01-31,Total correlation: 0.08818823774576368
+root - INFO - 2023-01-31,Total rankICIR: 1.822319832837344
 root - INFO - 2023-01-31,index mean: 1.2452158321822657
 root - INFO - 2023-01-31,Number of Long: 42, List length: 42, close long: 2, new long: 2
 root - INFO - 2023-01-31,卖出:128062
@@ -6372,7 +6610,8 @@ root - INFO - 2023-01-31,策略收益：
 毛收益 -1.36, 净收益 -1.36
 root - INFO - 2023-01-31,策略收益：
 毛收益 2015.47, 净收益 2015.47
-root - INFO - 2023-02-01,Total correlation: 0.11923491783245233
+root - INFO - 2023-02-01,Total correlation: 0.11865307373615926
+root - INFO - 2023-02-01,Total rankICIR: 2.4518445432582827
 root - INFO - 2023-02-01,index mean: 1.2413147487859197
 root - INFO - 2023-02-01,Number of Long: 42, List length: 42, close long: 5, new long: 5
 root - INFO - 2023-02-01,卖出:113573
@@ -6387,7 +6626,8 @@ root - INFO - 2023-02-01,策略收益：
 毛收益 404.92, 净收益 404.92
 root - INFO - 2023-02-01,策略收益：
 毛收益 509.54, 净收益 509.54
-root - INFO - 2023-02-02,Total correlation: 0.11287221141161327
+root - INFO - 2023-02-02,Total correlation: 0.08457131636147512
+root - INFO - 2023-02-02,Total rankICIR: 1.7475798477680862
 root - INFO - 2023-02-02,index mean: 1.2417838906944048
 root - INFO - 2023-02-02,Number of Long: 42, List length: 42, close long: 6, new long: 6
 root - INFO - 2023-02-02,买入:110062
@@ -6420,7 +6660,8 @@ root - INFO - 2023-02-02,策略收益：
 毛收益 -23.26, 净收益 -23.26
 root - INFO - 2023-02-02,策略收益：
 毛收益 193.42, 净收益 193.42
-root - INFO - 2023-02-03,Total correlation: -0.004200315711310004
+root - INFO - 2023-02-03,Total correlation: 0.0011028327156134292
+root - INFO - 2023-02-03,Total rankICIR: 0.02278891132577099
 root - INFO - 2023-02-03,index mean: 1.2446264584899078
 root - INFO - 2023-02-03,Number of Long: 42, List length: 42, close long: 4, new long: 4
 root - INFO - 2023-02-03,买入:113535
@@ -6459,7 +6700,8 @@ root - INFO - 2023-02-03,策略收益：
 毛收益 515.85, 净收益 515.85
 root - INFO - 2023-02-03,策略收益：
 毛收益 314.97, 净收益 314.97
-root - INFO - 2023-02-06,Total correlation: -0.17802497203963086
+root - INFO - 2023-02-06,Total correlation: -0.14573437252903046
+root - INFO - 2023-02-06,Total rankICIR: -3.011451914385436
 root - INFO - 2023-02-06,index mean: 1.245604217233858
 root - INFO - 2023-02-06,Number of Long: 42, List length: 42, close long: 8, new long: 8
 root - INFO - 2023-02-06,买入:113505
@@ -6486,7 +6728,8 @@ root - INFO - 2023-02-06,策略收益：
 毛收益 103.02, 净收益 103.02
 root - INFO - 2023-02-06,策略收益：
 毛收益 643.10, 净收益 643.10
-root - INFO - 2023-02-07,Total correlation: -0.21340175680418555
+root - INFO - 2023-02-07,Total correlation: -0.18840020358091555
+root - INFO - 2023-02-07,Total rankICIR: -3.893097722236637
 root - INFO - 2023-02-07,index mean: 1.252680088133379
 root - INFO - 2023-02-07,Number of Long: 42, List length: 42, close long: 7, new long: 7
 root - INFO - 2023-02-07,买入:110045
@@ -6537,7 +6780,8 @@ root - INFO - 2023-02-07,策略收益：
 毛收益 -30.96, 净收益 -30.96
 root - INFO - 2023-02-07,策略收益：
 毛收益 53.76, 净收益 53.76
-root - INFO - 2023-02-08,Total correlation: -0.03288185227498243
+root - INFO - 2023-02-08,Total correlation: -0.04439199140351064
+root - INFO - 2023-02-08,Total rankICIR: -0.9194609172934196
 root - INFO - 2023-02-08,index mean: 1.2637122378568526
 root - INFO - 2023-02-08,Number of Long: 42, List length: 42, close long: 5, new long: 5
 root - INFO - 2023-02-08,卖出:110062
@@ -6582,7 +6826,8 @@ root - INFO - 2023-02-08,策略收益：
 毛收益 113.52, 净收益 113.52
 root - INFO - 2023-02-08,策略收益：
 毛收益 9.10, 净收益 9.10
-root - INFO - 2023-02-09,Total correlation: -0.0856376732043557
+root - INFO - 2023-02-09,Total correlation: -0.058887775992753175
+root - INFO - 2023-02-09,Total rankICIR: -1.2197021764467253
 root - INFO - 2023-02-09,index mean: 1.2666410699102715
 root - INFO - 2023-02-09,Number of Long: 42, List length: 43, close long: 4, new long: 5
 root - INFO - 2023-02-09,买入:110081
@@ -6615,7 +6860,8 @@ root - INFO - 2023-02-09,策略收益：
 毛收益 108.72, 净收益 108.72
 root - INFO - 2023-02-09,策略收益：
 毛收益 5.15, 净收益 5.15
-root - INFO - 2023-02-10,Total correlation: 0.10225698479609494
+root - INFO - 2023-02-10,Total correlation: 0.06809774756140698
+root - INFO - 2023-02-10,Total rankICIR: 1.413745977566654
 root - INFO - 2023-02-10,index mean: 1.2732293039750895
 root - INFO - 2023-02-10,Number of Long: 43, List length: 43, close long: 4, new long: 4
 root - INFO - 2023-02-10,卖出:113596
@@ -6644,7 +6890,8 @@ root - INFO - 2023-02-10,策略收益：
 毛收益 152.38, 净收益 152.38
 root - INFO - 2023-02-10,策略收益：
 毛收益 261.62, 净收益 261.62
-root - INFO - 2023-02-13,Total correlation: -0.028183497677317686
+root - INFO - 2023-02-13,Total correlation: -0.03450352924203776
+root - INFO - 2023-02-13,Total rankICIR: -0.7179719343801784
 root - INFO - 2023-02-13,index mean: 1.2826540721462603
 root - INFO - 2023-02-13,Number of Long: 43, List length: 43, close long: 4, new long: 4
 root - INFO - 2023-02-13,买入:113043
@@ -6671,7 +6918,8 @@ root - INFO - 2023-02-13,策略收益：
 毛收益 79.02, 净收益 79.02
 root - INFO - 2023-02-13,策略收益：
 毛收益 538.63, 净收益 538.63
-root - INFO - 2023-02-14,Total correlation: -0.10054754834100149
+root - INFO - 2023-02-14,Total correlation: -0.10871722640611346
+root - INFO - 2023-02-14,Total rankICIR: -2.2648697374834055
 root - INFO - 2023-02-14,index mean: 1.3092751815130002
 root - INFO - 2023-02-14,Number of Long: 43, List length: 43, close long: 5, new long: 5
 root - INFO - 2023-02-14,买入:110059
@@ -6698,7 +6946,8 @@ root - INFO - 2023-02-14,策略收益：
 毛收益 652.37, 净收益 652.37
 root - INFO - 2023-02-14,策略收益：
 毛收益 123.55, 净收益 123.55
-root - INFO - 2023-02-15,Total correlation: 0.08120276123991299
+root - INFO - 2023-02-15,Total correlation: 0.09766144704251264
+root - INFO - 2023-02-15,Total rankICIR: 2.0368909724676754
 root - INFO - 2023-02-15,index mean: 1.309210757431949
 root - INFO - 2023-02-15,Number of Long: 43, List length: 43, close long: 2, new long: 2
 root - INFO - 2023-02-15,卖出:110059
@@ -6731,7 +6980,8 @@ root - INFO - 2023-02-15,策略收益：
 毛收益 99.55, 净收益 99.55
 root - INFO - 2023-02-15,策略收益：
 毛收益 207.47, 净收益 207.47
-root - INFO - 2023-02-16,Total correlation: -0.13857845007404138
+root - INFO - 2023-02-16,Total correlation: -0.13062176264000921
+root - INFO - 2023-02-16,Total rankICIR: -2.7243328579130277
 root - INFO - 2023-02-16,index mean: 1.3035105651853935
 root - INFO - 2023-02-16,Number of Long: 43, List length: 43, close long: 9, new long: 9
 root - INFO - 2023-02-16,卖出:113037
@@ -6746,7 +6996,8 @@ root - INFO - 2023-02-16,策略收益：
 毛收益 1.74, 净收益 1.74
 root - INFO - 2023-02-16,策略收益：
 毛收益 47.25, 净收益 47.25
-root - INFO - 2023-02-17,Total correlation: -0.33255548189480505
+root - INFO - 2023-02-17,Total correlation: -0.28154670181080765
+root - INFO - 2023-02-17,Total rankICIR: -5.8721220360050905
 root - INFO - 2023-02-17,index mean: 1.302093702190174
 root - INFO - 2023-02-17,Number of Long: 43, List length: 43, close long: 5, new long: 5
 root - INFO - 2023-02-17,买入:110059
@@ -6803,7 +7054,8 @@ root - INFO - 2023-02-17,策略收益：
 毛收益 93.52, 净收益 93.52
 root - INFO - 2023-02-17,策略收益：
 毛收益 -45.01, 净收益 -45.01
-root - INFO - 2023-02-20,Total correlation: -0.2216495913314784
+root - INFO - 2023-02-20,Total correlation: -0.1954944304766979
+root - INFO - 2023-02-20,Total rankICIR: -4.08204354992326
 root - INFO - 2023-02-20,index mean: 1.2997668703181573
 root - INFO - 2023-02-20,Number of Long: 43, List length: 43, close long: 5, new long: 5
 root - INFO - 2023-02-20,卖出:111001
@@ -6836,7 +7088,8 @@ root - INFO - 2023-02-20,策略收益：
 毛收益 -86.11, 净收益 -86.11
 root - INFO - 2023-02-20,策略收益：
 毛收益 120.43, 净收益 120.43
-root - INFO - 2023-02-21,Total correlation: 0.2975850473979894
+root - INFO - 2023-02-21,Total correlation: 0.23962885771020814
+root - INFO - 2023-02-21,Total rankICIR: 5.003597445749373
 root - INFO - 2023-02-21,index mean: 1.2953609574556375
 root - INFO - 2023-02-21,Number of Long: 43, List length: 43, close long: 5, new long: 5
 root - INFO - 2023-02-21,买入:110079
@@ -6869,7 +7122,8 @@ root - INFO - 2023-02-21,策略收益：
 毛收益 -181.61, 净收益 -181.61
 root - INFO - 2023-02-21,策略收益：
 毛收益 -98.01, 净收益 -98.01
-root - INFO - 2023-02-22,Total correlation: -0.04352624944915368
+root - INFO - 2023-02-22,Total correlation: -0.019927940423800656
+root - INFO - 2023-02-22,Total rankICIR: -0.41610761223157533
 root - INFO - 2023-02-22,index mean: 1.3030007485243067
 root - INFO - 2023-02-22,Number of Long: 43, List length: 43, close long: 3, new long: 3
 root - INFO - 2023-02-22,买入:110083
@@ -6902,7 +7156,8 @@ root - INFO - 2023-02-22,策略收益：
 毛收益 -133.32, 净收益 -133.32
 root - INFO - 2023-02-22,策略收益：
 毛收益 186.55, 净收益 186.55
-root - INFO - 2023-02-23,Total correlation: -0.15310293091887228
+root - INFO - 2023-02-23,Total correlation: -0.16130558573924048
+root - INFO - 2023-02-23,Total rankICIR: -3.3681595134340423
 root - INFO - 2023-02-23,index mean: 1.3045597110980154
 root - INFO - 2023-02-23,Number of Long: 43, List length: 43, close long: 4, new long: 4
 root - INFO - 2023-02-23,买入:113017
@@ -6923,7 +7178,8 @@ root - INFO - 2023-02-23,策略收益：
 毛收益 64.99, 净收益 64.99
 root - INFO - 2023-02-23,策略收益：
 毛收益 99.42, 净收益 99.42
-root - INFO - 2023-02-24,Total correlation: -0.060500274436351226
+root - INFO - 2023-02-24,Total correlation: -0.014903450823514025
+root - INFO - 2023-02-24,Total rankICIR: -0.31119318927592354
 root - INFO - 2023-02-24,index mean: 1.311365341011521
 root - INFO - 2023-02-24,Number of Long: 43, List length: 43, close long: 4, new long: 4
 root - INFO - 2023-02-24,卖出:110045
@@ -6950,7 +7206,8 @@ root - INFO - 2023-02-24,策略收益：
 毛收益 19.84, 净收益 19.84
 root - INFO - 2023-02-24,策略收益：
 毛收益 16.19, 净收益 16.19
-root - INFO - 2023-02-27,Total correlation: -0.18701069140268572
+root - INFO - 2023-02-27,Total correlation: -0.15458378970823622
+root - INFO - 2023-02-27,Total rankICIR: -3.2278042917259167
 root - INFO - 2023-02-27,index mean: 1.319277203115044
 root - INFO - 2023-02-27,Number of Long: 43, List length: 43, close long: 5, new long: 5
 root - INFO - 2023-02-27,买入:113037
@@ -6977,7 +7234,8 @@ root - INFO - 2023-02-27,策略收益：
 毛收益 -19.37, 净收益 -19.37
 root - INFO - 2023-02-27,策略收益：
 毛收益 -47.66, 净收益 -47.66
-root - INFO - 2023-02-28,Total correlation: -0.05767756388288966
+root - INFO - 2023-02-28,Total correlation: -0.05360475927269329
+root - INFO - 2023-02-28,Total rankICIR: -1.1193002342865659
 root - INFO - 2023-02-28,index mean: 1.3161061899219668
 root - INFO - 2023-02-28,Number of Long: 43, List length: 43, close long: 5, new long: 5
 root - INFO - 2023-02-28,买入:111001
@@ -7010,7 +7268,8 @@ root - INFO - 2023-02-28,策略收益：
 毛收益 -64.25, 净收益 -64.25
 root - INFO - 2023-02-28,策略收益：
 毛收益 -129.10, 净收益 -129.10
-root - INFO - 2023-03-01,Total correlation: -0.03458553887267858
+root - INFO - 2023-03-01,Total correlation: -0.03454499005236341
+root - INFO - 2023-03-01,Total rankICIR: -0.7213205689878799
 root - INFO - 2023-03-01,index mean: 1.3042287243553483
 root - INFO - 2023-03-01,Number of Long: 43, List length: 43, close long: 4, new long: 4
 root - INFO - 2023-03-01,卖出:111001
@@ -7043,7 +7302,8 @@ root - INFO - 2023-03-01,策略收益：
 毛收益 371.28, 净收益 371.28
 root - INFO - 2023-03-01,策略收益：
 毛收益 -438.15, 净收益 -438.15
-root - INFO - 2023-03-02,Total correlation: 0.17017324093866854
+root - INFO - 2023-03-02,Total correlation: 0.12746900330616923
+root - INFO - 2023-03-02,Total rankICIR: 2.6616309298034784
 root - INFO - 2023-03-02,index mean: 1.3050980363143108
 root - INFO - 2023-03-02,Number of Long: 43, List length: 43, close long: 7, new long: 7
 root - INFO - 2023-03-02,买入:110087
@@ -7070,7 +7330,8 @@ root - INFO - 2023-03-02,策略收益：
 毛收益 -57.19, 净收益 -57.19
 root - INFO - 2023-03-02,策略收益：
 毛收益 37.33, 净收益 37.33
-root - INFO - 2023-03-03,Total correlation: -0.3008752303358647
+root - INFO - 2023-03-03,Total correlation: -0.2959098915052373
+root - INFO - 2023-03-03,Total rankICIR: -6.178779932666287
 root - INFO - 2023-03-03,index mean: 1.309004460396483
 root - INFO - 2023-03-03,Number of Long: 43, List length: 43, close long: 4, new long: 4
 root - INFO - 2023-03-03,买入:111001
@@ -7115,7 +7376,8 @@ root - INFO - 2023-03-03,策略收益：
 毛收益 24.98, 净收益 24.98
 root - INFO - 2023-03-03,策略收益：
 毛收益 10.50, 净收益 10.50
-root - INFO - 2023-03-06,Total correlation: -0.13943394480023816
+root - INFO - 2023-03-06,Total correlation: -0.1341220789431984
+root - INFO - 2023-03-06,Total rankICIR: -2.803761029445966
 root - INFO - 2023-03-06,index mean: 1.3172593102918224
 root - INFO - 2023-03-06,Number of Long: 43, List length: 43, close long: 4, new long: 4
 root - INFO - 2023-03-06,卖出:113050
@@ -7142,7 +7404,8 @@ root - INFO - 2023-03-06,策略收益：
 毛收益 569.74, 净收益 569.74
 root - INFO - 2023-03-06,策略收益：
 毛收益 25.12, 净收益 25.12
-root - INFO - 2023-03-07,Total correlation: -0.09113598133732552
+root - INFO - 2023-03-07,Total correlation: -0.09388965638536581
+root - INFO - 2023-03-07,Total rankICIR: -1.9672067674586589
 root - INFO - 2023-03-07,index mean: 1.3154135330662269
 root - INFO - 2023-03-07,Number of Long: 43, List length: 44, close long: 6, new long: 7
 root - INFO - 2023-03-07,卖出:113042
@@ -7169,7 +7432,8 @@ root - INFO - 2023-03-07,策略收益：
 毛收益 113.92, 净收益 113.92
 root - INFO - 2023-03-07,策略收益：
 毛收益 177.44, 净收益 177.44
-root - INFO - 2023-03-08,Total correlation: -0.24826866770504674
+root - INFO - 2023-03-08,Total correlation: -0.20778761611895213
+root - INFO - 2023-03-08,Total rankICIR: -4.358589806514796
 root - INFO - 2023-03-08,index mean: 1.3040653679598921
 root - INFO - 2023-03-08,Number of Long: 44, List length: 44, close long: 3, new long: 3
 root - INFO - 2023-03-08,买入:110070
@@ -7210,7 +7474,8 @@ root - INFO - 2023-03-08,策略收益：
 毛收益 -13.91, 净收益 -13.91
 root - INFO - 2023-03-08,策略收益：
 毛收益 1.96, 净收益 1.96
-root - INFO - 2023-03-09,Total correlation: -0.08911678724434946
+root - INFO - 2023-03-09,Total correlation: -0.07657886099148707
+root - INFO - 2023-03-09,Total rankICIR: -1.6063317398132742
 root - INFO - 2023-03-09,index mean: 1.3114934135089409
 root - INFO - 2023-03-09,Number of Long: 44, List length: 44, close long: 6, new long: 6
 root - INFO - 2023-03-09,卖出:110070
@@ -7231,7 +7496,8 @@ root - INFO - 2023-03-09,策略收益：
 毛收益 15.62, 净收益 15.62
 root - INFO - 2023-03-09,策略收益：
 毛收益 4.95, 净收益 4.95
-root - INFO - 2023-03-10,Total correlation: -0.11400780664987291
+root - INFO - 2023-03-10,Total correlation: -0.10380891373739981
+root - INFO - 2023-03-10,Total rankICIR: -2.182457429718115
 root - INFO - 2023-03-10,index mean: 1.3036572088134486
 root - INFO - 2023-03-10,Number of Long: 44, List length: 44, close long: 5, new long: 5
 root - INFO - 2023-03-10,买入:110076
@@ -7270,7 +7536,8 @@ root - INFO - 2023-03-10,策略收益：
 毛收益 56.45, 净收益 56.45
 root - INFO - 2023-03-10,策略收益：
 毛收益 141.95, 净收益 141.95
-root - INFO - 2023-03-13,Total correlation: -0.1236584253692976
+root - INFO - 2023-03-13,Total correlation: -0.11813977197060452
+root - INFO - 2023-03-13,Total rankICIR: -2.483746470314505
 root - INFO - 2023-03-13,index mean: 1.3024400842235437
 root - INFO - 2023-03-13,Number of Long: 44, List length: 44, close long: 4, new long: 4
 root - INFO - 2023-03-13,买入:113021
@@ -7303,7 +7570,8 @@ root - INFO - 2023-03-13,策略收益：
 毛收益 83.63, 净收益 83.63
 root - INFO - 2023-03-13,策略收益：
 毛收益 -154.72, 净收益 -154.72
-root - INFO - 2023-03-14,Total correlation: -0.0434667743862844
+root - INFO - 2023-03-14,Total correlation: -0.03758690487829096
+root - INFO - 2023-03-14,Total rankICIR: -0.7902194219972857
 root - INFO - 2023-03-14,index mean: 1.2819563192480117
 root - INFO - 2023-03-14,Number of Long: 44, List length: 44, close long: 6, new long: 6
 root - INFO - 2023-03-14,卖出:113043
@@ -7330,7 +7598,8 @@ root - INFO - 2023-03-14,策略收益：
 毛收益 197.76, 净收益 197.76
 root - INFO - 2023-03-14,策略收益：
 毛收益 -17.50, 净收益 -17.50
-root - INFO - 2023-03-15,Total correlation: 0.03473206928768884
+root - INFO - 2023-03-15,Total correlation: 0.029026995413550038
+root - INFO - 2023-03-15,Total rankICIR: 0.6102576312757659
 root - INFO - 2023-03-15,index mean: 1.2951226136318323
 root - INFO - 2023-03-15,Number of Long: 44, List length: 44, close long: 6, new long: 6
 root - INFO - 2023-03-15,卖出:110076
@@ -7369,7 +7638,8 @@ root - INFO - 2023-03-15,策略收益：
 毛收益 -4.47, 净收益 -4.47
 root - INFO - 2023-03-15,策略收益：
 毛收益 64.60, 净收益 64.60
-root - INFO - 2023-03-16,Total correlation: -0.24671384728300574
+root - INFO - 2023-03-16,Total correlation: -0.21667309048988584
+root - INFO - 2023-03-16,Total rankICIR: -4.555290862168706
 root - INFO - 2023-03-16,index mean: 1.308449731092324
 root - INFO - 2023-03-16,Number of Long: 44, List length: 44, close long: 6, new long: 6
 root - INFO - 2023-03-16,卖出:113047
@@ -7408,7 +7678,8 @@ root - INFO - 2023-03-16,策略收益：
 毛收益 -190.12, 净收益 -190.12
 root - INFO - 2023-03-16,策略收益：
 毛收益 -115.50, 净收益 -115.50
-root - INFO - 2023-03-17,Total correlation: -0.008001158956823344
+root - INFO - 2023-03-17,Total correlation: -0.0030611306859955304
+root - INFO - 2023-03-17,Total rankICIR: -0.0643565871991408
 root - INFO - 2023-03-17,index mean: 1.3090873147911573
 root - INFO - 2023-03-17,Number of Long: 44, List length: 44, close long: 8, new long: 8
 root - INFO - 2023-03-17,买入:110072
@@ -7447,7 +7718,8 @@ root - INFO - 2023-03-17,策略收益：
 毛收益 532.13, 净收益 532.13
 root - INFO - 2023-03-17,策略收益：
 毛收益 92.92, 净收益 92.92
-root - INFO - 2023-03-20,Total correlation: -0.1625303181084002
+root - INFO - 2023-03-20,Total correlation: -0.1550324592417276
+root - INFO - 2023-03-20,Total rankICIR: -3.259370802930186
 root - INFO - 2023-03-20,index mean: 1.3131368150815437
 root - INFO - 2023-03-20,Number of Long: 44, List length: 44, close long: 3, new long: 3
 root - INFO - 2023-03-20,卖出:110087
@@ -7498,7 +7770,8 @@ root - INFO - 2023-03-20,策略收益：
 毛收益 47.70, 净收益 47.70
 root - INFO - 2023-03-20,策略收益：
 毛收益 100.58, 净收益 100.58
-root - INFO - 2023-03-21,Total correlation: 0.13709585346979053
+root - INFO - 2023-03-21,Total correlation: 0.11978363145918204
+root - INFO - 2023-03-21,Total rankICIR: 2.5183066369234552
 root - INFO - 2023-03-21,index mean: 1.3106499064413384
 root - INFO - 2023-03-21,Number of Long: 44, List length: 44, close long: 7, new long: 7
 root - INFO - 2023-03-21,卖出:113574
@@ -7519,7 +7792,8 @@ root - INFO - 2023-03-21,策略收益：
 毛收益 702.86, 净收益 702.86
 root - INFO - 2023-03-21,策略收益：
 毛收益 318.95, 净收益 318.95
-root - INFO - 2023-03-22,Total correlation: 0.2106209811426041
+root - INFO - 2023-03-22,Total correlation: 0.1728908962438943
+root - INFO - 2023-03-22,Total rankICIR: 3.634822940086013
 root - INFO - 2023-03-22,index mean: 1.3059969894859358
 root - INFO - 2023-03-22,Number of Long: 44, List length: 44, close long: 6, new long: 6
 root - INFO - 2023-03-22,卖出:110072
@@ -7564,7 +7838,8 @@ root - INFO - 2023-03-22,策略收益：
 毛收益 174.99, 净收益 174.99
 root - INFO - 2023-03-22,策略收益：
 毛收益 -1.50, 净收益 -1.50
-root - INFO - 2023-03-23,Total correlation: -0.0510036225875109
+root - INFO - 2023-03-23,Total correlation: -0.04930320799964368
+root - INFO - 2023-03-23,Total rankICIR: -1.0365405891825024
 root - INFO - 2023-03-23,index mean: 1.3032827757955245
 root - INFO - 2023-03-23,Number of Long: 44, List length: 44, close long: 4, new long: 4
 root - INFO - 2023-03-23,卖出:110081
@@ -7603,7 +7878,8 @@ root - INFO - 2023-03-23,策略收益：
 毛收益 -67.84, 净收益 -67.84
 root - INFO - 2023-03-23,策略收益：
 毛收益 263.20, 净收益 263.20
-root - INFO - 2023-03-24,Total correlation: 0.0964728815349363
+root - INFO - 2023-03-24,Total correlation: 0.0698089330093018
+root - INFO - 2023-03-24,Total rankICIR: 1.467648769471278
 root - INFO - 2023-03-24,index mean: 1.3066629971237207
 root - INFO - 2023-03-24,Number of Long: 44, List length: 44, close long: 9, new long: 9
 root - INFO - 2023-03-24,买入:113053
@@ -7630,7 +7906,8 @@ root - INFO - 2023-03-24,策略收益：
 毛收益 -221.62, 净收益 -221.62
 root - INFO - 2023-03-24,策略收益：
 毛收益 162.82, 净收益 162.82
-root - INFO - 2023-03-27,Total correlation: -0.13767961475208468
+root - INFO - 2023-03-27,Total correlation: -0.12358775772854723
+root - INFO - 2023-03-27,Total rankICIR: -2.5982838117271907
 root - INFO - 2023-03-27,index mean: 1.2970610527082762
 root - INFO - 2023-03-27,Number of Long: 44, List length: 44, close long: 5, new long: 5
 root - INFO - 2023-03-27,买入:110079
@@ -7687,7 +7964,8 @@ root - INFO - 2023-03-27,策略收益：
 毛收益 18.19, 净收益 18.19
 root - INFO - 2023-03-27,策略收益：
 毛收益 257.47, 净收益 257.47
-root - INFO - 2023-03-28,Total correlation: -0.14616672975097117
+root - INFO - 2023-03-28,Total correlation: -0.13602780928311592
+root - INFO - 2023-03-28,Total rankICIR: -2.859820918357788
 root - INFO - 2023-03-28,index mean: 1.3013031919396922
 root - INFO - 2023-03-28,Number of Long: 44, List length: 44, close long: 7, new long: 7
 root - INFO - 2023-03-28,卖出:111009
@@ -7720,7 +7998,8 @@ root - INFO - 2023-03-28,策略收益：
 毛收益 -94.53, 净收益 -94.53
 root - INFO - 2023-03-28,策略收益：
 毛收益 197.07, 净收益 197.07
-root - INFO - 2023-03-29,Total correlation: -0.09449149646298297
+root - INFO - 2023-03-29,Total correlation: -0.07311617128184839
+root - INFO - 2023-03-29,Total rankICIR: -1.5371794723743657
 root - INFO - 2023-03-29,index mean: 1.303501712584131
 root - INFO - 2023-03-29,Number of Long: 44, List length: 44, close long: 4, new long: 4
 root - INFO - 2023-03-29,买入:110073
@@ -7765,7 +8044,8 @@ root - INFO - 2023-03-29,策略收益：
 毛收益 -17.25, 净收益 -17.25
 root - INFO - 2023-03-29,策略收益：
 毛收益 -131.81, 净收益 -131.81
-root - INFO - 2023-03-30,Total correlation: -0.2057636054375199
+root - INFO - 2023-03-30,Total correlation: -0.16737606659263807
+root - INFO - 2023-03-30,Total rankICIR: -3.5188802862936757
 root - INFO - 2023-03-30,index mean: 1.2942795013590742
 root - INFO - 2023-03-30,Number of Long: 44, List length: 44, close long: 6, new long: 6
 root - INFO - 2023-03-30,买入:110079
@@ -7792,7 +8072,8 @@ root - INFO - 2023-03-30,策略收益：
 毛收益 -161.47, 净收益 -161.47
 root - INFO - 2023-03-30,策略收益：
 毛收益 -108.23, 净收益 -108.23
-root - INFO - 2023-03-31,Total correlation: -0.0033811292900165118
+root - INFO - 2023-03-31,Total correlation: -0.03230220721731999
+root - INFO - 2023-03-31,Total rankICIR: -0.6791150162313601
 root - INFO - 2023-03-31,index mean: 1.2923881495440062
 root - INFO - 2023-03-31,Number of Long: 44, List length: 44, close long: 6, new long: 6
 root - INFO - 2023-03-31,卖出:110079
@@ -7831,7 +8112,8 @@ root - INFO - 2023-03-31,策略收益：
 毛收益 109.72, 净收益 109.72
 root - INFO - 2023-03-31,策略收益：
 毛收益 -16.16, 净收益 -16.16
-root - INFO - 2023-04-03,Total correlation: 0.1847219026292912
+root - INFO - 2023-04-03,Total correlation: 0.17838224020290527
+root - INFO - 2023-04-03,Total rankICIR: 3.750271835474689
 root - INFO - 2023-04-03,index mean: 1.2877858307874104
 root - INFO - 2023-04-03,Number of Long: 44, List length: 44, close long: 5, new long: 5
 root - INFO - 2023-04-03,买入:113042
@@ -7870,7 +8152,8 @@ root - INFO - 2023-04-03,策略收益：
 毛收益 39.46, 净收益 39.46
 root - INFO - 2023-04-03,策略收益：
 毛收益 -136.67, 净收益 -136.67
-root - INFO - 2023-04-04,Total correlation: 0.012661955142694609
+root - INFO - 2023-04-04,Total correlation: 0.0073357219818513154
+root - INFO - 2023-04-04,Total rankICIR: 0.154399086554268
 root - INFO - 2023-04-04,index mean: 1.2888742075873447
 root - INFO - 2023-04-04,Number of Long: 44, List length: 44, close long: 5, new long: 5
 root - INFO - 2023-04-04,卖出:111001
@@ -7903,7 +8186,8 @@ root - INFO - 2023-04-04,策略收益：
 毛收益 28.24, 净收益 28.24
 root - INFO - 2023-04-04,策略收益：
 毛收益 107.54, 净收益 107.54
-root - INFO - 2023-04-06,Total correlation: -0.2079860737338425
+root - INFO - 2023-04-06,Total correlation: -0.185463217729849
+root - INFO - 2023-04-06,Total rankICIR: -3.903549163633558
 root - INFO - 2023-04-06,index mean: 1.2912375915504395
 root - INFO - 2023-04-06,Number of Long: 44, List length: 44, close long: 6, new long: 6
 root - INFO - 2023-04-06,卖出:110073
@@ -7936,7 +8220,8 @@ root - INFO - 2023-04-06,策略收益：
 毛收益 -113.36, 净收益 -113.36
 root - INFO - 2023-04-06,策略收益：
 毛收益 -199.31, 净收益 -199.31
-root - INFO - 2023-04-07,Total correlation: 0.11391931393289015
+root - INFO - 2023-04-07,Total correlation: 0.08485936576495601
+root - INFO - 2023-04-07,Total rankICIR: 1.786083032058574
 root - INFO - 2023-04-07,index mean: 1.283673383725013
 root - INFO - 2023-04-07,Number of Long: 44, List length: 44, close long: 5, new long: 5
 root - INFO - 2023-04-07,买入:110047
@@ -7975,7 +8260,8 @@ root - INFO - 2023-04-07,策略收益：
 毛收益 -48.30, 净收益 -48.30
 root - INFO - 2023-04-07,策略收益：
 毛收益 12.88, 净收益 12.88
-root - INFO - 2023-04-10,Total correlation: -0.004024679884505023
+root - INFO - 2023-04-10,Total correlation: -0.015704903207603656
+root - INFO - 2023-04-10,Total rankICIR: -0.33054997390526053
 root - INFO - 2023-04-10,index mean: 1.2826425652485642
 root - INFO - 2023-04-10,Number of Long: 44, List length: 44, close long: 3, new long: 3
 root - INFO - 2023-04-10,买入:118000
@@ -8008,7 +8294,8 @@ root - INFO - 2023-04-10,策略收益：
 毛收益 770.08, 净收益 770.08
 root - INFO - 2023-04-10,策略收益：
 毛收益 158.51, 净收益 158.51
-root - INFO - 2023-04-11,Total correlation: -0.3055415516361921
+root - INFO - 2023-04-11,Total correlation: -0.2757965620135319
+root - INFO - 2023-04-11,Total rankICIR: -5.804846115358131
 root - INFO - 2023-04-11,index mean: 1.2803355063340445
 root - INFO - 2023-04-11,Number of Long: 44, List length: 44, close long: 8, new long: 8
 root - INFO - 2023-04-11,卖出:113600
@@ -8029,7 +8316,8 @@ root - INFO - 2023-04-11,策略收益：
 毛收益 99.43, 净收益 99.43
 root - INFO - 2023-04-11,策略收益：
 毛收益 -121.30, 净收益 -121.30
-root - INFO - 2023-04-12,Total correlation: -0.10360643270230716
+root - INFO - 2023-04-12,Total correlation: -0.0963651004814197
+root - INFO - 2023-04-12,Total rankICIR: -2.0282507334453976
 root - INFO - 2023-04-12,index mean: 1.2760752034421674
 root - INFO - 2023-04-12,Number of Long: 44, List length: 44, close long: 4, new long: 4
 root - INFO - 2023-04-12,买入:110079
@@ -8080,7 +8368,8 @@ root - INFO - 2023-04-12,策略收益：
 毛收益 1.16, 净收益 1.16
 root - INFO - 2023-04-12,策略收益：
 毛收益 529.01, 净收益 529.01
-root - INFO - 2023-04-13,Total correlation: -0.05715843090006344
+root - INFO - 2023-04-13,Total correlation: -0.046127396577595674
+root - INFO - 2023-04-13,Total rankICIR: -0.9719645577241448
 root - INFO - 2023-04-13,index mean: 1.2579143350522848
 root - INFO - 2023-04-13,Number of Long: 44, List length: 44, close long: 9, new long: 9
 root - INFO - 2023-04-13,买入:110076
@@ -8107,7 +8396,8 @@ root - INFO - 2023-04-13,策略收益：
 毛收益 -186.24, 净收益 -186.24
 root - INFO - 2023-04-13,策略收益：
 毛收益 13.80, 净收益 13.80
-root - INFO - 2023-04-14,Total correlation: -0.1133899302012464
+root - INFO - 2023-04-14,Total correlation: -0.10934844347987624
+root - INFO - 2023-04-14,Total rankICIR: -2.3041146778347272
 root - INFO - 2023-04-14,index mean: 1.2472183904406249
 root - INFO - 2023-04-14,Number of Long: 44, List length: 44, close long: 7, new long: 7
 root - INFO - 2023-04-14,卖出:110059
@@ -8164,7 +8454,8 @@ root - INFO - 2023-04-14,策略收益：
 毛收益 -15.20, 净收益 -15.20
 root - INFO - 2023-04-14,策略收益：
 毛收益 -120.38, 净收益 -120.38
-root - INFO - 2023-04-17,Total correlation: 0.10074646444700118
+root - INFO - 2023-04-17,Total correlation: 0.0915562158621563
+root - INFO - 2023-04-17,Total rankICIR: 1.931380489451523
 root - INFO - 2023-04-17,index mean: 1.2479018206809522
 root - INFO - 2023-04-17,Number of Long: 44, List length: 44, close long: 3, new long: 3
 root - INFO - 2023-04-17,买入:110079
@@ -8209,7 +8500,8 @@ root - INFO - 2023-04-17,策略收益：
 毛收益 -15.34, 净收益 -15.34
 root - INFO - 2023-04-17,策略收益：
 毛收益 -58.21, 净收益 -58.21
-root - INFO - 2023-04-18,Total correlation: -0.2205644398887445
+root - INFO - 2023-04-18,Total correlation: -0.20696157822104197
+root - INFO - 2023-04-18,Total rankICIR: -4.370761982474685
 root - INFO - 2023-04-18,index mean: 1.24249437103802
 root - INFO - 2023-04-18,Number of Long: 44, List length: 44, close long: 9, new long: 9
 root - INFO - 2023-04-18,卖出:111012
@@ -8230,7 +8522,8 @@ root - INFO - 2023-04-18,策略收益：
 毛收益 -57.10, 净收益 -57.10
 root - INFO - 2023-04-18,策略收益：
 毛收益 -17.94, 净收益 -17.94
-root - INFO - 2023-04-19,Total correlation: 0.06016852785691585
+root - INFO - 2023-04-19,Total correlation: 0.05457772090722212
+root - INFO - 2023-04-19,Total rankICIR: 1.152611173928258
 root - INFO - 2023-04-19,index mean: 1.235663037335227
 root - INFO - 2023-04-19,Number of Long: 44, List length: 44, close long: 5, new long: 5
 root - INFO - 2023-04-19,卖出:110047
@@ -8287,7 +8580,8 @@ root - INFO - 2023-04-19,策略收益：
 毛收益 331.04, 净收益 331.04
 root - INFO - 2023-04-19,策略收益：
 毛收益 -1371.84, 净收益 -1371.84
-root - INFO - 2023-04-20,Total correlation: -0.1956609141595604
+root - INFO - 2023-04-20,Total correlation: -0.15501176431387553
+root - INFO - 2023-04-20,Total rankICIR: -3.2773167748690577
 root - INFO - 2023-04-20,index mean: 1.2324255250940641
 root - INFO - 2023-04-20,Number of Long: 44, List length: 44, close long: 6, new long: 6
 root - INFO - 2023-04-20,买入:110067
@@ -8320,7 +8614,8 @@ root - INFO - 2023-04-20,策略收益：
 毛收益 -156.19, 净收益 -156.19
 root - INFO - 2023-04-20,策略收益：
 毛收益 -34.85, 净收益 -34.85
-root - INFO - 2023-04-21,Total correlation: -0.1560043537268895
+root - INFO - 2023-04-21,Total correlation: -0.12708436986848368
+root - INFO - 2023-04-21,Total rankICIR: -2.6898691055628645
 root - INFO - 2023-04-21,index mean: 1.2287389774795643
 root - INFO - 2023-04-21,Number of Long: 44, List length: 44, close long: 3, new long: 3
 root - INFO - 2023-04-21,卖出:110067
@@ -8359,7 +8654,8 @@ root - INFO - 2023-04-21,策略收益：
 毛收益 -137.80, 净收益 -137.80
 root - INFO - 2023-04-21,策略收益：
 毛收益 -71.50, 净收益 -71.50
-root - INFO - 2023-04-24,Total correlation: -0.3157478045925491
+root - INFO - 2023-04-24,Total correlation: -0.27344760844204047
+root - INFO - 2023-04-24,Total rankICIR: -5.794250940254443
 root - INFO - 2023-04-24,index mean: 1.2252210765994014
 root - INFO - 2023-04-24,Number of Long: 44, List length: 45, close long: 4, new long: 5
 root - INFO - 2023-04-24,买入:113535
@@ -8380,7 +8676,8 @@ root - INFO - 2023-04-24,策略收益：
 毛收益 -119.88, 净收益 -119.88
 root - INFO - 2023-04-24,策略收益：
 毛收益 -422.56, 净收益 -422.56
-root - INFO - 2023-04-25,Total correlation: -0.2534506440556022
+root - INFO - 2023-04-25,Total correlation: -0.23398034887415087
+root - INFO - 2023-04-25,Total rankICIR: -4.963472740599188
 root - INFO - 2023-04-25,index mean: 1.2227567895637819
 root - INFO - 2023-04-25,Number of Long: 45, List length: 45, close long: 5, new long: 5
 root - INFO - 2023-04-25,卖出:110076
@@ -8409,7 +8706,8 @@ root - INFO - 2023-04-25,策略收益：
 毛收益 -82.92, 净收益 -82.92
 root - INFO - 2023-04-25,策略收益：
 毛收益 -170.03, 净收益 -170.03
-root - INFO - 2023-04-26,Total correlation: -0.027813520250597596
+root - INFO - 2023-04-26,Total correlation: -0.04749851199236046
+root - INFO - 2023-04-26,Total rankICIR: -1.0087145271637923
 root - INFO - 2023-04-26,index mean: 1.2182436686732412
 root - INFO - 2023-04-26,Number of Long: 45, List length: 45, close long: 4, new long: 4
 root - INFO - 2023-04-26,卖出:110072
@@ -8442,7 +8740,8 @@ root - INFO - 2023-04-26,策略收益：
 毛收益 139.01, 净收益 139.01
 root - INFO - 2023-04-26,策略收益：
 毛收益 -298.97, 净收益 -298.97
-root - INFO - 2023-04-27,Total correlation: 0.14354227561711008
+root - INFO - 2023-04-27,Total correlation: 0.10658830916547296
+root - INFO - 2023-04-27,Total rankICIR: 2.2635904025442093
 root - INFO - 2023-04-27,index mean: 1.2170898502198435
 root - INFO - 2023-04-27,Number of Long: 45, List length: 45, close long: 5, new long: 5
 root - INFO - 2023-04-27,买入:111003
@@ -8469,7 +8768,8 @@ root - INFO - 2023-04-27,策略收益：
 毛收益 78.99, 净收益 78.99
 root - INFO - 2023-04-27,策略收益：
 毛收益 43.13, 净收益 43.13
-root - INFO - 2023-04-28,Total correlation: 0.06853042780509155
+root - INFO - 2023-04-28,Total correlation: 0.04739961671539482
+root - INFO - 2023-04-28,Total rankICIR: 1.0066143118442226
 root - INFO - 2023-04-28,index mean: 1.2131586453260916
 root - INFO - 2023-04-28,Number of Long: 45, List length: 45, close long: 5, new long: 5
 root - INFO - 2023-04-28,买入:110067
@@ -8502,7 +8802,8 @@ root - INFO - 2023-04-28,策略收益：
 毛收益 29.97, 净收益 29.97
 root - INFO - 2023-04-28,策略收益：
 毛收益 54.72, 净收益 54.72
-root - INFO - 2023-05-04,Total correlation: 0.0036338969166665627
+root - INFO - 2023-05-04,Total correlation: -0.009285167670663027
+root - INFO - 2023-05-04,Total rankICIR: -0.19718688278183966
 root - INFO - 2023-05-04,index mean: 1.2030083659928212
 root - INFO - 2023-05-04,Number of Long: 45, List length: 44, close long: 6, new long: 5
 root - INFO - 2023-05-04,卖出:110063
@@ -8535,7 +8836,8 @@ root - INFO - 2023-05-04,策略收益：
 毛收益 323.60, 净收益 323.60
 root - INFO - 2023-05-04,策略收益：
 毛收益 2.60, 净收益 2.60
-root - INFO - 2023-05-05,Total correlation: -0.2890841874788504
+root - INFO - 2023-05-05,Total correlation: -0.2582986427706611
+root - INFO - 2023-05-05,Total rankICIR: -5.467151782053448
 root - INFO - 2023-05-05,index mean: 1.201417580204742
 root - INFO - 2023-05-05,Number of Long: 44, List length: 45, close long: 6, new long: 7
 root - INFO - 2023-05-05,卖出:110067
@@ -8572,7 +8874,8 @@ root - INFO - 2023-05-05,策略收益：
 毛收益 283.66, 净收益 283.66
 root - INFO - 2023-05-05,策略收益：
 毛收益 -44.50, 净收益 -44.50
-root - INFO - 2023-05-08,Total correlation: -0.2094350707637471
+root - INFO - 2023-05-08,Total correlation: -0.18743886087292083
+root - INFO - 2023-05-08,Total rankICIR: -3.980594212045171
 root - INFO - 2023-05-08,index mean: 1.1981949381493178
 root - INFO - 2023-05-08,Number of Long: 45, List length: 45, close long: 5, new long: 5
 root - INFO - 2023-05-08,买入:111001
@@ -8613,7 +8916,8 @@ root - INFO - 2023-05-08,策略收益：
 毛收益 -406.98, 净收益 -406.98
 root - INFO - 2023-05-08,策略收益：
 毛收益 -88.88, 净收益 -88.88
-root - INFO - 2023-05-09,Total correlation: -0.06066872696061871
+root - INFO - 2023-05-09,Total correlation: -0.04279283683705434
+root - INFO - 2023-05-09,Total rankICIR: -0.9077731534107185
 root - INFO - 2023-05-09,index mean: 1.1893172631922442
 root - INFO - 2023-05-09,Number of Long: 45, List length: 45, close long: 6, new long: 6
 root - INFO - 2023-05-09,卖出:110076
@@ -8646,7 +8950,8 @@ root - INFO - 2023-05-09,策略收益：
 毛收益 -98.17, 净收益 -98.17
 root - INFO - 2023-05-09,策略收益：
 毛收益 -299.09, 净收益 -299.09
-root - INFO - 2023-05-10,Total correlation: -0.2238850233016144
+root - INFO - 2023-05-10,Total correlation: -0.20308406752611366
+root - INFO - 2023-05-10,Total rankICIR: -4.312847719988609
 root - INFO - 2023-05-10,index mean: 1.1915618152862113
 root - INFO - 2023-05-10,Number of Long: 45, List length: 45, close long: 4, new long: 4
 root - INFO - 2023-05-10,卖出:110070
@@ -8685,7 +8990,8 @@ root - INFO - 2023-05-10,策略收益：
 毛收益 -183.62, 净收益 -183.62
 root - INFO - 2023-05-10,策略收益：
 毛收益 -36.46, 净收益 -36.46
-root - INFO - 2023-05-11,Total correlation: -0.036358323096428835
+root - INFO - 2023-05-11,Total correlation: -0.052201855729776744
+root - INFO - 2023-05-11,Total rankICIR: -1.111053682303195
 root - INFO - 2023-05-11,index mean: 1.1973207298705686
 root - INFO - 2023-05-11,Number of Long: 45, List length: 45, close long: 6, new long: 6
 root - INFO - 2023-05-11,卖出:113546
@@ -8712,7 +9018,8 @@ root - INFO - 2023-05-11,策略收益：
 毛收益 -741.51, 净收益 -741.51
 root - INFO - 2023-05-11,策略收益：
 毛收益 15.39, 净收益 15.39
-root - INFO - 2023-05-12,Total correlation: 0.10126190621191845
+root - INFO - 2023-05-12,Total correlation: 0.09823215273018196
+root - INFO - 2023-05-12,Total rankICIR: 2.0953634297306607
 root - INFO - 2023-05-12,index mean: 1.195028040237584
 root - INFO - 2023-05-12,Number of Long: 45, List length: 45, close long: 4, new long: 4
 root - INFO - 2023-05-12,买入:110082
@@ -8751,7 +9058,8 @@ root - INFO - 2023-05-12,策略收益：
 毛收益 -223.60, 净收益 -223.60
 root - INFO - 2023-05-12,策略收益：
 毛收益 57.91, 净收益 57.91
-root - INFO - 2023-05-15,Total correlation: -0.2305691471642109
+root - INFO - 2023-05-15,Total correlation: -0.11656211861405463
+root - INFO - 2023-05-15,Total rankICIR: -2.486354964719963
 root - INFO - 2023-05-15,index mean: 1.1978835016791312
 root - INFO - 2023-05-15,Number of Long: 45, List length: 45, close long: 5, new long: 5
 root - INFO - 2023-05-15,卖出:113048
@@ -8778,7 +9086,8 @@ root - INFO - 2023-05-15,策略收益：
 毛收益 -195.55, 净收益 -195.55
 root - INFO - 2023-05-15,策略收益：
 毛收益 -474.30, 净收益 -474.30
-root - INFO - 2023-05-16,Total correlation: 0.21501179518675706
+root - INFO - 2023-05-16,Total correlation: 0.142769240960755
+root - INFO - 2023-05-16,Total rankICIR: 3.045371989569108
 root - INFO - 2023-05-16,index mean: 1.2071767549566237
 root - INFO - 2023-05-16,Number of Long: 45, List length: 45, close long: 3, new long: 3
 root - INFO - 2023-05-16,卖出:113546
@@ -8811,7 +9120,8 @@ root - INFO - 2023-05-16,策略收益：
 毛收益 -14.59, 净收益 -14.59
 root - INFO - 2023-05-16,策略收益：
 毛收益 -261.29, 净收益 -261.29
-root - INFO - 2023-05-17,Total correlation: 0.03080749553722195
+root - INFO - 2023-05-17,Total correlation: 0.02600964623307132
+root - INFO - 2023-05-17,Total rankICIR: 0.5554140562763078
 root - INFO - 2023-05-17,index mean: 1.2101315171532443
 root - INFO - 2023-05-17,Number of Long: 45, List length: 45, close long: 5, new long: 5
 root - INFO - 2023-05-17,卖出:113593
@@ -8832,7 +9142,8 @@ root - INFO - 2023-05-17,策略收益：
 毛收益 -124.05, 净收益 -124.05
 root - INFO - 2023-05-17,策略收益：
 毛收益 -161.61, 净收益 -161.61
-root - INFO - 2023-05-18,Total correlation: 0.10535615442875791
+root - INFO - 2023-05-18,Total correlation: 0.06089522919603482
+root - INFO - 2023-05-18,Total rankICIR: 1.3017913139396762
 root - INFO - 2023-05-18,index mean: 1.213102402950452
 root - INFO - 2023-05-18,Number of Long: 45, List length: 45, close long: 5, new long: 5
 root - INFO - 2023-05-18,买入:113608
@@ -8865,7 +9176,8 @@ root - INFO - 2023-05-18,策略收益：
 毛收益 -35.57, 净收益 -35.57
 root - INFO - 2023-05-18,策略收益：
 毛收益 20.16, 净收益 20.16
-root - INFO - 2023-05-19,Total correlation: 0.0234917488213525
+root - INFO - 2023-05-19,Total correlation: 0.04185078743577671
+root - INFO - 2023-05-19,Total rankICIR: 0.895645963157045
 root - INFO - 2023-05-19,index mean: 1.2104077102826487
 root - INFO - 2023-05-19,Number of Long: 45, List length: 45, close long: 6, new long: 6
 root - INFO - 2023-05-19,买入:110070
@@ -8898,7 +9210,8 @@ root - INFO - 2023-05-19,策略收益：
 毛收益 -157.32, 净收益 -157.32
 root - INFO - 2023-05-19,策略收益：
 毛收益 -88.24, 净收益 -88.24
-root - INFO - 2023-05-22,Total correlation: -0.05387142066803034
+root - INFO - 2023-05-22,Total correlation: -0.06251852917725174
+root - INFO - 2023-05-22,Total rankICIR: -1.3379549516493408
 root - INFO - 2023-05-22,index mean: 1.2116040126573675
 root - INFO - 2023-05-22,Number of Long: 45, List length: 46, close long: 3, new long: 4
 root - INFO - 2023-05-22,买入:110059
@@ -8937,7 +9250,8 @@ root - INFO - 2023-05-22,策略收益：
 毛收益 -314.67, 净收益 -314.67
 root - INFO - 2023-05-22,策略收益：
 毛收益 -9.01, 净收益 -9.01
-root - INFO - 2023-05-23,Total correlation: -0.12057294070959508
+root - INFO - 2023-05-23,Total correlation: -0.1204246810380532
+root - INFO - 2023-05-23,Total rankICIR: -2.588430404132973
 root - INFO - 2023-05-23,index mean: 1.2147399230983946
 root - INFO - 2023-05-23,Number of Long: 46, List length: 46, close long: 7, new long: 7
 root - INFO - 2023-05-23,买入:113605
@@ -8960,7 +9274,8 @@ root - INFO - 2023-05-23,策略收益：
 毛收益 360.26, 净收益 360.26
 root - INFO - 2023-05-23,策略收益：
 毛收益 -422.38, 净收益 -422.38
-root - INFO - 2023-05-24,Total correlation: -0.10873247571549946
+root - INFO - 2023-05-24,Total correlation: -0.07795169937681294
+root - INFO - 2023-05-24,Total rankICIR: -1.677320608215492
 root - INFO - 2023-05-24,index mean: 1.214456805330741
 root - INFO - 2023-05-24,Number of Long: 46, List length: 46, close long: 5, new long: 5
 root - INFO - 2023-05-24,卖出:113574
@@ -9005,7 +9320,8 @@ root - INFO - 2023-05-24,策略收益：
 毛收益 98.21, 净收益 98.21
 root - INFO - 2023-05-24,策略收益：
 毛收益 -25.82, 净收益 -25.82
-root - INFO - 2023-05-25,Total correlation: 0.03128570657288978
+root - INFO - 2023-05-25,Total correlation: 0.04866297216598847
+root - INFO - 2023-05-25,Total rankICIR: 1.0471023303349376
 root - INFO - 2023-05-25,index mean: 1.2200047923292765
 root - INFO - 2023-05-25,Number of Long: 46, List length: 46, close long: 4, new long: 4
 root - INFO - 2023-05-25,卖出:110070
@@ -9038,7 +9354,8 @@ root - INFO - 2023-05-25,策略收益：
 毛收益 -62.72, 净收益 -62.72
 root - INFO - 2023-05-25,策略收益：
 毛收益 -60.80, 净收益 -60.80
-root - INFO - 2023-05-26,Total correlation: -0.1691309572779485
+root - INFO - 2023-05-26,Total correlation: -0.16086590601595874
+root - INFO - 2023-05-26,Total rankICIR: -3.4800616356870617
 root - INFO - 2023-05-26,index mean: 1.224118297005296
 root - INFO - 2023-05-26,Number of Long: 46, List length: 46, close long: 6, new long: 6
 root - INFO - 2023-05-26,卖出:113644
@@ -9065,7 +9382,8 @@ root - INFO - 2023-05-26,策略收益：
 毛收益 39.26, 净收益 39.26
 root - INFO - 2023-05-26,策略收益：
 毛收益 -236.77, 净收益 -236.77
-root - INFO - 2023-05-29,Total correlation: 0.06833255328971335
+root - INFO - 2023-05-29,Total correlation: 0.045277586814582695
+root - INFO - 2023-05-29,Total rankICIR: 0.9805498855110443
 root - INFO - 2023-05-29,index mean: 1.218608019624987
 root - INFO - 2023-05-29,Number of Long: 46, List length: 47, close long: 5, new long: 6
 root - INFO - 2023-05-29,卖出:110059
@@ -9104,7 +9422,8 @@ root - INFO - 2023-05-29,策略收益：
 毛收益 99.33, 净收益 99.33
 root - INFO - 2023-05-29,策略收益：
 毛收益 182.53, 净收益 182.53
-root - INFO - 2023-05-30,Total correlation: 0.06701201500905567
+root - INFO - 2023-05-30,Total correlation: 0.09088836620643559
+root - INFO - 2023-05-30,Total rankICIR: 1.9725078954465538
 root - INFO - 2023-05-30,index mean: 1.2262831356531998
 root - INFO - 2023-05-30,Number of Long: 47, List length: 47, close long: 5, new long: 5
 root - INFO - 2023-05-30,买入:110059
@@ -9139,7 +9458,8 @@ root - INFO - 2023-05-30,策略收益：
 毛收益 157.73, 净收益 157.73
 root - INFO - 2023-05-30,策略收益：
 毛收益 -125.34, 净收益 -125.34
-root - INFO - 2023-05-31,Total correlation: -0.0012790939239446062
+root - INFO - 2023-05-31,Total correlation: 0.005369175461992848
+root - INFO - 2023-05-31,Total rankICIR: 0.11664834892473362
 root - INFO - 2023-05-31,index mean: 1.2370474570360313
 root - INFO - 2023-05-31,Number of Long: 47, List length: 47, close long: 6, new long: 6
 root - INFO - 2023-05-31,卖出:113561
@@ -9172,7 +9492,8 @@ root - INFO - 2023-05-31,策略收益：
 毛收益 -75.99, 净收益 -75.99
 root - INFO - 2023-05-31,策略收益：
 毛收益 -82.72, 净收益 -82.72
-root - INFO - 2023-06-01,Total correlation: 0.06225968580156014
+root - INFO - 2023-06-01,Total correlation: 0.07185901124275602
+root - INFO - 2023-06-01,Total rankICIR: 1.5611773308894943
 root - INFO - 2023-06-01,index mean: 1.2410667640580582
 root - INFO - 2023-06-01,Number of Long: 47, List length: 47, close long: 3, new long: 3
 root - INFO - 2023-06-01,卖出:113030
@@ -9211,7 +9532,8 @@ root - INFO - 2023-06-01,策略收益：
 毛收益 -105.30, 净收益 -105.30
 root - INFO - 2023-06-01,策略收益：
 毛收益 1.39, 净收益 1.39
-root - INFO - 2023-06-02,Total correlation: 0.15278467329810783
+root - INFO - 2023-06-02,Total correlation: 0.11192228436856053
+root - INFO - 2023-06-02,Total rankICIR: 2.4367206093319895
 root - INFO - 2023-06-02,index mean: 1.24075498440293
 root - INFO - 2023-06-02,Number of Long: 47, List length: 47, close long: 2, new long: 2
 root - INFO - 2023-06-02,买入:110067
@@ -9232,7 +9554,8 @@ root - INFO - 2023-06-02,策略收益：
 毛收益 135.37, 净收益 135.37
 root - INFO - 2023-06-02,策略收益：
 毛收益 146.38, 净收益 146.38
-root - INFO - 2023-06-05,Total correlation: 0.10784893967855967
+root - INFO - 2023-06-05,Total correlation: 0.07429176067495619
+root - INFO - 2023-06-05,Total rankICIR: 1.6191513855992155
 root - INFO - 2023-06-05,index mean: 1.25635308292867
 root - INFO - 2023-06-05,Number of Long: 47, List length: 47, close long: 6, new long: 6
 root - INFO - 2023-06-05,卖出:113542
@@ -9247,7 +9570,8 @@ root - INFO - 2023-06-05,策略收益：
 毛收益 72.80, 净收益 72.80
 root - INFO - 2023-06-05,策略收益：
 毛收益 106.41, 净收益 106.41
-root - INFO - 2023-06-06,Total correlation: -0.05640397633994002
+root - INFO - 2023-06-06,Total correlation: -0.03839737521281505
+root - INFO - 2023-06-06,Total rankICIR: -0.8386113330276884
 root - INFO - 2023-06-06,index mean: 1.2702488997093673
 root - INFO - 2023-06-06,Number of Long: 47, List length: 47, close long: 7, new long: 7
 root - INFO - 2023-06-06,卖出:111003
@@ -9286,7 +9610,8 @@ root - INFO - 2023-06-06,策略收益：
 毛收益 -217.05, 净收益 -217.05
 root - INFO - 2023-06-06,策略收益：
 毛收益 53.42, 净收益 53.42
-root - INFO - 2023-06-07,Total correlation: -0.28711352807943863
+root - INFO - 2023-06-07,Total correlation: -0.26030506937123943
+root - INFO - 2023-06-07,Total rankICIR: -5.685148529278234
 root - INFO - 2023-06-07,index mean: 1.2703200323476103
 root - INFO - 2023-06-07,Number of Long: 47, List length: 47, close long: 4, new long: 4
 root - INFO - 2023-06-07,买入:110070
@@ -9331,7 +9656,8 @@ root - INFO - 2023-06-07,策略收益：
 毛收益 -32.69, 净收益 -32.69
 root - INFO - 2023-06-07,策略收益：
 毛收益 -42.24, 净收益 -42.24
-root - INFO - 2023-06-08,Total correlation: -0.01165791247877125
+root - INFO - 2023-06-08,Total correlation: -0.00284131628444675
+root - INFO - 2023-06-08,Total rankICIR: -0.06212029775451316
 root - INFO - 2023-06-08,index mean: 1.2855699348942462
 root - INFO - 2023-06-08,Number of Long: 47, List length: 47, close long: 4, new long: 4
 root - INFO - 2023-06-08,买入:113052
@@ -9358,7 +9684,8 @@ root - INFO - 2023-06-08,策略收益：
 毛收益 96.48, 净收益 96.48
 root - INFO - 2023-06-08,策略收益：
 毛收益 -6.21, 净收益 -6.21
-root - INFO - 2023-06-09,Total correlation: 0.003217566951898095
+root - INFO - 2023-06-09,Total correlation: -0.007773880120932891
+root - INFO - 2023-06-09,Total rankICIR: -0.16996198222060077
 root - INFO - 2023-06-09,index mean: 1.3162380035654153
 root - INFO - 2023-06-09,Number of Long: 47, List length: 47, close long: 6, new long: 6
 root - INFO - 2023-06-09,卖出:110067
@@ -9385,7 +9712,8 @@ root - INFO - 2023-06-09,策略收益：
 毛收益 -95.75, 净收益 -95.75
 root - INFO - 2023-06-09,策略收益：
 毛收益 101.47, 净收益 101.47
-root - INFO - 2023-06-12,Total correlation: 0.1068769487471754
+root - INFO - 2023-06-12,Total correlation: 0.09393934749217399
+root - INFO - 2023-06-12,Total rankICIR: 2.053815785670197
 root - INFO - 2023-06-12,index mean: 1.3172104856816202
 root - INFO - 2023-06-12,Number of Long: 47, List length: 47, close long: 4, new long: 4
 root - INFO - 2023-06-12,卖出:110070
@@ -9424,7 +9752,8 @@ root - INFO - 2023-06-12,策略收益：
 毛收益 606.69, 净收益 606.69
 root - INFO - 2023-06-12,策略收益：
 毛收益 -68.77, 净收益 -68.77
-root - INFO - 2023-06-13,Total correlation: 0.10381549642359067
+root - INFO - 2023-06-13,Total correlation: 0.07655680855338441
+root - INFO - 2023-06-13,Total rankICIR: 1.675527565958348
 root - INFO - 2023-06-13,index mean: 1.314685441856168
 root - INFO - 2023-06-13,Number of Long: 47, List length: 47, close long: 4, new long: 4
 root - INFO - 2023-06-13,卖出:113565
@@ -9451,7 +9780,8 @@ root - INFO - 2023-06-13,策略收益：
 毛收益 -39.78, 净收益 -39.78
 root - INFO - 2023-06-13,策略收益：
 毛收益 -590.65, 净收益 -590.65
-root - INFO - 2023-06-14,Total correlation: 0.1625476884987961
+root - INFO - 2023-06-14,Total correlation: 0.17183058760842412
+root - INFO - 2023-06-14,Total rankICIR: 3.7606960328286543
 root - INFO - 2023-06-14,index mean: 1.3178781294560935
 root - INFO - 2023-06-14,Number of Long: 47, List length: 47, close long: 5, new long: 5
 root - INFO - 2023-06-14,买入:113062
@@ -9478,7 +9808,8 @@ root - INFO - 2023-06-14,策略收益：
 毛收益 -36.47, 净收益 -36.47
 root - INFO - 2023-06-14,策略收益：
 毛收益 49.05, 净收益 49.05
-root - INFO - 2023-06-15,Total correlation: 0.14012710607569498
+root - INFO - 2023-06-15,Total correlation: 0.12589927586237018
+root - INFO - 2023-06-15,Total rankICIR: 2.755440191769464
 root - INFO - 2023-06-15,index mean: 1.3222217508816423
 root - INFO - 2023-06-15,Number of Long: 47, List length: 48, close long: 5, new long: 6
 root - INFO - 2023-06-15,卖出:113062
@@ -9511,7 +9842,8 @@ root - INFO - 2023-06-15,策略收益：
 毛收益 421.44, 净收益 421.44
 root - INFO - 2023-06-15,策略收益：
 毛收益 120.03, 净收益 120.03
-root - INFO - 2023-06-16,Total correlation: -0.0053203994280252775
+root - INFO - 2023-06-16,Total correlation: -0.026341107305837597
+root - INFO - 2023-06-16,Total rankICIR: -0.5777055844467578
 root - INFO - 2023-06-16,index mean: 1.3281141280313111
 root - INFO - 2023-06-16,Number of Long: 48, List length: 48, close long: 6, new long: 6
 root - INFO - 2023-06-16,买入:113062
@@ -9546,7 +9878,8 @@ root - INFO - 2023-06-16,策略收益：
 毛收益 -111.50, 净收益 -111.50
 root - INFO - 2023-06-16,策略收益：
 毛收益 177.39, 净收益 177.39
-root - INFO - 2023-06-19,Total correlation: 0.018512911502015783
+root - INFO - 2023-06-19,Total correlation: 0.030678885007655577
+root - INFO - 2023-06-19,Total rankICIR: 0.6728404765882705
 root - INFO - 2023-06-19,index mean: 1.3331155230542184
 root - INFO - 2023-06-19,Number of Long: 48, List length: 48, close long: 5, new long: 5
 root - INFO - 2023-06-19,买入:110082
@@ -9585,7 +9918,8 @@ root - INFO - 2023-06-19,策略收益：
 毛收益 19.02, 净收益 19.02
 root - INFO - 2023-06-19,策略收益：
 毛收益 45.57, 净收益 45.57
-root - INFO - 2023-06-20,Total correlation: -0.07270912083888596
+root - INFO - 2023-06-20,Total correlation: -0.04931496235844063
+root - INFO - 2023-06-20,Total rankICIR: -1.0826852621993839
 root - INFO - 2023-06-20,index mean: 1.3407541570766741
 root - INFO - 2023-06-20,Number of Long: 48, List length: 48, close long: 5, new long: 5
 root - INFO - 2023-06-20,卖出:113644
@@ -9618,7 +9952,8 @@ root - INFO - 2023-06-20,策略收益：
 毛收益 -36.50, 净收益 -36.50
 root - INFO - 2023-06-20,策略收益：
 毛收益 -119.48, 净收益 -119.48
-root - INFO - 2023-06-21,Total correlation: -0.03313500307778022
+root - INFO - 2023-06-21,Total correlation: -0.03288291056647543
+root - INFO - 2023-06-21,Total rankICIR: -0.7219278074223211
 root - INFO - 2023-06-21,index mean: 1.344687787722778
 root - INFO - 2023-06-21,Number of Long: 48, List length: 48, close long: 5, new long: 5
 root - INFO - 2023-06-21,卖出:113062
@@ -9651,7 +9986,8 @@ root - INFO - 2023-06-21,策略收益：
 毛收益 151.62, 净收益 151.62
 root - INFO - 2023-06-21,策略收益：
 毛收益 -103.77, 净收益 -103.77
-root - INFO - 2023-06-26,Total correlation: -0.29150489500152565
+root - INFO - 2023-06-26,Total correlation: -0.25911837259482945
+root - INFO - 2023-06-26,Total rankICIR: -5.688813896569737
 root - INFO - 2023-06-26,index mean: 1.3439919502251034
 root - INFO - 2023-06-26,Number of Long: 48, List length: 48, close long: 7, new long: 7
 root - INFO - 2023-06-26,买入:110070
@@ -9684,7 +10020,8 @@ root - INFO - 2023-06-26,策略收益：
 毛收益 -86.20, 净收益 -86.20
 root - INFO - 2023-06-26,策略收益：
 毛收益 1019.08, 净收益 1019.08
-root - INFO - 2023-06-27,Total correlation: -0.11683026047695573
+root - INFO - 2023-06-27,Total correlation: -0.10431161594791401
+root - INFO - 2023-06-27,Total rankICIR: -2.290109205440339
 root - INFO - 2023-06-27,index mean: 1.3502769786619975
 root - INFO - 2023-06-27,Number of Long: 48, List length: 48, close long: 4, new long: 4
 root - INFO - 2023-06-27,买入:113046
@@ -9729,7 +10066,8 @@ root - INFO - 2023-06-27,策略收益：
 毛收益 17.10, 净收益 17.10
 root - INFO - 2023-06-27,策略收益：
 毛收益 6.80, 净收益 6.80
-root - INFO - 2023-06-28,Total correlation: 0.05405839498472824
+root - INFO - 2023-06-28,Total correlation: 0.07207192623688448
+root - INFO - 2023-06-28,Total rankICIR: 1.5839435319392057
 root - INFO - 2023-06-28,index mean: 1.3655795884351836
 root - INFO - 2023-06-28,Number of Long: 48, List length: 48, close long: 6, new long: 6
 root - INFO - 2023-06-28,买入:113066
@@ -9756,7 +10094,8 @@ root - INFO - 2023-06-28,策略收益：
 毛收益 308.74, 净收益 308.74
 root - INFO - 2023-06-28,策略收益：
 毛收益 -89.45, 净收益 -89.45
-root - INFO - 2023-06-29,Total correlation: 0.1493282010337101
+root - INFO - 2023-06-29,Total correlation: 0.1277850042631175
+root - INFO - 2023-06-29,Total rankICIR: 2.808364387488838
 root - INFO - 2023-06-29,index mean: 1.380180110926912
 root - INFO - 2023-06-29,Number of Long: 48, List length: 48, close long: 7, new long: 7
 root - INFO - 2023-06-29,买入:113033
@@ -9795,7 +10134,8 @@ root - INFO - 2023-06-29,策略收益：
 毛收益 -57.82, 净收益 -57.82
 root - INFO - 2023-06-29,策略收益：
 毛收益 7.13, 净收益 7.13
-root - INFO - 2023-06-30,Total correlation: 0.030540370957736436
+root - INFO - 2023-06-30,Total correlation: 0.011888060680017784
+root - INFO - 2023-06-30,Total rankICIR: 0.2612670120613242
 root - INFO - 2023-06-30,index mean: 1.383379484845875
 root - INFO - 2023-06-30,Number of Long: 48, List length: 48, close long: 7, new long: 7
 root - INFO - 2023-06-30,卖出:113033
@@ -9840,7 +10180,8 @@ root - INFO - 2023-06-30,策略收益：
 毛收益 171.90, 净收益 171.90
 root - INFO - 2023-06-30,策略收益：
 毛收益 25.74, 净收益 25.74
-root - INFO - 2023-07-03,Total correlation: -0.06876733796082365
+root - INFO - 2023-07-03,Total correlation: -0.0773442194235004
+root - INFO - 2023-07-03,Total rankICIR: -1.699814095242585
 root - INFO - 2023-07-03,index mean: 1.390908510098391
 root - INFO - 2023-07-03,Number of Long: 48, List length: 48, close long: 6, new long: 6
 root - INFO - 2023-07-03,买入:110076
@@ -9885,7 +10226,8 @@ root - INFO - 2023-07-03,策略收益：
 毛收益 47.73, 净收益 47.73
 root - INFO - 2023-07-03,策略收益：
 毛收益 19.81, 净收益 19.81
-root - INFO - 2023-07-04,Total correlation: 0.005023943851597815
+root - INFO - 2023-07-04,Total correlation: -0.0018124905616090238
+root - INFO - 2023-07-04,Total rankICIR: -0.039833578088720914
 root - INFO - 2023-07-04,index mean: 1.400466000851943
 root - INFO - 2023-07-04,Number of Long: 48, List length: 48, close long: 4, new long: 4
 root - INFO - 2023-07-04,买入:110092
@@ -9924,7 +10266,8 @@ root - INFO - 2023-07-04,策略收益：
 毛收益 35.04, 净收益 35.04
 root - INFO - 2023-07-04,策略收益：
 毛收益 -52.94, 净收益 -52.94
-root - INFO - 2023-07-05,Total correlation: 0.025992409003929347
+root - INFO - 2023-07-05,Total correlation: 0.014208652286162003
+root - INFO - 2023-07-05,Total rankICIR: 0.31226725940788985
 root - INFO - 2023-07-05,index mean: 1.4092657690445558
 root - INFO - 2023-07-05,Number of Long: 48, List length: 48, close long: 9, new long: 9
 root - INFO - 2023-07-05,卖出:113046
@@ -9951,7 +10294,8 @@ root - INFO - 2023-07-05,策略收益：
 毛收益 78.62, 净收益 78.62
 root - INFO - 2023-07-05,策略收益：
 毛收益 19.20, 净收益 19.20
-root - INFO - 2023-07-06,Total correlation: -0.19362300618415265
+root - INFO - 2023-07-06,Total correlation: -0.17852231503286506
+root - INFO - 2023-07-06,Total rankICIR: -3.92343150748767
 root - INFO - 2023-07-06,index mean: 1.4098013543012635
 root - INFO - 2023-07-06,Number of Long: 48, List length: 48, close long: 5, new long: 5
 root - INFO - 2023-07-06,卖出:113033
@@ -10008,7 +10352,8 @@ root - INFO - 2023-07-06,策略收益：
 毛收益 616.25, 净收益 616.25
 root - INFO - 2023-07-06,策略收益：
 毛收益 55.20, 净收益 55.20
-root - INFO - 2023-07-07,Total correlation: -0.1362927047155523
+root - INFO - 2023-07-07,Total correlation: -0.12197723880763912
+root - INFO - 2023-07-07,Total rankICIR: -2.680725610387345
 root - INFO - 2023-07-07,index mean: 1.4150861075184464
 root - INFO - 2023-07-07,Number of Long: 48, List length: 48, close long: 5, new long: 5
 root - INFO - 2023-07-07,买入:113046
@@ -10041,7 +10386,8 @@ root - INFO - 2023-07-07,策略收益：
 毛收益 -14.90, 净收益 -14.90
 root - INFO - 2023-07-07,策略收益：
 毛收益 2.05, 净收益 2.05
-root - INFO - 2023-07-10,Total correlation: -0.1305450103114301
+root - INFO - 2023-07-10,Total correlation: -0.14406855834208923
+root - INFO - 2023-07-10,Total rankICIR: -3.166232305096537
 root - INFO - 2023-07-10,index mean: 1.4044169946598337
 root - INFO - 2023-07-10,Number of Long: 48, List length: 48, close long: 10, new long: 10
 root - INFO - 2023-07-10,卖出:113042
@@ -10074,7 +10420,8 @@ root - INFO - 2023-07-10,策略收益：
 毛收益 43.80, 净收益 43.80
 root - INFO - 2023-07-10,策略收益：
 毛收益 -50.69, 净收益 -50.69
-root - INFO - 2023-07-11,Total correlation: -0.24551425097050758
+root - INFO - 2023-07-11,Total correlation: -0.23552046988650072
+root - INFO - 2023-07-11,Total rankICIR: -5.176094831847129
 root - INFO - 2023-07-11,index mean: 1.3771391848173102
 root - INFO - 2023-07-11,Number of Long: 48, List length: 48, close long: 5, new long: 5
 root - INFO - 2023-07-11,买入:110073
@@ -10137,7 +10484,8 @@ root - INFO - 2023-07-11,策略收益：
 毛收益 -0.61, 净收益 -0.61
 root - INFO - 2023-07-11,策略收益：
 毛收益 60.03, 净收益 60.03
-root - INFO - 2023-07-12,Total correlation: 0.1625610223135245
+root - INFO - 2023-07-12,Total correlation: 0.13842788834998498
+root - INFO - 2023-07-12,Total rankICIR: 3.0422658286014954
 root - INFO - 2023-07-12,index mean: 1.3764174998764795
 root - INFO - 2023-07-12,Number of Long: 48, List length: 48, close long: 3, new long: 3
 root - INFO - 2023-07-12,卖出:110082
@@ -10170,7 +10518,8 @@ root - INFO - 2023-07-12,策略收益：
 毛收益 122.00, 净收益 122.00
 root - INFO - 2023-07-12,策略收益：
 毛收益 -7.92, 净收益 -7.92
-root - INFO - 2023-07-13,Total correlation: -0.2499316056504079
+root - INFO - 2023-07-13,Total correlation: -0.2462021192688865
+root - INFO - 2023-07-13,Total rankICIR: -5.410848227976198
 root - INFO - 2023-07-13,index mean: 1.3774898537442706
 root - INFO - 2023-07-13,Number of Long: 48, List length: 48, close long: 6, new long: 6
 root - INFO - 2023-07-13,卖出:110059
@@ -10191,5 +10540,7 @@ root - INFO - 2023-07-13,策略收益：
 毛收益 65.24, 净收益 65.24
 root - INFO - 2023-07-13,策略收益：
 毛收益 -17.51, 净收益 -17.51
-root - INFO - 2023-07-13,策略胜率：0.5145888594164456%
-root - INFO - 2023-07-13,rankIC: -0.04462032651172518
+root - INFO - 2023-07-13,策略胜率：0.5057375811565755%
+root - INFO - 2023-07-13,Index rankIC: -0.04381466277976174
+root - INFO - 2023-07-13,Index rankICIR: -0.8535723429541139
+root - INFO - 2023-07-13,Index IR: -0.2734640648459235
