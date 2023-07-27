@@ -6,6 +6,7 @@ import os
 import numpy as np
 import sys
 import logging
+from scipy.stats import rankdata
 
 class GenericCVS_extend(GenericCSVData):
 
@@ -46,9 +47,11 @@ class MyStrategy(bt.Strategy):
         reverse = False,
         total_trade = 0,
         win_count = 0,
+        rankIC = [],
         logger = None,
         base = 0,
         total_trend = [],
+        last_day_data = [],
         account_value = [],
         index_mean = [],
         index_mean_long = [],
@@ -75,26 +78,42 @@ class MyStrategy(bt.Strategy):
 
 
     def rebalance_portfolio(self):
-        # print('Current time: {}'.format(self.datas[0].datetime.datetime()))
+
+        if not len(self.p.last_day_data)==0:
+            # Calculate the RankIC of index
+            # convert to ranks
+            self.p.last_day_data = np.array(self.p.last_day_data)
+            last_index_list = self.p.last_day_data[:,2]
+            today_close = []
+            for data in self.datas:
+                if data._name in self.p.last_day_data[:,0]:
+                    today_close.append(data.close[0])
+            corr = pd.DataFrame({"index":rankdata(last_index_list, method='dense'), "return":rankdata(np.array(today_close)-self.p.last_day_data[:,1].astype(np.float64), method='dense')})
+            # calculate the correlation
+            correlation = corr["index"].corr(corr["return"])
+            self.log(f"Total correlation: {correlation}")
+            self.p.rankIC.append(correlation)
 
         # 提取股票池当日因子截面
         self.p.account_value.append(self.broker.getvalue())
+        self.p.last_day_data = []
         rate_list=[]
-        bond_list = []
+        bond_list=[]
         index_mean = 0
         for data in self.datas:
             if (not self.indx[data._name] == 0) & (not np.isnan(self.indx[data._name][0])):
                 rate_list.append([data._name, data.indx[0]])
                 index_mean = index_mean+self.indx[data._name][0]
+                self.p.last_day_data.append([data._name, data.close[0], data.indx[0]])
             bond_list.append(data.close[0])
 
-        if len(rate_list)>0:
-            self.log(f'index mean: {index_mean/len(rate_list)}')
-            self.p.index_mean.append(index_mean/len(rate_list))
         self.params.total_trend.append(np.mean(bond_list))
         
         if len(rate_list) == 0:
             return
+
+        self.log(f'index mean: {index_mean/len(rate_list)}')
+        self.p.index_mean.append(index_mean/len(rate_list))
 
         # 股票池按照因子大小排序，记录前10%的股票，如果因子值为NaN则跳过当个交易日
         long_list=[]
@@ -207,6 +226,7 @@ class MyStrategy(bt.Strategy):
         if not self.p.printlog:
             print(f'策略胜率：{self.p.win_count/self.p.total_trade}%')
         self.log(f'策略胜率：{self.p.win_count/self.p.total_trade}%')
+        self.log(f'rankIC: {np.mean(self.p.rankIC)}')
         return
 
 
@@ -298,7 +318,7 @@ if __name__ == '__main__':
     logging.basicConfig(filename=f'backTest.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
     logger = logging.getLogger()
     logger.setLevel(level=logging.INFO)
-    # backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='Result', logger=logger, prob=1)
-    for a in range(0,10):
-        print(f"top {a*10} to {a*10+10}%")
-        backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result", logger=logger, prob=1)
+    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='Result', logger=logger, prob=1)
+    # for a in range(0,10):
+    #     print(f"top {a*10} to {a*10+10}%")
+    #     backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result", logger=logger, prob=1)

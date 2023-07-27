@@ -171,7 +171,7 @@ if __name__ == '__main__':
 
     window=int(225/session_length)*day_avg
     weight_df = pd.DataFrame(data={'weight':range(1, window+1)})
-    weight_df = weight_df.sort_values(by='weight', ascending=False)
+    weight_df = weight_df.sort_values(by='weight', ascending=False) 
     weight_mean = weight_df['weight'].sum()
     
     for ind, file in enumerate(files):
