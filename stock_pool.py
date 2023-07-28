@@ -1,6 +1,6 @@
 from backtraderHelpers import *
 
-def backTest(name, save, group, dir, logger, prob=1):
+def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
     """
         Conduct the backtest using given parameters
 
@@ -8,7 +8,8 @@ def backTest(name, save, group, dir, logger, prob=1):
             name: name of current group
             save: save the result to a csv file or not
             group: current group
-            dir: directory which will be use to save the data
+            data_dir: directory of data source
+            result_dir: directory which will be use to save the data
             logger: the universal logger
             prob: default is one, fraction of data that will be accept by the program
     """
@@ -16,7 +17,6 @@ def backTest(name, save, group, dir, logger, prob=1):
 
     cerebro.addanalyzer(bt.analyzers.TimeReturn, _name='pnl')  # 返回收益率时序数据
     cerebro.addanalyzer(bt.analyzers.AnnualReturn, _name='_AnnualReturn')  # 年化收益率
-    cerebro.addanalyzer(bt.analyzers.SharpeRatio, _name='_SharpeRatio')  # 夏普比率
     cerebro.addanalyzer(bt.analyzers.DrawDown, _name='_DrawDown')  # 回撤
     cerebro.addanalyzer(TotalValue, _name="_TotalValue") # 账户总值
 
@@ -26,13 +26,12 @@ def backTest(name, save, group, dir, logger, prob=1):
     cerebro.addsizer(bt.sizers.FixedSize, stake=100)
 
     # 将文件夹下每一个CSV数据导入策略模型
-    data_Dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
-    files = os.listdir(data_Dir)
+    files = os.listdir(data_dir)
     for ind, file in enumerate(files):
         if np.random.rand() > prob:
             continue
         data = GenericCVS_extend(
-            dataname=data_Dir+'/'+file,
+            dataname=data_dir+'/'+file,
             fromdate=bt.datetime.datetime(2022, 1, 4),
             todate=bt.datetime.datetime(2023, 7, 14),
             dtformat = '%Y-%m-%d %H:%M:%S',
@@ -52,14 +51,40 @@ def backTest(name, save, group, dir, logger, prob=1):
     # 将初始本金设为100w
     cerebro.broker.setcash(1000000.0)
     #cerebro.broker.setcommission(0.005)
-    #cerebro.addobserver(bt.observers.DrawDown)
     cerebro.addobserver(bt.observers.TimeReturn)
 
-    print('启动资金: %.2f' % cerebro.broker.getvalue())
+    logger.info('启动资金: %.2f' % cerebro.broker.getvalue())
 
     result = cerebro.run()
+    risk_free_rate = 0.017
+    risk_free_rate_daily = (1 + risk_free_rate)**(1/252) - 1
+    pnl = []
+    for element in result[0].analyzers.pnl.get_analysis().items():
+        pnl.append(element[1])
+    excess_return = np.array(pnl)*2-risk_free_rate_daily
 
-    print('期末价值: %.2f' % cerebro.broker.getvalue())
+    df = pd.DataFrame({"Account value":result[0].p.account_value})
+    df['Account value'] = df['Account value']-500000
+    df['Return'] = df['Account value'].pct_change()
+    # Annual risk free rate
+    risk_free_rate_annual = 0.017  # 1.7%
+    # Convert annual risk free rate to daily
+    risk_free_rate_daily = (1 + risk_free_rate_annual)**(1/252) - 1
+    # Calculate the excess returns by subtracting the daily risk-free rate from the daily returns
+    df['Excess Return'] = df['Return'] - risk_free_rate_daily
+    # Calculate the Sharpe Ratio
+    sharpe_ratio = df['Excess Return'].mean() / df['Excess Return'].std()
+    # Annualize the Sharpe Ratio
+    sharpe_ratio = sharpe_ratio * np.sqrt(252)
+    
+    annual_return = []
+    for year in result[0].analyzers._AnnualReturn.get_analysis().items():
+        annual_return.append(year[1])
+    sharpRatio = np.mean(excess_return)/np.std(excess_return)*sqrt(252)
+    logger.info('期末价值: %.2f' % cerebro.broker.getvalue())
+    logger.info(f'Annual Return: {np.mean(annual_return)*2}')
+    logger.info(f'Sharp Ratio: {sharpe_ratio}')
+    logger.info(f'Max DrawDown: {result[0].analyzers._DrawDown.get_analysis()["max"]["drawdown"]}%')
 
     
     account_value = np.array(result[0].p.account_value)
@@ -73,12 +98,12 @@ def backTest(name, save, group, dir, logger, prob=1):
 
     df = pd.DataFrame(data={'Market trend':total_trend, f"{name} Return":account_value})
 
-    if save and os.path.exists(f"{dir}.csv"):
-        temp_df = pd.read_csv(f"{dir}.csv")
+    if save and os.path.exists(f"{result_dir}.csv"):
+        temp_df = pd.read_csv(f"{result_dir}.csv")
         temp_df[f"{name} Return"] = df[f"{name} Return"].tail(int(len(account_value)/(group+1))).values
-        temp_df.to_csv(f"{dir}.csv", mode='w', index = False)
+        temp_df.to_csv(f"{result_dir}.csv", mode='w', index = False)
     elif save:
-        df.to_csv(f"{dir}.csv", index=False)
+        df.to_csv(f"{result_dir}.csv", index=False)
     else:
         cerebro.plot()
         plt.plot(account_value, label="Account value")
@@ -97,9 +122,10 @@ def backTest(name, save, group, dir, logger, prob=1):
 
 if __name__ == '__main__':
     logging.basicConfig(filename=f'backTest.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+    data_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
     logger = logging.getLogger()
     logger.setLevel(level=logging.INFO)
-    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, dir='Result', logger=logger, prob=1)
+    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, data_dir=data_dir, result_dir='Result', logger=logger, prob=1)
     # for a in range(0,10):
     #     print(f"top {a*10} to {a*10+10}%")
     #     backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result", logger=logger, prob=1)
