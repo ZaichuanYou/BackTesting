@@ -1,4 +1,5 @@
 from backtraderHelpers import *
+import pathlib
 
 def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
     """
@@ -58,10 +59,6 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
     result = cerebro.run()
     risk_free_rate = 0.017
     risk_free_rate_daily = (1 + risk_free_rate)**(1/252) - 1
-    pnl = []
-    for element in result[0].analyzers.pnl.get_analysis().items():
-        pnl.append(element[1])
-    excess_return = np.array(pnl)*2-risk_free_rate_daily
 
     df = pd.DataFrame({"Account value":result[0].p.account_value})
     df['Account value'] = df['Account value']-500000
@@ -80,7 +77,7 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
     annual_return = []
     for year in result[0].analyzers._AnnualReturn.get_analysis().items():
         annual_return.append(year[1])
-    sharpRatio = np.mean(excess_return)/np.std(excess_return)*sqrt(252)
+
     logger.info('期末价值: %.2f' % cerebro.broker.getvalue())
     logger.info(f'Annual Return: {np.mean(annual_return)*2}')
     logger.info(f'Sharp Ratio: {sharpe_ratio}')
@@ -98,18 +95,19 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
 
     df = pd.DataFrame(data={'Market trend':total_trend, f"{name} Return":account_value})
 
-    if save and os.path.exists(f"{result_dir}.csv"):
-        temp_df = pd.read_csv(f"{result_dir}.csv")
+    if save and os.path.exists(os.path.join(result_dir, "Result.csv")):
+        temp_df = pd.read_csv(os.path.join(result_dir, "Result.csv"))
         temp_df[f"{name} Return"] = df[f"{name} Return"].tail(int(len(account_value)/(group+1))).values
-        temp_df.to_csv(f"{result_dir}.csv", mode='w', index = False)
+        temp_df.to_csv(os.path.join(result_dir, "Result.csv"), mode='w', index = False)
     elif save:
-        df.to_csv(f"{result_dir}.csv", index=False)
+        df.to_csv(os.path.join(result_dir, "Result.csv"), index=False)
     else:
-        cerebro.plot()
+        cerebro.plot(savefig=True, figfilename=os.path.join(result_dir, 'Backtest result'))
         plt.plot(account_value, label="Account value")
         plt.plot(total_trend, label="Market trend")
         plt.title("Account value compared to market trend")
         plt.legend()
+        plt.savefig(os.path.join(result_dir,"Account value compared to market trend.png"))
         plt.show()
         plt.plot(index_mean, label="Market index mean")
         plt.plot(index_mean_long, label="Long index mean")
@@ -117,15 +115,21 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
             plt.plot(index_mean_short, label="Short index mean")
         plt.title("Index mean of the whole market over time")
         plt.legend()
+        plt.savefig(os.path.join(result_dir, "Index mean of the whole market over time.png"))
         plt.show()
 
 
 if __name__ == '__main__':
-    logging.basicConfig(filename=f'backTest.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
-    data_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
+    
+    data_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Flux'
+    result_dir = 'ReturnSTD'
+    if not os.path.isdir(result_dir):
+        os.makedirs(result_dir)
+    result_dir = os.path.join(pathlib.Path(__file__).parent.resolve(), result_dir)
+    logging.basicConfig(filename=os.path.join(result_dir, 'Backtest.log'), filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
     logger = logging.getLogger()
     logger.setLevel(level=logging.INFO)
-    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, data_dir=data_dir, result_dir='Result', logger=logger, prob=1)
+    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, data_dir=data_dir, result_dir=result_dir, logger=logger, prob=1)
     # for a in range(0,10):
     #     print(f"top {a*10} to {a*10+10}%")
-    #     backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, dir="Result", logger=logger, prob=1)
+    #     backTest(name=f"top {a*10} to {a*10+10}%", save=False, group=0, data_dir=data_dir, result_dir=os.path.join(result_dir, 'Result.csv'), logger=logger, prob=1)
