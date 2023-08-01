@@ -121,15 +121,15 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
 
 if __name__ == '__main__':
     
-    data_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
-    result_dir = os.path.join("Results", 'ReturnFollow')
+    data_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Release'
+    result_dir = os.path.join("Results", 'ResultFollow_Release')
     if not os.path.isdir(result_dir):
         os.makedirs(result_dir)
     result_dir = os.path.join(pathlib.Path(__file__).parent.resolve(), result_dir)
     logging.basicConfig(filename=os.path.join(result_dir, 'Backtest.log'), filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
     logger = logging.getLogger()
     logger.setLevel(level=logging.INFO)
-    # backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, data_dir=data_dir, result_dir=result_dir, logger=logger, prob=1)
-    for a in range(0,10):
-        print(f"top {a*10} to {a*10+10}%")
-        backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, data_dir=data_dir, result_dir=result_dir, logger=logger, prob=1)
+    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, data_dir=data_dir, result_dir=result_dir, logger=logger, prob=1)
+    # for a in range(0,10):
+    #     print(f"top {a*10} to {a*10+10}%")
+    #     backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, data_dir=data_dir, result_dir=result_dir, logger=logger, prob=1)

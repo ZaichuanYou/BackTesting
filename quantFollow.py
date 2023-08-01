@@ -98,6 +98,7 @@ def analyze_index(data, window, s_dir, d_dir, cols, weight_df, weight_mean):
 def analyze_index_release(data, window, s_dir, d_dir, cols, weight_df, weight_mean):
     """
         This will calculate the Amount follow index and store the result at a new column.\n
+        Added new criteria which only consider time slice that has a positive return.\n
         Using weighted average by setting weighted_avg to be true.
 
         params:
@@ -130,14 +131,21 @@ def analyze_index_release(data, window, s_dir, d_dir, cols, weight_df, weight_me
             df_session = df_temp.iloc[i_start:i_end-follow_interval]
 
             # Sort the dataframe by trading volume and return
-            df_session = df_session[df_session['return'] > 0].sort_values(by=['volume', 'return'], ascending=False)
+            df_session = df_session[df_session['return'] > 0].sort_values(by=['volume'], ascending=False)
+
+            if len(df_session)==0:
+                print(i+i_start)
+                df_result = pd.concat([df_result, df.loc[[i+16+i_start]]], ignore_index=True)
+                df_result.iat[-1, 8] = 0
+                df_result.iat[-1, 9] = 0
+                continue
 
             # Get the 10 minutes with the highest trading volume and positive return of the day
             M = df_session.head(adv_moment_num).sort_values(by='time')
             df_session = df_session.append(df_temp.iloc[i_end-follow_interval:])
 
             if M['volume'].sum()==0 or M.size == 0:
-                df_result = pd.concat([df_result, df.loc[[i+i_start]]], ignore_index=True)
+                df_result = pd.concat([df_result, df.loc[[i+16+i_start]]], ignore_index=True)
                 df_result.iat[-1, 8] = 0
                 df_result.iat[-1, 9] = 0
                 continue
@@ -182,7 +190,7 @@ def analyze_index_release(data, window, s_dir, d_dir, cols, weight_df, weight_me
 
 if __name__ == '__main__':
     s_dir = 'C:/Users/21995/Desktop/量化投资/可转债数据/full_data'
-    d_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Test'
+    d_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Release'
     cols = ['SecurityID', 'time', 'open', 'high', 'low', 'close', 'volume', 'amount', 'factor', 'index']
     files = os.listdir(s_dir)
     finishd = os.listdir(d_dir)
@@ -196,7 +204,7 @@ if __name__ == '__main__':
         # if file in finishd:
         #     continue
         tic = time.perf_counter()
-        analyze_index(file, window=window, s_dir=s_dir, d_dir=d_dir, cols=cols, weight_df=weight_df, weight_mean=weight_mean)
+        analyze_index_release(file, window=window, s_dir=s_dir, d_dir=d_dir, cols=cols, weight_df=weight_df, weight_mean=weight_mean)
         toc = time.perf_counter()
         print("\r", end="")
         print(f"Processing Data: {int(ind+1)*100//len(files)}%, time taken last file: {toc - tic:0.4f}s, last file: {file}")

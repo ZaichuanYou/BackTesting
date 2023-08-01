@@ -44,7 +44,7 @@ class MyStrategy(bt.Strategy):
     params = dict(
         group = 0,
         printlog=True,
-        hedge=False,
+        hedge=True,
         reverse = False,
         total_trade = 0,
         win_count = 0,
@@ -151,6 +151,13 @@ class MyStrategy(bt.Strategy):
         group_start = int(len(sorted_rate)/10)*self.params.group
         group_end = int(len(sorted_rate)/10)*(self.params.group+1)
         long_list=[i[0] for i in sorted_rate[group_start:group_end]]
+
+        # self.log("Rate List:")
+        # self.log(rate_list)
+        # self.log("Sorted List:")
+        # self.log(sorted_rate)
+        # self.log("Long List:")
+        # self.log(long_list)
 
         # 如果进行多空对冲则再记录空头可转债
         if self.p.hedge:

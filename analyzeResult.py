@@ -89,5 +89,5 @@ def show_end(data_path):
 
 
 if __name__ == "__main__":
-    plot_result("multi_factor")
-    show_end("multi_factor")
+    plot_result("Results/ResultFollow_Release")
+    show_end("Results/ResultFollow_Release")
