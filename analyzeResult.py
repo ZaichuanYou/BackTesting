@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import pandas as pd
+import os
 
 def plot_result(data_path):
     """
@@ -11,7 +12,7 @@ def plot_result(data_path):
         params:
             data_path: the path to data
     """
-    data = pd.read_csv(data_path)
+    data = pd.read_csv(os.path.join(data_path, "Result.csv"))
     # Setting the color palette
     reds = sns.color_palette("Reds", 10)
     reds.reverse() # Reverse the color palette so the darkest red corresponds to 'top 0 to 10% Return'
@@ -36,6 +37,7 @@ def plot_result(data_path):
     plt.ylabel('Value')
     plt.title('Market trend and Return Percentages Over Time')
     plt.grid(True)
+    plt.savefig(os.path.join(data_path, 'Market trend and Return Percentages Over Time.png'))
     plt.show()
 
 
@@ -46,7 +48,7 @@ def show_end(data_path):
         params:
             data_path: the path to data
     """
-    data = pd.read_csv(data_path)
+    data = pd.read_csv(os.path.join(data_path, "Result.csv"))
 
     # Extracting the ending values of each column
     ending_values = data.iloc[-1]
@@ -81,10 +83,11 @@ def show_end(data_path):
 
     plt.legend()
     plt.tight_layout()  # adjust the layout to make everything fit
+    plt.savefig(os.path.join(data_path, 'Ending Value of Each Category.png'))
     plt.show()
 
 
 
 if __name__ == "__main__":
-    plot_result("Result.csv")
-    show_end("Result.csv")
+    plot_result("multi_factor")
+    show_end("multi_factor")
