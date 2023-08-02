@@ -44,7 +44,7 @@ class MyStrategy(bt.Strategy):
     params = dict(
         group = 0,
         printlog=True,
-        hedge=True,
+        hedge=False,
         reverse = False,
         total_trade = 0,
         win_count = 0,
@@ -148,8 +148,8 @@ class MyStrategy(bt.Strategy):
         sorted_rate=sorted(rate_list,key=lambda x:x[1], reverse=self.p.reverse)
         
         # 选择对应的可转债
-        group_start = int(len(sorted_rate)/10)*self.params.group
-        group_end = int(len(sorted_rate)/10)*(self.params.group+1)
+        group_start = int(len(sorted_rate)/10*self.params.group)
+        group_end = int(len(sorted_rate)/10*(self.params.group+1))
         long_list=[i[0] for i in sorted_rate[group_start:group_end]]
 
         # self.log("Rate List:")
