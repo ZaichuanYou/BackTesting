@@ -1,11 +1,10 @@
-
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import pandas as pd
 import os
 
-def plot_result(data_path):
+def plot_result(data_path, show=True):
     """
         This function will plot the ten-group result of the index and market value
 
@@ -38,10 +37,11 @@ def plot_result(data_path):
     plt.title('Market trend and Return Percentages Over Time')
     plt.grid(True)
     plt.savefig(os.path.join(data_path, 'Market trend and Return Percentages Over Time.png'))
-    plt.show()
+    if show:
+        plt.show()
 
 
-def show_end(data_path):
+def show_end(data_path, show=True):
     """
         This function will plot the ending value of ten-group result of the index and using market value as a basis line
 
@@ -84,10 +84,56 @@ def show_end(data_path):
     plt.legend()
     plt.tight_layout()  # adjust the layout to make everything fit
     plt.savefig(os.path.join(data_path, 'Ending Value of Each Category.png'))
-    plt.show()
+    if show:
+        plt.show()
+
+
+def plot_excess_return(data_path, show=True):
+    """
+        This function will plot the excessive return of each column compared to market return.
+        Excessive return of a column is calculated as (column value - market return)
+
+        params:
+            data_path: the path to data
+    """
+    data = pd.read_csv(os.path.join(data_path, "Result.csv"))
+    
+    # Calculate the excess return for each column
+    excess_returns = data.subtract(data["Market trend"], axis=0)
+    excess_returns.drop(columns=["Market trend"], inplace=True)  # we don't need the market trend column
+
+    # Setting the color palette
+    reds = sns.color_palette("Reds", 10)
+    reds.reverse()  # Reverse the color palette so the darkest red corresponds to 'top 0 to 10% Return'
+    colors = reds
+
+    # Creating the plot
+    plt.figure(figsize=(10, 6))
+
+    # We reverse the order of the columns so that 'top 90 to 100% Return' is plotted last.
+    reversed_columns = list(reversed(excess_returns.columns))
+
+    for i, column in enumerate(reversed_columns):
+        plt.plot(excess_returns[column], color=colors[len(excess_returns.columns)-1-i], label=column)
+
+    # Reversing the legend to match the request of data order
+    handles, labels = plt.gca().get_legend_handles_labels()
+    handles.reverse()
+    labels.reverse()
+
+    plt.legend(handles, labels)
+    plt.xlabel('Time')
+    plt.ylabel('Excess Return')
+    plt.title('Excess Return Over Time')
+    plt.grid(True)
+    plt.savefig(os.path.join(data_path, 'Excess Return.png'))
+    if show:
+        plt.show()
 
 
 
 if __name__ == "__main__":
-    plot_result("Results/ResultFollow_Release")
-    show_end("Results/ResultFollow_Release")
+    data_dir = "Results/ResultFollow"
+    plot_result(data_dir)
+    show_end(data_dir)
+    plot_excess_return(data_dir)
