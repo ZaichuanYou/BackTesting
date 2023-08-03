@@ -88,24 +88,26 @@ def analyze_Reverse_Imp(data, s_dir, d_dir, cols):
             i_start = n*session_length
             i_end = (n+1)*session_length
             
-            df_session = df_temp.iloc[i_start+1:i_end]
+            df_session = df_temp.iloc[i_start:i_end]
             df_session['return'] = df_session['close'].diff()
-            df_session.drop([0])
+            
+            df_session = df_session.dropna()
 
             vol_mean = np.mean(df_session['volume'])
             vol_std = np.std(df_session['volume'])
-            df_release = df_session[df_session['volume']>vol_mean+vol_std & df_session['return']<0].index
-            if len(df_release == 0):
+            df_release = df_session[(df_session['volume']>vol_mean+vol_std) & (df_session['return']>0)].index
+            if len(df_release) == 0:
                 df_result = pd.concat([df_result, df.loc[[i+i_start]]], ignore_index=True)
                 df_result.iat[-1, 8] = 0
                 df_result.iat[-1, 9] = 0
                 continue
-            ret = df.iloc[df_release]['return'].values
+            ret = df.iloc[df_release]['close'].values-df.iloc[df_release-1]['close'].values
             Factor = np.mean(ret)
             df_result = pd.concat([df_result, df.loc[[i+i_start]]], ignore_index=True)
             df_result.iat[-1, 8] = Factor
             df_result.iat[-1, 9] = Factor
         i=i+241
+
 
     df_result.to_csv(d_dir+'/{}'.format(data))
 
@@ -122,10 +124,10 @@ if __name__ == '__main__':
         # if file in finishd:
         #     continue
         tic = time.perf_counter()
-        analyze_index(file, s_dir=s_dir, d_dir=d_dir, cols=cols)
+        analyze_Reverse_Imp(file, s_dir=s_dir, d_dir=d_dir, cols=cols)
         toc = time.perf_counter()
         print("\r", end="")
         print(f"Processing Data: {int(ind+1)*100//len(files)}%, time taken last file: {toc - tic:0.4f}s, last file: {file}")
-        sys.stdout.flush()
-    
+
+        
     extend_data(d_dir, d_dir)
