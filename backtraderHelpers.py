@@ -58,7 +58,9 @@ class MyStrategy(bt.Strategy):
         account_value = [],
         index_mean = [],
         index_mean_long = [],
-        index_mean_short = []
+        index_mean_short = [],
+        order_summery_long={},
+        order_summery_short={}
     )
 
     def __init__(self):
@@ -112,10 +114,18 @@ class MyStrategy(bt.Strategy):
                     if data.close[0]-self.p.last_day_close[data._name]>=0:
                         win_count = win_count+1
                     total_count = total_count+1
+                    if data._name in self.p.order_summery_long:
+                        self.p.order_summery_long[data._name] = self.p.order_summery_long[data._name]+1
+                    else:
+                        self.p.order_summery_long[data._name] = 1
                 elif pos < 0:
                     if data.close[0]-self.p.last_day_close[data._name]<0:
                         win_count = win_count+1
                     total_count = total_count+1
+                    if data._name in self.p.order_summery_short:
+                        self.p.order_summery_short[data._name] = self.p.order_summery_short[data._name]+1
+                    else:
+                        self.p.order_summery_short[data._name] = 1
         self.p.total_trade = self.p.total_trade+total_count
         self.p.win_count = self.p.win_count+win_count
         
@@ -258,10 +268,7 @@ class MyStrategy(bt.Strategy):
     #记录交易收益情况（可省略，默认不输出结果）
     def notify_trade(self,trade):
         if trade.isclosed:
-            # self.p.total_trade = self.p.total_trade+1
             self.log(f'策略收益：\n毛收益 {trade.pnl:.2f}, 净收益 {trade.pnlcomm:.2f}')
-            # if trade.pnlcomm > 0:
-            #     self.p.win_count = self.p.win_count+1
 
     def stop(self):
         if not self.p.printlog:

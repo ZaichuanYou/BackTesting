@@ -92,8 +92,15 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
         index_mean_short = result[0].p.index_mean_short
     total_trend = np.array(result[0].p.total_trend)
     total_trend = total_trend/total_trend[0]
-
+    
     df = pd.DataFrame(data={'Market trend':total_trend, f"{name} Return":account_value})
+
+    order_long = result[0].p.order_summery_long
+    df_long = pd.DataFrame(list(order_long.items()), columns=['Bond name', 'Time ordered']).sort_values(by='Time ordered', ascending=False).head(50)
+    if result[0].p.hedge:
+        order_short = result[0].p.order_summery_short
+        df_short = pd.DataFrame(list(order_short.items()), columns=['Bond name', 'Time ordered']).sort_values(by='Time ordered', ascending=False).head(50)
+    
 
     if save and os.path.exists(os.path.join(result_dir, "Result.csv")):
         temp_df = pd.read_csv(os.path.join(result_dir, "Result.csv"))
@@ -103,12 +110,14 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
         df.to_csv(os.path.join(result_dir, "Result.csv"), index=False)
     else:
         cerebro.plot(savefig=True, figfilename=os.path.join(result_dir, 'Backtest result'))
+
         plt.plot(account_value, label="Account value")
         plt.plot(total_trend, label="Market trend")
         plt.title("Account value compared to market trend")
         plt.legend()
         plt.savefig(os.path.join(result_dir,"Account value compared to market trend.png"))
         plt.show()
+
         plt.plot(index_mean, label="Market index mean")
         plt.plot(index_mean_long, label="Long index mean")
         if result[0].p.hedge:
@@ -118,11 +127,42 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
         plt.savefig(os.path.join(result_dir, "Index mean of the whole market over time.png"))
         plt.show()
 
+        if result[0].p.hedge:
+            # create the first subplot
+            plt.figure(figsize=(10,12))
+            plt.subplot(2, 1, 1) # 2 rows, 1 column, index 1
+            plt.bar(df_long['Bond name'], df_long['Time ordered'])
+            plt.xticks(rotation=45)
+            plt.xlabel('Bond name')
+            plt.ylabel('Time ordered')
+            plt.title('Total long time in backtest')
+
+            # create the second subplot
+            plt.subplot(2, 1, 2) # 2 rows, 1 column, index 2
+            plt.bar(df_short['Bond name'], df_short['Time ordered'])
+            plt.xticks(rotation=45)
+            plt.xlabel('Bond name')
+            plt.ylabel('Time ordered')
+            plt.title('Total short time in backtest')
+
+            # adjust the layout so that plots do not overlap
+            plt.tight_layout()
+            plt.savefig(os.path.join(result_dir, "Total trade time in backtest.png"))
+            plt.show()
+        else:
+            plt.bar(df_long['Bond name'], df_long['Time ordered'])
+            plt.xticks(rotation=45)
+            plt.xlabel('Bond name')
+            plt.ylabel('Time long')
+            plt.title('Total long time in backtest')
+            plt.savefig(os.path.join(result_dir, "Total trade time in backtest.png"))
+            plt.show()
+
 
 if __name__ == '__main__':
     
-    data_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_Release'
-    result_dir = os.path.join("Results", 'ResultFollow_Release')
+    data_dir = 'C:/Users/21995/Desktop/量化投资/中金/Data/DataCB_Data_ReleaseF20I3'
+    result_dir = os.path.join("Results", 'ResultFollow_ReleaseF20I3')
     if not os.path.isdir(result_dir):
         os.makedirs(result_dir)
     result_dir = os.path.join(pathlib.Path(__file__).parent.resolve(), result_dir)
