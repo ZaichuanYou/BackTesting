@@ -44,10 +44,12 @@ class MyStrategy(bt.Strategy):
     params = dict(
         group = 0,
         printlog=True,
-        hedge=False,
+        hedge=True,
         reverse = False,
-        total_trade = 0,
-        win_count = 0,
+        total_trade_long = 0,
+        total_trade_short = 0,
+        win_count_long = 0,
+        win_count_short = 0,
         rankIC = [],
         rankICIR = [],
         logger = None,
@@ -105,29 +107,33 @@ class MyStrategy(bt.Strategy):
 
 
         # 计算因子胜率
-        win_count = 0
-        total_count = 0
+        win_count_long = 0
+        win_count_short = 0
+        total_count_long = 0
+        total_count_short = 0
         if not len(self.p.last_day_data)==0:
             for data in self.datas:
                 pos = self.getposition(data).size
                 if pos > 0:
                     if data.close[0]-self.p.last_day_close[data._name]>=0:
-                        win_count = win_count+1
-                    total_count = total_count+1
+                        win_count_long = win_count_long+1
+                    total_count_long = total_count_long+1
                     if data._name in self.p.order_summery_long:
                         self.p.order_summery_long[data._name] = self.p.order_summery_long[data._name]+1
                     else:
                         self.p.order_summery_long[data._name] = 1
                 elif pos < 0:
                     if data.close[0]-self.p.last_day_close[data._name]<0:
-                        win_count = win_count+1
-                    total_count = total_count+1
+                        win_count_short = win_count_short+1
+                    total_count_short = total_count_short+1
                     if data._name in self.p.order_summery_short:
                         self.p.order_summery_short[data._name] = self.p.order_summery_short[data._name]+1
                     else:
                         self.p.order_summery_short[data._name] = 1
-        self.p.total_trade = self.p.total_trade+total_count
-        self.p.win_count = self.p.win_count+win_count
+        self.p.total_trade_long = self.p.total_trade_long+total_count_long
+        self.p.total_trade_short = self.p.total_trade_long+total_count_short
+        self.p.win_count_long = self.p.win_count_long+win_count_long
+        self.p.win_count_short = self.p.win_count_long+win_count_short
         
 
         # 提取股票池当日因子截面
@@ -271,9 +277,9 @@ class MyStrategy(bt.Strategy):
             self.log(f'策略收益：\n毛收益 {trade.pnl:.2f}, 净收益 {trade.pnlcomm:.2f}')
 
     def stop(self):
-        if not self.p.printlog:
-            print(f'策略胜率：{self.p.win_count/self.p.total_trade}%')
-        self.log(f'策略胜率：{self.p.win_count/self.p.total_trade}%')
+        self.log(f'多头胜率：{self.p.win_count_long/self.p.total_trade_long}%')
+        self.log(f'空头胜率：{self.p.win_count_short/self.p.total_trade_short}%')
+        self.log(f'策略胜率：{(self.p.win_count_long+self.p.win_count_short)/(self.p.total_trade_long+self.p.total_trade_short)}%')
         self.log(f'Index rankIC: {np.mean(self.p.rankIC)}')
         self.log(f'Index rankICIR: {np.mean(self.p.rankICIR)}')
         self.log(f"Index IR: {np.mean(self.p.rankIC)/np.std(self.p.rankIC)}")
