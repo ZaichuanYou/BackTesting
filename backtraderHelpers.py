@@ -45,6 +45,7 @@ class MyStrategy(bt.Strategy):
         group = 0,
         printlog=True,
         hedge=True,
+        debug=False,
         reverse = False,
         total_trade_long = 0,
         total_trade_short = 0,
@@ -62,7 +63,9 @@ class MyStrategy(bt.Strategy):
         index_mean_long = [],
         index_mean_short = [],
         order_summery_long={},
-        order_summery_short={}
+        order_summery_short={},
+        long_info={},
+        short_info={}
     )
 
     def __init__(self):
@@ -105,35 +108,35 @@ class MyStrategy(bt.Strategy):
             self.log(f"Total correlation: {correlation}")
             self.log(f"Total rankICIR: {correlation*sqrt(len(last_index_list))}")
 
-
-        # 计算因子胜率
-        win_count_long = 0
-        win_count_short = 0
-        total_count_long = 0
-        total_count_short = 0
-        if not len(self.p.last_day_data)==0:
-            for data in self.datas:
-                pos = self.getposition(data).size
-                if pos > 0:
-                    if data.close[0]-self.p.last_day_close[data._name]>=0:
-                        win_count_long = win_count_long+1
-                    total_count_long = total_count_long+1
-                    if data._name in self.p.order_summery_long:
-                        self.p.order_summery_long[data._name] = self.p.order_summery_long[data._name]+1
-                    else:
-                        self.p.order_summery_long[data._name] = 1
-                elif pos < 0:
-                    if data.close[0]-self.p.last_day_close[data._name]<0:
-                        win_count_short = win_count_short+1
-                    total_count_short = total_count_short+1
-                    if data._name in self.p.order_summery_short:
-                        self.p.order_summery_short[data._name] = self.p.order_summery_short[data._name]+1
-                    else:
-                        self.p.order_summery_short[data._name] = 1
-        self.p.total_trade_long = self.p.total_trade_long+total_count_long
-        self.p.total_trade_short = self.p.total_trade_long+total_count_short
-        self.p.win_count_long = self.p.win_count_long+win_count_long
-        self.p.win_count_short = self.p.win_count_long+win_count_short
+        if self.p.debug:
+            # 计算因子胜率
+            win_count_long = 0
+            win_count_short = 0
+            total_count_long = 0
+            total_count_short = 0
+            if not len(self.p.last_day_data)==0:
+                for data in self.datas:
+                    pos = self.getposition(data).size
+                    if pos > 0:
+                        if data.close[0]-self.p.last_day_close[data._name]>=0:
+                            win_count_long = win_count_long+1
+                        total_count_long = total_count_long+1
+                        if data._name in self.p.order_summery_long:
+                            self.p.order_summery_long[data._name] = self.p.order_summery_long[data._name]+1
+                        else:
+                            self.p.order_summery_long[data._name] = 1
+                    elif pos < 0:
+                        if data.close[0]-self.p.last_day_close[data._name]<0:
+                            win_count_short = win_count_short+1
+                        total_count_short = total_count_short+1
+                        if data._name in self.p.order_summery_short:
+                            self.p.order_summery_short[data._name] = self.p.order_summery_short[data._name]+1
+                        else:
+                            self.p.order_summery_short[data._name] = 1
+            self.p.total_trade_long = self.p.total_trade_long+total_count_long
+            self.p.total_trade_short = self.p.total_trade_long+total_count_short
+            self.p.win_count_long = self.p.win_count_long+win_count_long
+            self.p.win_count_short = self.p.win_count_long+win_count_short
         
 
         # 提取股票池当日因子截面
@@ -210,24 +213,39 @@ class MyStrategy(bt.Strategy):
             elif pos<0: count_short = count_short+1
 
             if pos>0 and data._name not in long_list:
+                if self.p.debug:self.p.long_info[data._name].iloc[-1]['end']=data.datetime.date()
                 self.close(data = data)
                 close_long = close_long+1
             if self.p.hedge and pos<0 and data._name not in short_list:
+                if self.p.debug:self.p.short_info[data._name].iloc[-1]['end']=data.datetime.date()
                 self.close(data = data)
                 close_short = close_short+1
 
             if not pos>0 and data._name in long_list:
+                if self.p.debug:
+                    if data._name not in self.p.long_info:
+                        self.p.long_info[data._name] = pd.DataFrame({'start':data.datetime.date(), 'end':'present'}, index=[0])
+                    else:
+                        new_data = pd.DataFrame([[data.datetime.date(),'present']], columns=self.p.long_info[data._name].columns)
+                        self.p.long_info[data._name] = pd.concat([self.p.long_info[data._name], new_data], ignore_index=True)
                 size=int(p_value/data.close[0])
                 if size==0:self.log("ERROR")
                 new_long = new_long+1
                 self.buy(data=data, size=size)
 
             if self.p.hedge and not pos<0 and data._name in short_list:
+                if self.p.debug:
+                    if data._name not in self.p.short_info:
+                        self.p.short_info[data._name] = pd.DataFrame({'start':data.datetime.date(), 'end':'present'}, index=[0])
+                    else:
+                        new_data = pd.DataFrame([[data.datetime.date(),'present']], columns=self.p.short_info[data._name].columns)
+                        self.p.short_info[data._name] = pd.concat([self.p.short_info[data._name], new_data], ignore_index=True)
                 size=int(p_value/data.close[0])
                 self.sell(data=data, size=size)
                 new_short = new_short+1
         self.p.index_mean_long.append(index_mean_long/len(long_list))
 
+        
         # 如果进行多空对冲记录空头因子平均值
         # 记录多空情况以及多空新开
         if self.p.hedge:
@@ -277,9 +295,10 @@ class MyStrategy(bt.Strategy):
             self.log(f'策略收益：\n毛收益 {trade.pnl:.2f}, 净收益 {trade.pnlcomm:.2f}')
 
     def stop(self):
-        self.log(f'多头胜率：{self.p.win_count_long/self.p.total_trade_long}%')
-        self.log(f'空头胜率：{self.p.win_count_short/self.p.total_trade_short}%')
-        self.log(f'策略胜率：{(self.p.win_count_long+self.p.win_count_short)/(self.p.total_trade_long+self.p.total_trade_short)}%')
+        if self.p.debug:
+            self.log(f'多头胜率：{self.p.win_count_long/self.p.total_trade_long}%')
+            self.log(f'空头胜率：{self.p.win_count_short/self.p.total_trade_short}%')
+            self.log(f'策略胜率：{(self.p.win_count_long+self.p.win_count_short)/(self.p.total_trade_long+self.p.total_trade_short)}%')
         self.log(f'Index rankIC: {np.mean(self.p.rankIC)}')
         self.log(f'Index rankICIR: {np.mean(self.p.rankICIR)}')
         self.log(f"Index IR: {np.mean(self.p.rankIC)/np.std(self.p.rankIC)}")

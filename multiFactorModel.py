@@ -44,7 +44,7 @@ def combine_model(dirs, dest_dir):
         data = {dir: pd.read_csv(os.path.join(dir, file), index_col=0, engine='pyarrow')['index'] for dir in dirs}
         full_data = pd.read_csv(os.path.join(dirs[0], file), index_col=0, engine='pyarrow')
         df = pd.DataFrame(data)
-        print(df.head())
+        # print(df.head())
         df['mean'] = df.mean(axis=1, skipna=False)
         full_data['index'] = df['mean']
         full_data.to_csv(os.path.join(dest_dir, file))
@@ -54,6 +54,6 @@ def combine_model(dirs, dest_dir):
         print(f"Processing Data: {ind * 100 // len(files)}%, time taken last iteration: {toc - tic:0.4f}s")
 
 if __name__=='__main__':
-    dirs = ['Data/CB_Data_Test', 'Data/CB_Data_Flux']
+    dirs = ['Data/CB_Data_ReverseImp','Data/DataCB_Data_ReleaseF15I7']
     # standardize_index(dirs=dirs)
     combine_model(dirs=dirs, dest_dir="Data/Test_Data")

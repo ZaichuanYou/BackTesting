@@ -5,7 +5,7 @@ import sys
 import time
 from cringe import extend_data
 
-follow_interval = 5
+follow_interval = 7
 adv_moment_num = 15
 session_length = 225
 day_avg = 20
@@ -295,7 +295,7 @@ def analyze_index_optimimzed(data, window, s_dir, d_dir, cols, weight_df, weight
 
 if __name__ == '__main__':
     s_dir = 'C:/Users/21995/Desktop/量化投资/可转债数据/full_data'
-    d_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_F15'
+    d_dir = 'C:/Users/21995/Desktop/量化投资/中金/Data/CB_Data_ReleaseF15I7'
     cols = ['SecurityID', 'time', 'open', 'high', 'low', 'close', 'volume', 'amount', 'factor', 'index']
     files = os.listdir(s_dir)
     if not os.path.isdir(d_dir):
@@ -310,10 +310,10 @@ if __name__ == '__main__':
     
     
     for ind, file in enumerate(files):
-        # if file in finishd:
-        #     continue
+        if file in finishd:
+            continue
         tic = time.perf_counter()
-        analyze_index_optimimzed(file, window=window, s_dir=s_dir, d_dir=d_dir, cols=cols, weight_df=weight_df, weight_mean=weight_mean)
+        analyze_index_release(file, window=window, s_dir=s_dir, d_dir=d_dir, cols=cols, weight_df=weight_df, weight_mean=weight_mean)
         toc = time.perf_counter()
         print("\r", end="")
         print(f"Processing Data: {int(ind+1)*100//len(files)}%, time taken last file: {toc - tic:0.4f}s, last file: {file}")

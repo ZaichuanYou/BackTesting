@@ -10,7 +10,7 @@ from cringe import extend_data
 follow_interval = 5
 adv_moment_num = 10
 session_length = 236
-day_avg = 20
+day_avg = 5
 weighted_avg = False
 
 def analyze_index(data, s_dir, d_dir, cols):
@@ -33,27 +33,27 @@ def analyze_index(data, s_dir, d_dir, cols):
 
     df = df.dropna()
 
-    i = 0
+    index = []
+    for i in range(0, day_avg):
+        index.extend(list(range(i*241, (i+1)*241-5)))
+    index = np.array(index)
+
+    i = 241*day_avg
     while i < len(df):
         
-        df_temp = df.iloc[i:i+236]
+        df_session = df.iloc[index]
 
-        for n in range(0, int(236/session_length)):
-            i_start = n*session_length
-            i_end = (n+1)*session_length
-            
-            df_session = df_temp.iloc[i_start+1:i_end]
-
-            vol_mean = np.mean(df_session['volume'])
-            vol_std = np.std(df_session['volume'])
-            df_release = df_session[df_session['volume']>vol_mean+vol_std].index
-            ret = df.iloc[df_release]['close'].values-df.iloc[df_release-1]['close'].values
-            ret_mean = np.mean(ret)
-            Factor = sqrt(np.sum((ret-ret_mean)**2/len(df_release)))
-            df_result = pd.concat([df_result, df.loc[[i+i_start]]], ignore_index=True)
-            df_result.iat[-1, 8] = Factor
-            df_result.iat[-1, 9] = Factor
+        vol_mean = np.mean(df_session['volume'])
+        vol_std = np.std(df_session['volume'])
+        df_release = df_session[df_session['volume']>vol_mean+vol_std].index
+        ret = df.iloc[df_release]['close'].values-df.iloc[df_release-1]['close'].values
+        ret_mean = np.mean(ret)
+        Factor = sqrt(np.sum((ret-ret_mean)**2/len(df_release)))
+        df_result = pd.concat([df_result, df.loc[[i]]], ignore_index=True)
+        df_result.iat[-1, 8] = Factor
+        df_result.iat[-1, 9] = Factor
         i=i+241
+        index = index+241
 
     df_result.to_csv(d_dir+'/{}'.format(data)) 
     
@@ -107,13 +107,11 @@ def analyze_Reverse_Imp(data, s_dir, d_dir, cols):
             df_result.iat[-1, 8] = Factor
             df_result.iat[-1, 9] = Factor
         i=i+241
-
-
     df_result.to_csv(d_dir+'/{}'.format(data))
 
 if __name__ == '__main__':
     s_dir = 'C:/Users/21995/Desktop/量化投资/可转债数据/full_data'
-    d_dir = 'C:/Users/21995/Desktop/量化投资/CB_Data_ReverseImp'
+    d_dir = 'C:/Users/21995/Desktop/量化投资/中金/Data/CB_Data_Flux5'
     cols = ['SecurityID', 'time', 'open', 'high', 'low', 'close', 'volume', 'amount', 'factor', 'index']
     files = os.listdir(s_dir)
     if not os.path.isdir(d_dir):
@@ -124,7 +122,7 @@ if __name__ == '__main__':
         # if file in finishd:
         #     continue
         tic = time.perf_counter()
-        analyze_Reverse_Imp(file, s_dir=s_dir, d_dir=d_dir, cols=cols)
+        analyze_index(file, s_dir=s_dir, d_dir=d_dir, cols=cols)
         toc = time.perf_counter()
         print("\r", end="")
         print(f"Processing Data: {int(ind+1)*100//len(files)}%, time taken last file: {toc - tic:0.4f}s, last file: {file}")

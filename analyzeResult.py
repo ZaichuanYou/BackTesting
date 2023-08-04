@@ -133,7 +133,7 @@ def plot_excess_return(data_path, show=True):
 
 
 if __name__ == "__main__":
-    data_dir = "Results/ResultFollow"
+    data_dir = "Results/ReturnSTD"
     plot_result(data_dir)
     show_end(data_dir)
     plot_excess_return(data_dir)

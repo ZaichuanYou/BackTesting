@@ -95,13 +95,31 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
     
     df = pd.DataFrame(data={'Market trend':total_trend, f"{name} Return":account_value})
 
-    order_long = result[0].p.order_summery_long
-    df_long = pd.DataFrame(list(order_long.items()), columns=['Bond name', 'Time ordered']).sort_values(by='Time ordered', ascending=False).head(50)
-    if result[0].p.hedge:
-        order_short = result[0].p.order_summery_short
-        df_short = pd.DataFrame(list(order_short.items()), columns=['Bond name', 'Time ordered']).sort_values(by='Time ordered', ascending=False)
-        # df_short.to_csv(os.path.join(result_dir, "Shorted.csv"), index=False)
-        df_short = df_short.head(50)
+    if result[0].p.debug:
+        order_long = result[0].p.order_summery_long
+        df_long = pd.DataFrame(list(order_long.items()), columns=['Bond name', 'Time ordered']).sort_values(by='Time ordered', ascending=False).head(50)
+        df_long.to_csv(os.path.join(result_dir, "Longed.csv"), index=False)
+        if result[0].p.hedge:
+            order_short = result[0].p.order_summery_short
+            df_short = pd.DataFrame(list(order_short.items()), columns=['Bond name', 'Time ordered']).sort_values(by='Time ordered', ascending=False)
+            df_short.to_csv(os.path.join(result_dir, "Shorted.csv"), index=False)
+            df_short = df_short.head(50)
+
+        if result[0].p.hedge:
+            long_info = result[0].p.long_info
+            long_df = pd.DataFrame(columns=list(long_info.keys()))
+            for bond in long_info.keys():
+                long_info[bond]['d']=long_info[bond]['start'].astype(str)+' to '+long_info[bond]['end'].astype(str)
+                long_df[bond]=long_info[bond]['d']
+            long_df.to_csv(os.path.join(result_dir, "Short info.csv"))
+        
+        if result[0].p.hedge:
+            short_info = result[0].p.short_info
+            short_df = pd.DataFrame(columns=list(short_info.keys()))
+            for bond in short_info.keys():
+                short_info[bond]['d']=short_info[bond]['start'].astype(str)+' to '+short_info[bond]['end'].astype(str)
+                short_df[bond]=short_info[bond]['d']
+            short_df.to_csv(os.path.join(result_dir, "Short info.csv"))
     
 
     if save and os.path.exists(os.path.join(result_dir, "Result.csv")):
@@ -122,43 +140,45 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
 
         plt.plot(index_mean, label="Market index mean")
         plt.plot(index_mean_long, label="Long index mean")
-        if result[0].p.hedge:
-            plt.plot(index_mean_short, label="Short index mean")
-        plt.title("Index mean of the whole market over time")
-        plt.legend()
-        plt.savefig(os.path.join(result_dir, "Index mean of the whole market over time.png"))
-        plt.show()
-
-        if result[0].p.hedge:
-            # create the first subplot
-            plt.figure(figsize=(10,12))
-            plt.subplot(2, 1, 1) # 2 rows, 1 column, index 1
-            plt.bar(df_long['Bond name'], df_long['Time ordered'].astype(int))
-            plt.xticks(rotation=45)
-            plt.xlabel('Bond name')
-            plt.ylabel('Time ordered')
-            plt.title('Total long time in backtest')
-
-            # create the second subplot
-            plt.subplot(2, 1, 2) # 2 rows, 1 column, index 2
-            plt.bar(df_short['Bond name'], df_short['Time ordered'].astype(int))
-            plt.xticks(rotation=45)
-            plt.xlabel('Bond name')
-            plt.ylabel('Time ordered')
-            plt.title('Total short time in backtest')
-
-            # adjust the layout so that plots do not overlap
-            plt.tight_layout()
-            plt.savefig(os.path.join(result_dir, "Total trade time in backtest.png"))
+        
+        if result[0].p.debug:
+            if result[0].p.hedge:
+                plt.plot(index_mean_short, label="Short index mean")
+            plt.title("Index mean of the whole market over time")
+            plt.legend()
+            plt.savefig(os.path.join(result_dir, "Index mean of the whole market over time.png"))
             plt.show()
-        else:
-            plt.bar(df_long['Bond name'], df_long['Time ordered'].astype(int))
-            plt.xticks(rotation=45)
-            plt.xlabel('Bond name')
-            plt.ylabel('Time long')
-            plt.title('Total long time in backtest')
-            plt.savefig(os.path.join(result_dir, "Total trade time in backtest.png"))
-            plt.show()
+
+            if result[0].p.hedge:
+                # create the first subplot
+                plt.figure(figsize=(10,12))
+                plt.subplot(2, 1, 1) # 2 rows, 1 column, index 1
+                plt.bar(df_long['Bond name'], df_long['Time ordered'].astype(int))
+                plt.xticks(rotation=45)
+                plt.xlabel('Bond name')
+                plt.ylabel('Time ordered')
+                plt.title('Total long time in backtest')
+
+                # create the second subplot
+                plt.subplot(2, 1, 2) # 2 rows, 1 column, index 2
+                plt.bar(df_short['Bond name'], df_short['Time ordered'].astype(int))
+                plt.xticks(rotation=45)
+                plt.xlabel('Bond name')
+                plt.ylabel('Time ordered')
+                plt.title('Total short time in backtest')
+
+                # adjust the layout so that plots do not overlap
+                plt.tight_layout()
+                plt.savefig(os.path.join(result_dir, "Total trade time in backtest.png"))
+                plt.show()
+            else:
+                plt.bar(df_long['Bond name'], df_long['Time ordered'].astype(int))
+                plt.xticks(rotation=45)
+                plt.xlabel('Bond name')
+                plt.ylabel('Time long')
+                plt.title('Total long time in backtest')
+                plt.savefig(os.path.join(result_dir, "Total trade time in backtest.png"))
+                plt.show()
 
 
 if __name__ == '__main__':
