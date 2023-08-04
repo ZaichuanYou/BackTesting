@@ -99,7 +99,9 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
     df_long = pd.DataFrame(list(order_long.items()), columns=['Bond name', 'Time ordered']).sort_values(by='Time ordered', ascending=False).head(50)
     if result[0].p.hedge:
         order_short = result[0].p.order_summery_short
-        df_short = pd.DataFrame(list(order_short.items()), columns=['Bond name', 'Time ordered']).sort_values(by='Time ordered', ascending=False).head(50)
+        df_short = pd.DataFrame(list(order_short.items()), columns=['Bond name', 'Time ordered']).sort_values(by='Time ordered', ascending=False)
+        # df_short.to_csv(os.path.join(result_dir, "Shorted.csv"), index=False)
+        df_short = df_short.head(50)
     
 
     if save and os.path.exists(os.path.join(result_dir, "Result.csv")):
@@ -131,7 +133,7 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
             # create the first subplot
             plt.figure(figsize=(10,12))
             plt.subplot(2, 1, 1) # 2 rows, 1 column, index 1
-            plt.bar(df_long['Bond name'], df_long['Time ordered'])
+            plt.bar(df_long['Bond name'], df_long['Time ordered'].astype(int))
             plt.xticks(rotation=45)
             plt.xlabel('Bond name')
             plt.ylabel('Time ordered')
@@ -139,7 +141,7 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
 
             # create the second subplot
             plt.subplot(2, 1, 2) # 2 rows, 1 column, index 2
-            plt.bar(df_short['Bond name'], df_short['Time ordered'])
+            plt.bar(df_short['Bond name'], df_short['Time ordered'].astype(int))
             plt.xticks(rotation=45)
             plt.xlabel('Bond name')
             plt.ylabel('Time ordered')
@@ -150,7 +152,7 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
             plt.savefig(os.path.join(result_dir, "Total trade time in backtest.png"))
             plt.show()
         else:
-            plt.bar(df_long['Bond name'], df_long['Time ordered'])
+            plt.bar(df_long['Bond name'], df_long['Time ordered'].astype(int))
             plt.xticks(rotation=45)
             plt.xlabel('Bond name')
             plt.ylabel('Time long')
@@ -161,8 +163,8 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
 
 if __name__ == '__main__':
     
-    data_dir = 'C:/Users/21995/Desktop/量化投资/中金/Data/DataCB_Data_ReleaseF20I3'
-    result_dir = os.path.join("Results", 'ResultFollow_ReleaseF20I3')
+    data_dir = 'C:/Users/21995/Desktop/量化投资/中金/Data/CB_Data_Flux'
+    result_dir = os.path.join("Results", 'ReturnSTD')
     if not os.path.isdir(result_dir):
         os.makedirs(result_dir)
     result_dir = os.path.join(pathlib.Path(__file__).parent.resolve(), result_dir)
