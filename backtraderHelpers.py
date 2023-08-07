@@ -64,6 +64,8 @@ class MyStrategy(bt.Strategy):
         index_mean_short = [],
         order_summery_long={},
         order_summery_short={},
+        long_exchange_rate=[],
+        short_exchange_rate=[],
         long_info={},
         short_info={}
     )
@@ -243,6 +245,9 @@ class MyStrategy(bt.Strategy):
                 size=int(p_value/data.close[0])
                 self.sell(data=data, size=size)
                 new_short = new_short+1
+        if not count_long==0:
+            self.p.long_exchange_rate.append([new_long/count_long])
+            self.p.short_exchange_rate.append([new_short/count_short])
         self.p.index_mean_long.append(index_mean_long/len(long_list))
 
         
@@ -299,6 +304,8 @@ class MyStrategy(bt.Strategy):
             self.log(f'多头胜率：{self.p.win_count_long/self.p.total_trade_long}%')
             self.log(f'空头胜率：{self.p.win_count_short/self.p.total_trade_short}%')
             self.log(f'策略胜率：{(self.p.win_count_long+self.p.win_count_short)/(self.p.total_trade_long+self.p.total_trade_short)}%')
+        self.log(f'Long exchange rate: {np.mean(self.p.long_exchange_rate)}')
+        self.log(f'Short exchange rate: {np.mean(self.p.short_exchange_rate)}')
         self.log(f'Index rankIC: {np.mean(self.p.rankIC)}')
         self.log(f'Index rankICIR: {np.mean(self.p.rankICIR)}')
         self.log(f"Index IR: {np.mean(self.p.rankIC)/np.std(self.p.rankIC)}")
