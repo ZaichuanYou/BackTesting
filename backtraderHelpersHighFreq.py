@@ -275,7 +275,7 @@ class MyStrategy_High_freq(bt.Strategy):
             self.p.index_mean_short.append(index_mean_short/len(short_list))
             self.log(f"Number of Short: {count_short}, List length: {len(short_list)}, close short: {close_short}, new_short: {new_short}")
         self.log(f"Number of Long: {count_long}, List length: {len(long_list)}, close long: {close_long}, new long: {new_long}")
-        if count_short>len(short_list) or count_long>len(long_list):self.log("Error")
+        # if count_short>len(short_list) or count_long>len(long_list):self.log("Error")
     
 
     def log(self, txt, dt=None,doprint=False):
@@ -297,14 +297,15 @@ class MyStrategy_High_freq(bt.Strategy):
                 成本:{order.executed.value:.2f},\
                 手续费:{order.executed.comm:.2f},\
                 发起自:{order.executed_by}')
-
-                self.buyprice = order.executed.price
-                self.buycomm = order.executed.comm
+                if order.executed_by == "buy" and order.executed.value<0:
+                    self.log("Error: buy with negative value")
             else:
                 self.log(f'卖出:{order.data._name}\n价格:{order.executed.price:.2f},\
                 成本: {order.executed.value:.2f},\
                 手续费{order.executed.comm:.2f}\
                 发起自:{order.executed_by}')
+                if order.executed_by == "sell" and order.executed.value>0:
+                    self.log("Error: sell with positive value")
 
             self.bar_executed = len(self)
 

@@ -209,4 +209,11 @@ if __name__ == '__main__':
                 prob=1)
     # for a in range(0,10):
     #     print(f"top {a*10} to {a*10+10}%")
-    #     backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, data_dir=data_dir, result_dir=result_dir, logger=logger, prob=1)
+    #     backTest(name=f"top {a*10} to {a*10+10}%",
+    #                 save=True, 
+    #                 group=a, 
+    #                 data_dir=data_dir, 
+    #                 result_dir=result_dir, 
+    #                 logger=logger,
+    #                 timeframe=TimeFrame.Minutes,  
+    #                 prob=1)
