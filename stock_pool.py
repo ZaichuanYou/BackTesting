@@ -1,7 +1,8 @@
 from backtraderHelpers import *
+from backtraderHelpersHighFreq import *
 import pathlib
 
-def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
+def backTest(name, save, group, data_dir, result_dir, logger, timeframe=TimeFrame.Days, compression=1, prob=1):
     """
         Conduct the backtest using given parameters
 
@@ -21,7 +22,12 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
     cerebro.addanalyzer(bt.analyzers.DrawDown, _name='_DrawDown')  # 回撤
     cerebro.addanalyzer(TotalValue, _name="_TotalValue") # 账户总值
 
-    cerebro.addstrategy(MyStrategy, group=group, logger=logger)
+    if type(timeframe)==TimeFrame.Days:
+        cerebro.addstrategy(MyStrategy, group=group, logger=logger)
+        print('Imported Daily freq')
+    else:
+        cerebro.addstrategy(MyStrategy_High_freq, group=group, logger=logger)
+        print('Imported High freq')
 
     # 将买卖数量固定为100的倍数
     cerebro.addsizer(bt.sizers.FixedSize, stake=100)
@@ -35,6 +41,8 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
             dataname=data_dir+'/'+file,
             fromdate=bt.datetime.datetime(2022, 1, 4),
             todate=bt.datetime.datetime(2023, 7, 14),
+            timeframe=timeframe,
+            compression=59,
             dtformat = '%Y-%m-%d %H:%M:%S',
             datetime=1,
             high=4,
@@ -51,7 +59,7 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
 
     # 将初始本金设为100w
     cerebro.broker.setcash(1000000.0)
-    #cerebro.broker.setcommission(0.005)
+    # cerebro.broker.setcommission(0.00002)
     cerebro.addobserver(bt.observers.TimeReturn)
 
     logger.info('启动资金: %.2f' % cerebro.broker.getvalue())
@@ -183,15 +191,22 @@ def backTest(name, save, group, data_dir, result_dir, logger, prob=1):
 
 if __name__ == '__main__':
     
-    data_dir = 'C:/Users/21995/Desktop/量化投资/中金/Data/CB_Data_Flux'
-    result_dir = os.path.join("Results", 'ReturnSTD')
+    data_dir = 'C:/Users/21995/Desktop/量化投资/中金/Data/CB_Data_FluxHighFreq'
+    result_dir = os.path.join("Results", 'ReturnSTDHighFreq')
     if not os.path.isdir(result_dir):
         os.makedirs(result_dir)
     result_dir = os.path.join(pathlib.Path(__file__).parent.resolve(), result_dir)
     logging.basicConfig(filename=os.path.join(result_dir, 'Backtest.log'), filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
     logger = logging.getLogger()
     logger.setLevel(level=logging.INFO)
-    backTest(name=f"top {0*10} to {0*10+10}%", save=False, group=0, data_dir=data_dir, result_dir=result_dir, logger=logger, prob=1)
+    backTest(name=f"top {0*10} to {0*10+10}%",
+                save=False,
+                group=0, 
+                data_dir=data_dir, 
+                result_dir=result_dir, 
+                logger=logger, 
+                timeframe=TimeFrame.Minutes, 
+                prob=1)
     # for a in range(0,10):
     #     print(f"top {a*10} to {a*10+10}%")
     #     backTest(name=f"top {a*10} to {a*10+10}%", save=True, group=a, data_dir=data_dir, result_dir=result_dir, logger=logger, prob=1)
