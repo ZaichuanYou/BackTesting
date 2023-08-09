@@ -1,5 +1,6 @@
 import backtrader as bt
 from backtrader.feeds import GenericCSVData
+from backtrader import TimeFrame
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
@@ -10,17 +11,19 @@ from math import sqrt
 from scipy.stats import rankdata
 
 class GenericCVS_extend(GenericCSVData):
-
-    # 定义新指标indx并将指标的列输入
+    """
+        Extending the GenericCSVData to include a new indicator 'indx'
+    """
     lines = ('indx',)
 
+    # Setting default parameters for 'indx'
     params = (('indx', 10),
               ('nullvalue', float('NaN')))
 
 
 class TotalValue(bt.analyzers.Analyzer):
     """
-    Analyzer returning cash and market values
+        Analyzer returning cash and market values
     """
 
     def create_analysis(self):
@@ -40,7 +43,17 @@ class TotalValue(bt.analyzers.Analyzer):
 
 
 class MyStrategy(bt.Strategy):
-    # 策略参数
+    """
+        Main class which used to conduct backtest
+
+        Parameters:
+            group: indicate which group is currently testing
+            printlog: print log or not
+            hedge: using hedge to sell the last group or not
+            reverse: reverse the sort order or not
+    """
+
+    # Strategy parameters
     params = dict(
         group = 0,
         printlog=True,
@@ -71,10 +84,10 @@ class MyStrategy(bt.Strategy):
     )
 
     def __init__(self):
-        # 建立timer在每周1、2、3、4、5交易
+        # Initialization method for the strategy
 
         self.indx = dict()
-        # 遍历所有股票,提取indx指标
+        # Setting up the timer for trading on weekdays
         for data in self.datas:
             self.indx[data._name] = data.indx
 
@@ -84,7 +97,7 @@ class MyStrategy(bt.Strategy):
             monthcarry = True
         )
 
-    # 在timer被触发时调仓
+    # Method to be called when the timer is triggered, calls rebalance_portfolio
     def notify_timer(self, timer, when, *args, **kwargs):
         self.rebalance_portfolio()
 
@@ -247,7 +260,8 @@ class MyStrategy(bt.Strategy):
                 new_short = new_short+1
         if not count_long==0:
             self.p.long_exchange_rate.append([new_long/count_long])
-            self.p.short_exchange_rate.append([new_short/count_short])
+            if self.p.hedge:
+                self.p.short_exchange_rate.append([new_short/count_short])
         self.p.index_mean_long.append(index_mean_long/len(long_list))
 
         
@@ -260,13 +274,15 @@ class MyStrategy(bt.Strategy):
             self.p.index_mean_short.append(index_mean_short/len(short_list))
             self.log(f"Number of Short: {count_short}, List length: {len(short_list)}, close short: {close_short}, new_short: {new_short}")
         self.log(f"Number of Long: {count_long}, List length: {len(long_list)}, close long: {close_long}, new long: {new_long}")
+        if count_short>len(short_list) or count_long>len(long_list):self.log("Error")
     
 
     def log(self, txt, dt=None,doprint=False):
         if self.params.printlog or doprint:
             dt = dt or self.datas[0].datetime.date(0)
-            self.params.logger.info(f'{dt.isoformat()},{txt}')
-            print(f'{dt.isoformat()},{txt}')
+            time = None or self.datas[0].datetime.time(0)
+            self.params.logger.info(f'{dt.isoformat()} {time.isoformat()},{txt}')
+            print(f'{dt.isoformat()} {time.isoformat()},{txt}')
 
     #记录交易执行情况（可省略，默认不输出结果）
     def notify_order(self, order):
@@ -304,8 +320,9 @@ class MyStrategy(bt.Strategy):
             self.log(f'多头胜率：{self.p.win_count_long/self.p.total_trade_long}%')
             self.log(f'空头胜率：{self.p.win_count_short/self.p.total_trade_short}%')
             self.log(f'策略胜率：{(self.p.win_count_long+self.p.win_count_short)/(self.p.total_trade_long+self.p.total_trade_short)}%')
-        self.log(f'Long exchange rate: {np.mean(self.p.long_exchange_rate)}')
-        self.log(f'Short exchange rate: {np.mean(self.p.short_exchange_rate)}')
+        self.log(f'Long exchange rate: {np.mean(self.p.long_exchange_rate)}')    
+        if self.p.hedge:
+            self.log(f'Short exchange rate: {np.mean(self.p.short_exchange_rate)}')
         self.log(f'Index rankIC: {np.mean(self.p.rankIC)}')
         self.log(f'Index rankICIR: {np.mean(self.p.rankICIR)}')
         self.log(f"Index IR: {np.mean(self.p.rankIC)/np.std(self.p.rankIC)}")
