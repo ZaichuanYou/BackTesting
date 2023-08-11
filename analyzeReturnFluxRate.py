@@ -100,6 +100,46 @@ def analyze_index_HighFreq(data, s_dir, d_dir, cols):
     df_result.to_csv(d_dir+'/{}'.format(data)) 
     
 
+def analyze_return_HighFreq(data, s_dir, d_dir, cols):
+    """
+        This will calculate the Amount follow index and store the result at a new column.\n
+        This is a modified version which will devide data into high frequency sessions.
+
+        params:
+            data: directory of current data
+            window: look back window of the index calculation
+            s_dir: source directory of the data
+            d_dir: destination directory of the processed data
+            cols: columns that will be keeped in the processed data
+            weight_df: weight of weighted average
+            weight_mean: mean of weight
+    """
+    df = pd.read_csv(s_dir+'/{}'.format(data), index_col=0, engine='pyarrow')
+    df_result = pd.DataFrame(columns=cols)
+
+    df = df.dropna()
+
+    index = np.array(list(range(0,59)))
+
+    for i in range(0, len(df), 241):
+        for n in range(0, int(236/session_length)):
+            df_session = df.iloc[index+n*59]
+            vol_mean = np.mean(df_session['volume'])
+            vol_std = np.std(df_session['volume'])
+            df_release = df_session[df_session['volume']>vol_mean+vol_std].index
+            ret = df.iloc[df_release]['close'].values-df.iloc[df_release-1]['close'].values
+            if len(ret)==0:
+                df_result = pd.concat([df_result, df.loc[[index[0]+n*59]]], ignore_index=True)
+                df_result.iat[-1, 8] = 0
+                df_result.iat[-1, 9] = 0
+            Factor = np.mean(ret)
+            df_result = pd.concat([df_result, df.loc[[index[0]+n*59]]], ignore_index=True)
+            df_result.iat[-1, 8] = Factor
+            df_result.iat[-1, 9] = Factor
+        index = index+241
+
+    df_result.to_csv(d_dir+'/{}'.format(data)) 
+
 
 def analyze_Reverse_Imp(data, s_dir, d_dir, cols):
     """

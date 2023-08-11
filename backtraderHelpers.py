@@ -66,6 +66,7 @@ class MyStrategy(bt.Strategy):
         win_count_short = 0,
         rankIC = [],
         rankICIR = [],
+        t=[],
         logger = None,
         base = 0,
         total_trend = [],
@@ -221,7 +222,9 @@ class MyStrategy(bt.Strategy):
                 index_mean_short = index_mean_short+self.indx[data._name][0]
                 self.p.last_day_close[data._name] = data.close[0]
 
-            #获取仓位
+            # 获取仓位
+            # 如果可转债在longlist里则做多，如果可转债有多头但并不在longlist里则平仓
+            # 如果可转债在shortlist里则做空，如果可转债有空头但并不在shortlist里则平仓
             pos = self.getposition(data).size
 
             if pos>0: count_long = count_long+1

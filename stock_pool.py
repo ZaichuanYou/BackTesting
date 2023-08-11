@@ -22,6 +22,7 @@ def backTest(name, save, group, data_dir, result_dir, logger, timeframe=TimeFram
     cerebro.addanalyzer(bt.analyzers.DrawDown, _name='_DrawDown')  # 回撤
     cerebro.addanalyzer(TotalValue, _name="_TotalValue") # 账户总值
 
+    # 根据数据频率选择对应的回测模型
     if type(timeframe)==TimeFrame.Days:
         cerebro.addstrategy(MyStrategy, group=group, logger=logger)
         print('Imported Daily freq')
@@ -59,15 +60,16 @@ def backTest(name, save, group, data_dir, result_dir, logger, timeframe=TimeFram
 
     # 将初始本金设为100w
     cerebro.broker.setcash(1000000.0)
-    # cerebro.broker.setcommission(0.00002)
+    cerebro.broker.setcommission(0.00002)
     cerebro.addobserver(bt.observers.TimeReturn)
 
     logger.info('启动资金: %.2f' % cerebro.broker.getvalue())
 
     result = cerebro.run()
+
+    # 以年化收益率1.7%作为无风险利率计算Sharpe ratio
     risk_free_rate = 0.017
     risk_free_rate_daily = (1 + risk_free_rate)**(1/252) - 1
-
     df = pd.DataFrame({"Account value":result[0].p.account_value})
     df['Account value'] = df['Account value']-500000
     df['Return'] = df['Account value'].pct_change()
@@ -82,6 +84,7 @@ def backTest(name, save, group, data_dir, result_dir, logger, timeframe=TimeFram
     # Annualize the Sharpe Ratio
     sharpe_ratio = sharpe_ratio * np.sqrt(252)
     
+    # 计算年化收益率
     annual_return = []
     for year in result[0].analyzers._AnnualReturn.get_analysis().items():
         annual_return.append(year[1])
@@ -91,7 +94,7 @@ def backTest(name, save, group, data_dir, result_dir, logger, timeframe=TimeFram
     logger.info(f'Sharp Ratio: {sharpe_ratio}')
     logger.info(f'Max DrawDown: {result[0].analyzers._DrawDown.get_analysis()["max"]["drawdown"]*2}%')
 
-    
+    # 计算市场以及策略账户总值
     account_value = np.array(result[0].p.account_value)
     account_value = account_value/(account_value[0]/2)-1
     index_mean = result[0].p.index_mean
@@ -130,6 +133,7 @@ def backTest(name, save, group, data_dir, result_dir, logger, timeframe=TimeFram
             short_df.to_csv(os.path.join(result_dir, "Short info.csv"))
     
 
+    # 把结果存入指定的文件夹
     if save and os.path.exists(os.path.join(result_dir, "Result.csv")):
         temp_df = pd.read_csv(os.path.join(result_dir, "Result.csv"))
         temp_df[f"{name} Return"] = df[f"{name} Return"].tail(int(len(account_value)/(group+1))).values

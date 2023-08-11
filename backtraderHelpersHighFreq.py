@@ -94,11 +94,11 @@ class MyStrategy_High_freq(bt.Strategy):
 
     # Method to be called when the timer is triggered, calls rebalance_portfolio
     def notify_timer(self, timer, when, *args, **kwargs):
-        self.log("Timer triggered")
+        # self.log("Timer triggered")
         self.rebalance_portfolio()
 
     def rebalance_portfolio(self):
-        self.log("Rebalance")
+        # self.log("Rebalance")
         if not len(self.p.last_day_data)==0:
             # Calculate the RankIC of index
             # convert to ranks
@@ -217,7 +217,9 @@ class MyStrategy_High_freq(bt.Strategy):
                 index_mean_short = index_mean_short+self.indx[data._name][0]
                 self.p.last_day_close[data._name] = data.close[0]
 
-            #获取仓位
+            # 获取仓位
+            # 如果可转债在longlist里则做多，如果可转债有多头但并不在longlist里则平仓
+            # 如果可转债在shortlist里则做空，如果可转债有空头但并不在shortlist里则平仓
             pos = self.getposition(data).size
 
             if pos>0: count_long = count_long+1
@@ -329,5 +331,6 @@ class MyStrategy_High_freq(bt.Strategy):
             self.log(f'Short exchange rate: {np.mean(self.p.short_exchange_rate)}')
         self.log(f'Index rankIC: {np.mean(self.p.rankIC)}')
         self.log(f'Index rankICIR: {np.mean(self.p.rankICIR)}')
+        self.log(f'Index T: {np.mean(self.p.rankIC)/np.std(self.p.rankIC)*len(self.p.rankIC)}')
         self.log(f"Index IR: {np.mean(self.p.rankIC)/np.std(self.p.rankIC)}")
         return
